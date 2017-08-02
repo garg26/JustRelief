@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingRight="@dimen/tv_paddingRight"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <simplifii.framework.widgets.CustomFontTextView
+            android:id="@+id/tv_titles"
+            android:textAllCaps="false"
+            style="@style/tv_black_style_heading_without_background"
+            android:gravity="start"
+            android:layout_weight="25"
+
+            />
+
+        <simplifii.framework.widgets.CustomFontTextView
+            android:id="@+id/tv_titles_year"
+            android:gravity="center"
+
+            style="@style/tv_black_style_heading_without_background"
+            android:layout_weight="40"
+             />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="30"
+            android:gravity="center"
+            android:padding="6dp"
+            android:id="@+id/rl_delete"
+            android:layout_height="wrap_content">
+            <simplifii.framework.widgets.CustomFontTextView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:id="@+id/tv_delete"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/delete"
+                />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

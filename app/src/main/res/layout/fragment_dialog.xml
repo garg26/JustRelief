@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_item">
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="100">
+        <simplifii.framework.widgets.CustomFontButton
+            style="@style/button_style"
+            android:id="@+id/bt_cancel"
+            android:text="cancel"
+            android:layout_weight="50"/>
+        <simplifii.framework.widgets.CustomFontButton
+            style="@style/button_style"
+            android:id="@+id/bt_save"
+            android:text="Submit"
+            android:layout_weight="50"/>
+    </LinearLayout>
+
+</LinearLayout>

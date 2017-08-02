@@ -5,9 +5,9 @@
     android:layout_height="match_parent"
     android:minWidth="48dp"
     android:padding="6dp"
-    android:text="Test"
+    android:text="@string/test"
     android:textColor="@color/black"
-    android:textSize="14dp">
+    android:textSize="14sp">
 
 
 </simplifii.framework.widgets.CustomFontTextView>

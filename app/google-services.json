@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "703450493421",
+    "firebase_url": "https://justreliefclinics.firebaseio.com",
+    "project_id": "justreliefclinics",
+    "storage_bucket": "justreliefclinics.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:703450493421:android:968f4c0fd3bb6a18",
+        "android_client_info": {
+          "package_name": "com.justrelief"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "703450493421-jr6555o1cap0odf0e2ajgifegs64s6bk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.justrelief",
+            "certificate_hash": "2e39ca5e8c76d4f589641847cbc7f6b7f28a77c5"
+          }
+        },
+        {
+          "client_id": "703450493421-4n6fjs2bp4r5lu5gmaktvbrk0aunhoni.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXcxinI8zFt9cNzxX2FmM2yOih_vjo5qg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "703450493421-4n6fjs2bp4r5lu5gmaktvbrk0aunhoni.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

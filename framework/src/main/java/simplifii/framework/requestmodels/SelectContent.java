@@ -56,10 +56,7 @@ public class SelectContent extends BaseAdapterModel implements Serializable {
         return uri;
     }
 
-    public String getFullUrl() {
-        return AppConstants.PAGE_URL.PHOTO_URL + uri;
-    }
-
+ 
     public void setUri(String uri) {
         this.uri = uri;
     }

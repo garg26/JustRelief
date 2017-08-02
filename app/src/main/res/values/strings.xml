@@ -1,24 +1,139 @@
 <resources>
     <string name="app_name">JustReliefClinics</string>
     <string name="search">Search</string>
-    <string name="email_phone_number">Email/Phone Number</string>
-    <string name="password">Password</string>
+
+
     <string name="doctor_physiotherapist_login">Doctor/Physiotherapist login</string>
-    <string name="login">Login</string>
-    <string name="or">- OR -</string>
-    <string name="don_t_have_a_login_sign_up_and_enjoy">Don\'t have a login?\n Sign Up and Enjoy..</string>
-    <string name="forgot_password">Forgot password?</string>
-    <string name="sign_up_now">Sign Up Now</string>
+
+
     <string name="email_error">Email/Mobile needs to be at least 10 characters</string>
     <string name="password_error">Enter Password</string>
-    <string name="first_name">First Name</string>
-    <string name="last_name">Last Name</string>
-    <string name="email_address">Email Address</string>
-    <string name="mobile_number">Mobile Number</string>
-    <string name="confirm_password">Confirm Password</string>
-    <string name="yes_i_agree_to_terms_of_use">Yes, I agree to Terms of Use</string>
-    <string name="sign_up">Sign Up</string>
+
+
     <string name="clinic_photo">Clinic Photo</string>
 
+
+    <string name="enter_your_clinic_details">Enter your clinic details</string>
+    <string name="find_my_clinic">Find My Clinic</string>
+    <string name="create_new_clinic">Create New Clinic</string>
+    <string name="get_a_new_clinic_profile">Get a new clinic profile</string>
+    <string name="your_clinic_is_not_listed_on_justrelief_com_fill_in_all_n_your_clinic_details_and_create_a_new_clinic_profile">Your clinic is not listed on justrelief.com. Fill in all\n your clinic details and create a new clinic profile</string>
+    <string name="create_clinic_profile">Create Clinic Profile</string>
+    <string name="go_back">Go Back</string>
+
+
+    <string name="error_email_address_is_not_correct">Email Address is not correct</string>
+    <string name="error_number_is_not_correct">Number is not correct</string>
+
+    <string name="error_clinic_name">Clinic name is empty</string>
+    <string name="error_clinic_detail">Enter correct information</string>
+    <string name="submit">Submit</string>
+
+
+
+    <string name="resend_email">Email has been send</string>
+    <string name="verify_email">Email is verified</string>
+    <string name="error_email_verify">Please Verify your email to proceed</string>
+    <string name="error_resend_mail">Failed to resend mail</string>
+
+
+    <string name="error_complete_profile">Please complete your login profile</string>
+    <string name="error_start_time_empty">Starting time is empty</string>
+    <string name="error_end_time_empty">End time is empty</string>
+    <string name="error_days_empty">Choose Days is empty</string>
+    <string name="error_verify_not_email">Please verify your email address</string>
+    <string name="error_contact_number_empty">Contact Number is empty</string>
+    <string name="error_email_address_empty">Email Address is empty</string>
+    <string name="error_clinic_name_empty">Clinic Name is empty</string>
+    <string name="about_clinic">About Clinic</string>
+    <string name="street_address">Street Address</string>
+    <string name="landmark">Landmark</string>
+    <string name="zip_code">Zip Code</string>
+    <string name="area">Area</string>
+    <string name="city">City</string>
+    <string name="save_and_next">Save and Next</string>
+    <string name="save">Save</string>
+    <string name="year">Year</string>
+    <string name="error_inf_correctlt">Enter the information correctly</string>
+    <string name="error">Error</string>
+    <string name="clinic_profile">Clinic Profile</string>
+    <string name="contact_clinic_details"><![CDATA[Contact & Clinic Details]]></string>
+    <string name="timings_details">Timings Details</string>
+    <string name="location_photos_details"><![CDATA[Location & Photos Details]]></string>
+    <string name="doctors_details">Doctors Details</string>
+    <string name="services_specialization_details"><![CDATA[Specialization & Services Details]]></string>
+    <string name="award_accreditation_details"><![CDATA[Award & Accreditation Details]]></string>
+    <string name="error_accreditation_year_empty">accreditation Year is empty</string>
+    <string name="error_accreditation_empty">" accreditation is empty"</string>
+    <string name="success">Success</string>
+    <string name="fail">Fail</string>
+    <string name="error_award_year_empty">Award Year is empty</string>
+    <string name="award_title_empty">Award Titile is empty</string>
+    <string name="error_specialization_empty">Specialization is empty</string>
+    <string name="error_services_empty">Services is empty</string>
+    <string name="error_session1_time_empty">Session 1 timing is empty</string>
+    <string name="locality">Locality</string>
+    <string name="name">Name</string>
+    <string name="please_help_us_with_the_below_information">Please help us with the below information</string>
+    <string name="title">Title</string>
+    <string name="award">Award *</string>
+    <string name="accreditation">accreditation</string>
+    <string name="contact_details">Contact details</string>
+    <string name="contact_number">Contact Number *</string>
+    <string name="email_address">Email Address *</string>
+    <string name="clinic_name">Clinic Name *</string>
+    <string name="clinic_details">Clinic details</string>
+    <string name="country">Country</string>
+    <string name="add_services">Add Services</string>
+    <string name="specialization">Specialization</string>
+    <string name="add_specializations">Add Specializations</string>
+    <string name="timings">Timings *</string>
+    <string name="clinic_open_24_7">Clinic open 24×7</string>
+    <string name="choose_days">Choose Days</string>
+    <string name="session_1">Session 1</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="session_2">Session 2</string>
+    <string name="resend_mail">Resend Mail ?</string>
+    <string name="test">Test</string>
+    <string name="created_date">Created Date</string>
+    <string name="personal_details">Personal Details</string>
+    <string name="personal_details_to_increase_ssprofile_by_25_personal_details">Personal details to increase ssprofile by 25% personal details</string>
+    <string name="nitin">Nitin</string>
+
+
+    <string name="error_not_find_clinic">Not Find Any Clinic</string>
+    <string name="error_image_fime_not_exist">Image File is not exist</string>
+    <string name="payment_mode">Payment Mode</string>
+    <string name="upload_document">Upload Document</string>
+    <string name="select">- Select -</string>
+    <string name="choose_image">Choose Image</string>
+    <string name="services">Services</string>
+    <string name="information_save_successfully">Information saved successfully</string>
+    <string name="select_image_type">Select Image Type</string>
+    <string name="clinic_image_empty">Clinic Image is empty</string>
+    <string name="document_file_empty">Document File is Empty</string>
+    <string name="document_upload_successfully">Document upload successfully</string>
+    <string name="select_document_type">Select Document Type</string>
+    <string name="background_error">Background error</string>
+    <string name="select_time">Select Time</string>
+
+
+    <string name="image_upload_successfully">Image  Upload Successfully</string>
+    <string name="photos">Photos</string>
+    <string name="no_image_found">No Image Found!</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="clinic_photos">Clinic Photos</string>
+    <string name="services_specializations"><![CDATA[Services & Specializations]]></string>
+    <string name="india">India</string>
+    <string name="email_address_empty">Email Address is empty</string>
+    <string name="error_contact_no_empty">Contact Number is empty</string>
+    <string name="error_payment_mode_empty">Please choose Payment Mode</string>
+    <string name="error_about_clinic_empty">About Clinic is empty</string>
+    <string name="error_document_type_empty">Please Choose Document Type</string>
+    <string name="error_document_empty">Document is empty</string>
+    <string name="error_image_type_empty">Image Type is empty</string>
+    <string name="image_type_empty">Image Type is empty</string>
+    <string name="image_empty">Choose Image is empty</string>
 
 </resources>

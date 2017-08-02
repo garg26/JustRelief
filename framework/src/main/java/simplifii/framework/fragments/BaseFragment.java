@@ -2,9 +2,11 @@ package simplifii.framework.fragments;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.graphics.Bitmap;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
@@ -15,16 +17,37 @@ import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.MultiAutoCompleteTextView;
 import android.widget.ScrollView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.gun0912.tedpermission.PermissionListener;
+import com.gun0912.tedpermission.TedPermission;
+import com.tokenautocomplete.FilteredArrayAdapter;
+import com.tokenautocomplete.TokenCompleteTextView;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.List;
 
 import simplifii.framework.R;
 import simplifii.framework.activity.BaseActivity;
@@ -32,15 +55,14 @@ import simplifii.framework.asyncmanager.Service;
 import simplifii.framework.asyncmanager.ServiceFactory;
 import simplifii.framework.exceptionhandler.ExceptionHandler;
 import simplifii.framework.exceptionhandler.RestException;
-import simplifii.framework.receivers.CartUpdateReceiver;
+import simplifii.framework.models.response.MasterValues;
 import simplifii.framework.receivers.GenericLocalReceiver;
+import simplifii.framework.utility.CollectionUtils;
 import simplifii.framework.utility.Logger;
-import simplifii.framework.utility.Preferences;
 import simplifii.framework.utility.Util;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
+import simplifii.framework.widgets.ContactsCompletionView;
+import simplifii.framework.widgets.CustomFontTextInputEditText;
+import simplifii.framework.widgets.CustomTextInputLayout;
 
 public abstract class BaseFragment extends Fragment implements
         View.OnClickListener,
@@ -65,9 +87,132 @@ public abstract class BaseFragment extends Fragment implements
     public void refreshData() {
     }
 
+    protected ArrayAdapter setadapter(List<String> list, int spinnerID) {
+
+        Spinner spinner = (Spinner) findView(spinnerID);
+        ArrayAdapter dataAdapter = null;
+        if (list != null) {
+            dataAdapter = new ArrayAdapter(getActivity(), android.R.layout.simple_spinner_item, list);
+            dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+            spinner.setAdapter(dataAdapter);
+        }
+        return dataAdapter;
+    }
+
+    protected void setSpinAdapter(String[] array, int spinnerID) {
+
+        Spinner spinner = (Spinner) findView(spinnerID);
+
+        if (array != null) {
+            ArrayAdapter dataAdapter = new ArrayAdapter(getActivity(), android.R.layout.simple_spinner_item, array);
+            dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+            spinner.setAdapter(dataAdapter);
+        }
+    }
+
+    protected void askPermissions(final String MediaType) {
+        new TedPermission(getActivity())
+                .setPermissions(android.Manifest.permission.CAMERA, android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                .setPermissionListener(new PermissionListener() {
+                    @Override
+                    public void onPermissionGranted() {
+                        onPermissionVerify(MediaType);
+                    }
+
+                    @Override
+                    public void onPermissionDenied(ArrayList<String> deniedPermissions) {
+                        Log.e("Denied", "denied");
+                    }
+                }).check();
+    }
+
+    protected void onPermissionVerify(String mediaType) {
+
+    }
+
+
+    protected List<String> setContactCompletionView(final List<String> list, final List<String> list_selected, int id) {
+        final ContactsCompletionView ccv = (ContactsCompletionView) findView(id);
+        final FilteredArrayAdapter<String> adapterQualification = new FilteredArrayAdapter<String>(getActivity(), android.R.layout.simple_dropdown_item_1line, list) {
+            @Override
+            protected boolean keepObject(String obj, String mask) {
+                if (list_selected.contains(obj))
+                    return false;
+                if ("".equals(""))
+                    return obj.toLowerCase().contains(mask.toLowerCase());
+                //return obj.toLowerCase().contains(mask.toLowerCase());
+                return true;
+            }
+        };
+        ccv.setTokenizer(new MultiAutoCompleteTextView.CommaTokenizer());
+        ccv.setThreshold(1);
+        ccv.setAdapter(adapterQualification);
+
+        ccv.setTokenListener(new TokenCompleteTextView.TokenListener<String>() {
+            @Override
+            public void onTokenAdded(String token) {
+                list_selected.add(token);
+            }
+
+            @Override
+            public void onTokenRemoved(String token) {
+                list_selected.remove(token);
+            }
+        });
+        ccv.setTokenClickStyle(TokenCompleteTextView.TokenClickStyle.None);
+        ccv.allowCollapse(false);
+        ccv.allowDuplicates(false);
+        ccv.setTextIsSelectable(false);
+
+        ccv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (CollectionUtils.isNotEmpty(list))
+                    ccv.showDropDown();
+                adapterQualification.notifyDataSetChanged();
+            }
+        });
+
+
+        return list_selected;
+
+    }
+
     protected void setError(int edtitTextId, String error) {
         EditText editText = (EditText) findView(edtitTextId);
         editText.setError(error);
+    }
+
+    protected void setOnItemSelectedListener(AdapterView.OnItemSelectedListener onItemSelectedListener, int... spinnerIds) {
+        for (int spinnerId : spinnerIds) {
+            Spinner spinner = (Spinner) findView(spinnerId);
+            spinner.setOnItemSelectedListener(onItemSelectedListener);
+        }
+    }
+
+    protected String getValueIDs(List<String> list, List<MasterValues> masterlist) {
+        StringBuilder stringBuilder = new StringBuilder();
+        if (CollectionUtils.isNotEmpty(list))
+            for (int i = 0; i < list.size(); i++) {
+                for (MasterValues masterValues : masterlist) {
+                    if (masterValues.getLabel().equals(list.get(i))) {
+                        String serviceID = String.valueOf(masterValues.getValue());
+                        stringBuilder.append(serviceID + ",");
+                    }
+                }
+            }
+        if (stringBuilder.length() > 0) {
+            stringBuilder.deleteCharAt(stringBuilder.length() - 1);
+        }
+        return stringBuilder.toString();
+    }
+
+    protected void setOnCheckedChangeListener(CompoundButton.OnCheckedChangeListener onCheckedChangeListener, int... ids) {
+
+        for (int cbId : ids) {
+            CheckBox checkBox = (CheckBox) findView(cbId);
+            checkBox.setOnCheckedChangeListener(onCheckedChangeListener);
+        }
     }
 
     protected void setOnClickListener(int... viewIds) {
@@ -76,8 +221,67 @@ public abstract class BaseFragment extends Fragment implements
         }
     }
 
+    protected CheckBox getCheckBox(int ids) {
+        return (CheckBox) findView(ids);
+    }
+
+    protected String getTextFromCB(int ids) {
+        String string = null;
+        CheckBox checkBox = getCheckBox(ids);
+        if (checkBox.isChecked()) {
+            string = checkBox.getText().toString();
+        }
+        return string;
+    }
+
+    protected void setOnItemClickListener(AdapterView.OnItemClickListener onItemClickListener, int... ids) {
+        for (int id : ids) {
+            AutoCompleteTextView actv = (AutoCompleteTextView) findView(id);
+            actv.setOnItemClickListener(onItemClickListener);
+        }
+    }
+
     protected void setEditText(int layoutId, String text) {
         ((EditText) findView(layoutId)).setText(text);
+    }
+
+    protected String getACTVText(int id) {
+        AutoCompleteTextView actv = (AutoCompleteTextView) findView(id);
+        return actv.getText().toString();
+    }
+
+    protected void setACTVText(int id, String text) {
+        AutoCompleteTextView actv = (AutoCompleteTextView) findView(id);
+        actv.setText(text);
+    }
+
+    protected void setSpinText(int id, String text, List<String> list) {
+        Spinner spinner = (Spinner) findView(id);
+        if (CollectionUtils.isNotEmpty(list)) {
+            int position = list.indexOf(text);
+            spinner.setSelection(position);
+        }
+
+    }
+
+    protected String getValueID(List<MasterValues> valuesList, String string) {
+        int value = 0;
+        for (int i = 0; i < valuesList.size(); i++) {
+            if (valuesList.get(i).getLabel().equals(string)) {
+                value = valuesList.get(i).getValue();
+            }
+        }
+        return String.valueOf(value);
+    }
+
+    protected String getStringName(List<MasterValues> valuesList, String string) {
+        String str = null;
+        for (int i = 0; i < valuesList.size(); i++) {
+            if (String.valueOf(valuesList.get(i).getValue()).equals(string)) {
+                str = valuesList.get(i).getLabel();
+            }
+        }
+        return str;
     }
 
 
@@ -97,16 +301,24 @@ public abstract class BaseFragment extends Fragment implements
         }
     }
 
+    protected void noVisibility(int... viewIds) {
+        for (int i : viewIds) {
+            findView(i).setVisibility(View.GONE);
+        }
+    }
+
     protected void setOnClickListener(View v, int... viewIds) {
         for (int id : viewIds) {
             v.findViewById(id).setOnClickListener(this);
         }
     }
 
+
     public void openSortDialog() {
 
     }
-    public void clearBackStackAndStartNextActivity(Class<? extends Activity> activityClass){
+
+    public void clearBackStackAndStartNextActivity(Class<? extends Activity> activityClass) {
         Intent intent = new Intent(getActivity(), activityClass);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
@@ -121,6 +333,38 @@ public abstract class BaseFragment extends Fragment implements
 //        this.setRetainInstance(true);
         retainFlag = true;
         Log.e("onCreate", "savedInstanceState:" + savedInstanceState);
+        if (getActivity().getIntent().getExtras() != null) {
+            loadBundle(getActivity().getIntent().getExtras());
+        }
+    }
+
+    protected void loadBundle(Bundle bundle) {
+    }
+
+    protected void getImagePathFromBitmap(Bitmap bitmap, int tv_id) {
+        bitmap = Util.getResizeBitmap(bitmap, 1024);
+
+        File imageFile = null;
+        if (bitmap != null) {
+            try {
+                imageFile = Util.getFile(bitmap, "JR");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        if (imageFile != null) {
+            if (imageFile.exists()) {
+                String image_name = imageFile.getName();
+                setText(tv_id, image_name);
+                setTag(tv_id, imageFile);
+
+            } else {
+                showToast(getString(R.string.error));
+            }
+        } else {
+            showToast(getString(R.string.error));
+        }
+
     }
 
     @Override
@@ -162,7 +406,12 @@ public abstract class BaseFragment extends Fragment implements
     }
 
     protected void onInternetException() {
+        View view = findView(R.id.frame_noInternet);
+        if (view != null) {
 
+        }
+        view.setVisibility(View.VISIBLE);
+        onServerError();
     }
 
     protected void onServerError() {
@@ -173,7 +422,7 @@ public abstract class BaseFragment extends Fragment implements
             TextView errorMsg = (TextView) errorLayout.findViewById(R.id.tv_errorMsg);
             TextView errorInfo = (TextView) errorLayout.findViewById(R.id.tv_errorInfo);
 
-//            errorImage.setImageResource(R.drawable.icon_server_error);
+            //   errorImage.setImageResource(R.drawable.icon_server_error);
             errorMsg.setText(R.string.server_error);
             errorInfo.setText(R.string.msg_server_error);
             findView(R.id.btn_retry).setOnClickListener(new View.OnClickListener() {
@@ -185,20 +434,23 @@ public abstract class BaseFragment extends Fragment implements
         }
     }
 
-    public void onRetryClicked(View view) {
+    protected void onRetryClicked(View view) {
         if (Util.isConnectingToInternet(getActivity())) {
             findView(R.id.frame_noInternet).setVisibility(View.GONE);
         }
+
     }
 
+
     public void scrollToTop(final ScrollView scrollView) {
-        scrollView.post(new Runnable() {
-            @Override
-            public void run() {
-                scrollView.fullScroll(View.FOCUS_UP);
-                // scrollView.scrollTo(0, scrollView.getBottom());
-            }
-        });
+        scrollView.post(
+                new Runnable() {
+                    @Override
+                    public void run() {
+                        scrollView.fullScroll(View.FOCUS_UP);
+                        // scrollView.scrollTo(0, scrollView.getBottom());
+                    }
+                });
     }
 
     protected void initActionBar(String text) {
@@ -239,6 +491,16 @@ public abstract class BaseFragment extends Fragment implements
     protected void setText(int textViewID, String text) {
         TextView textView = (TextView) findView(textViewID);
         textView.setText(text);
+    }
+
+    protected void setTag(int textViewID, File file) {
+        TextView textView = (TextView) findView(textViewID);
+        textView.setTag(file);
+    }
+
+    protected File getTag(int textViewID) {
+        TextView textView = (TextView) findView(textViewID);
+        return (File) textView.getTag();
     }
 
     protected void setText(int textViewID, String text, View row) {
@@ -404,6 +666,7 @@ public abstract class BaseFragment extends Fragment implements
         }
     }
 
+
     protected String getEditText(int editTextId) {
         return ((EditText) findView(editTextId)).getText().toString().trim();
     }
@@ -415,6 +678,7 @@ public abstract class BaseFragment extends Fragment implements
     protected void showToast(int stringId) {
         Toast.makeText(getActivity(), stringId, Toast.LENGTH_LONG).show();
     }
+
     protected void showShortToast(int stringId) {
         Toast.makeText(getActivity(), stringId, Toast.LENGTH_SHORT).show();
     }
@@ -490,7 +754,93 @@ public abstract class BaseFragment extends Fragment implements
         return layout.getEditText().getText().toString();
     }
 
+
+    protected void enableEditText(int id) {
+        EditText editText = (EditText) findView(id);
+        editText.setFocusable(true);
+        editText.setCursorVisible(true);
+    }
+
     protected int getResourceColor(int colorId) {
         return ContextCompat.getColor(getActivity(), colorId);
     }
+
+    public boolean isValidateTIL(int... textInputLapyotIds) {
+
+        for (int i = 0; i < textInputLapyotIds.length; i++) {
+            int id = textInputLapyotIds[i];
+            CustomTextInputLayout customTextInputLayout = (CustomTextInputLayout) findView(id);
+            customTextInputLayout.setError("");
+            if (!customTextInputLayout.isValidate(getContext())) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public boolean isValidateET(int... editTextIDs) {
+        for (int id : editTextIDs) {
+            CustomFontTextInputEditText customFontTextInputEditText = (CustomFontTextInputEditText) findView(id);
+            if (!customFontTextInputEditText.isValidate(getContext())) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    protected void setAdapter(List<String> list, int actvID) {
+        AutoCompleteTextView actv = (AutoCompleteTextView) findView(actvID);
+        if (CollectionUtils.isNotEmpty(list)) {
+            ArrayAdapter adapter = new ArrayAdapter(getActivity(), android.R.layout.simple_dropdown_item_1line, list);
+            actv.setAdapter(adapter);
+            actv.setThreshold(1);
+        }
+    }
+
+    protected static String[] pickYear() {
+
+        Calendar mcurrentYear = Calendar.getInstance();
+        int year = mcurrentYear.get(Calendar.YEAR);
+        String[] year_list = new String[70];
+
+        for (int i = 0; i < year_list.length; i++) {
+
+            year_list[i] = String.valueOf(year);
+            year--;
+
+        }
+
+        return year_list;
+    }
+
+    protected void showAlterDialog(final Integer id, final View view, final String fileType, final LinearLayout ll_container) {
+        final Dialog dialog = new Dialog(getActivity(), android.R.style.Theme_DeviceDefault_Light_Dialog_NoActionBar);
+        dialog.setContentView(R.layout.row_delete_alert_dialog);
+        dialog.show();
+        TextView textView = (TextView) dialog.findViewById(R.id.tv_errorMsg);
+        dialog.findViewById(R.id.btn_no).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+
+            }
+        });
+        dialog.findViewById(R.id.btn_yes).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                delete(id, view, fileType, ll_container);
+                dialog.dismiss();
+            }
+        });
+        dialog.setCancelable(true);
+        dialog.show();
+    }
+
+
+    protected void delete(Integer id, View view, String fileType, LinearLayout ll_container) {
+
+
+    }
+
+
 }

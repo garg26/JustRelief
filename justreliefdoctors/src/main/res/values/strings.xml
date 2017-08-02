@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">JustReliefDoctors</string>
+    <string name="enter_your_details">Enter your Details</string>
+    <string name="error_doctor_name_empty">Doctor name is empty</string>
+    <string name="error_specialization_empty">Specialization is empty</string>
+    <string name="error_city_empty">City is empty</string>
+    <string name="error_registration_no_empty">Registration Number is empty</string>
+    <string name="error_registration_council_empty">Registration Council is empty</string>
+    <string name="find_my_doctor">Find my Doctor</string>
+    <string name="resend_email">Resend Email</string>
+    <string name="year_registration_is_empty">Registartion Year is empty</string>
+</resources>

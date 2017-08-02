@@ -1,13 +1,333 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <TextView
-        android:text="Award"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:textSize="30sp"
-        android:id="@+id/textView" />
-</LinearLayout>
+    <ScrollView style="@style/scroll_style">
+
+        <RelativeLayout style="@style/rl_root">
+
+            <LinearLayout
+                android:id="@+id/ll_awards"
+                style="@style/ll_style"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_textview_shape"
+
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <simplifii.framework.widgets.CustomFontTextView
+                        android:id="@+id/tv_week_day"
+                        style="@style/tv_black_style_heading"
+                        android:layout_weight="25"
+                        android:text="Awards" />
+
+                    <simplifii.framework.widgets.CustomFontTextView
+                        android:id="@+id/tv_start_time"
+                        android:gravity="center"
+                        android:paddingLeft="0dp"
+                        style="@style/tv_black_style_heading"
+                        android:layout_weight="40"
+                        android:text="Year" />
+
+                    <simplifii.framework.widgets.CustomFontTextView
+                        android:id="@+id/tv_end_time"
+                        android:gravity="center"
+                        style="@style/tv_black_style_heading"
+                        android:layout_weight="35"
+                        android:text="Delete" />
+
+
+                </LinearLayout>
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_no_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:visibility="gone" />
+                <LinearLayout
+                    android:id="@+id/ll_upload_award_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/tv_paddingRight"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_award"
+                style="@style/ll_style"
+                android:layout_below="@+id/ll_awards"
+                android:orientation="vertical"
+
+                >
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_award"
+                    style="@style/tv_black_style_heading"
+                    android:text="Award" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <simplifii.framework.widgets.CustomFontTextView
+                        android:id="@+id/tv_add_award"
+                        style="@style/tv_black_style_heading_without_background"
+                        android:text="Add Awards" />
+
+
+                </RelativeLayout>
+
+                <simplifii.framework.widgets.CustomFontTextInputEditText
+                    android:id="@+id/et_award"
+                    style="@style/et_black_style_background"
+                    android:hint="@string/title"
+
+                    />
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_award_year"
+                    style="@style/tv_black_style_heading_without_background"
+                    android:layout_marginTop="@dimen/margin_12dp"
+
+                    android:paddingRight="@dimen/margin_12dp"
+                    android:text="Year" />
+
+                <Spinner
+                    android:id="@+id/spin_award_year"
+                    style="@style/spin_style"
+                    android:hint="@string/year" />
+
+            </LinearLayout>
+
+            <simplifii.framework.widgets.CustomFontButton
+                android:id="@+id/btn_award_save"
+                style="@style/button_style"
+                android:background="@mipmap/locatebtn"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/ll_award"
+                android:text="Save" />
+
+            <LinearLayout
+                android:id="@+id/ll_Accreditation"
+                android:layout_below="@+id/btn_award_save"
+                style="@style/ll_style"
+                android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_textview_shape"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_upload_accreditation"
+                    style="@style/tv_black_style_heading"
+                    android:layout_weight="25"
+                    android:text="Accreditation" />
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_upload_year"
+                    style="@style/tv_black_style_heading"
+                    android:layout_weight="40"
+                    android:text="Year" />
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_delete"
+                    style="@style/tv_black_style_heading"
+                    android:layout_weight="35"
+                    android:gravity="center"
+                    android:text="Delete" />
+
+
+            </LinearLayout>
+
+
+            <simplifii.framework.widgets.CustomFontTextView
+                android:id="@+id/tv_no_record1"
+                android:layout_below="@+id/ll_Accreditation"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_below="@+id/tv_no_record1"
+                android:id="@+id/ll_upload_accreditation_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:paddingRight="@dimen/tv_paddingBottom"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_accreditation"
+                style="@style/ll_style"
+                android:layout_below="@+id/ll_Accreditation"
+                android:orientation="vertical"
+                >
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_accreditation"
+                    style="@style/tv_black_style_heading"
+                    android:text="accreditation" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <simplifii.framework.widgets.CustomFontTextView
+                        android:id="@+id/tv_add_accreditation"
+                        style="@style/tv_black_style_heading_without_background"
+                        android:text="Add Accreditation" />
+
+
+                </RelativeLayout>
+
+                <Spinner
+                    android:id="@+id/spin_accreditation"
+                    style="@style/spin_style"
+
+                    >
+
+                </Spinner>
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_accreditation_year"
+
+                    style="@style/tv_black_style_heading_without_background"
+
+                    android:text="Year" />
+
+                <Spinner
+                    android:id="@+id/spin_accreditation_year"
+                    style="@style/spin_style"
+                    android:hint="@string/year" />
+            </LinearLayout>
+
+            <simplifii.framework.widgets.CustomFontButton
+                android:id="@+id/btn_accreditation_save"
+                style="@style/button_style"
+                android:background="@mipmap/locatebtn"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/ll_accreditation"
+                android:layout_margin="@dimen/margin_12dp"
+                android:text="Save" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <!--<simplifii.framework.widgets.CustomFontTextView-->
+    <!--style="@style/tv_black_style_match_wrap"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="14dp"-->
+    <!--android:id="@+id/tv_award"-->
+    <!--android:text="@string/award"/>-->
+
+    <!--<simplifii.framework.widgets.CustomTextInputLayout-->
+    <!--style="@style/text_input_layout_style1"-->
+    <!--android:id="@+id/til_award"-->
+    <!--android:layout_below="@+id/tv_award"-->
+    <!--&gt;-->
+    <!--<simplifii.framework.widgets.CustomFontEditText-->
+    <!--style="@style/edit_text_style"-->
+    <!--android:id="@+id/et_award"-->
+    <!--android:hint="@string/title"/>-->
+    <!--</simplifii.framework.widgets.CustomTextInputLayout>-->
+
+    <!--<simplifii.framework.widgets.CustomFontTextView-->
+    <!--style="@style/tv_grey_style"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/til_award"-->
+
+    <!--android:text="@string/year"-->
+    <!--android:id="@+id/tv_year"-->
+    <!--/>-->
+    <!--<Spinner-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/spin_year"-->
+    <!--android:hint="@string/year"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:layout_below="@+id/tv_year"/>-->
+
+    <!--<simplifii.framework.widgets.CustomFontButton-->
+    <!--android:id="@+id/bt_award_save"-->
+    <!--style="@style/button_style"-->
+    <!--android:layout_width="@dimen/width"-->
+    <!--android:layout_height="@dimen/margin_40dp"-->
+    <!--android:layout_alignRight="@+id/til_password"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginTop="@dimen/margin_8dp"-->
+    <!--android:layout_below="@+id/spin_year"-->
+    <!--android:text="@string/save" />-->
+
+
+    <!--<simplifii.framework.widgets.CustomFontTextView-->
+    <!--style="@style/tv_black_style_match_wrap"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/bt_award_save"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:id="@+id/tv_accreditation"-->
+    <!--android:text="@string/accreditation"/>-->
+
+    <!--<Spinner-->
+
+    <!--android:id="@+id/spin_accreditation"-->
+    <!--android:layout_below="@+id/tv_accreditation"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--/>-->
+    <!--<simplifii.framework.widgets.CustomFontTextView-->
+    <!--style="@style/tv_grey_style"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/spin_accreditation"-->
+
+    <!--android:text="@string/year"-->
+    <!--android:id="@+id/tv_year1"-->
+    <!--/>-->
+    <!--<Spinner-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/spin_accreditation_year"-->
+    <!--android:hint="@string/year"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:layout_below="@+id/tv_year1"/>-->
+
+    <!--<simplifii.framework.widgets.CustomFontButton-->
+    <!--style="@style/button_style"-->
+    <!--android:layout_below="@+id/spin_accreditation_year"-->
+    <!--android:id="@+id/bt_accreditation_save"-->
+    <!--android:layout_width="@dimen/width"-->
+    <!--android:layout_height="@dimen/margin_40dp"-->
+    <!--android:layout_alignRight="@+id/til_password"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginTop="@dimen/margin_8dp"-->
+    <!--android:text="@string/save"-->
+    <!--/>-->
+
+</RelativeLayout>

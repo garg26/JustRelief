@@ -1,88 +1,248 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:descendantFocusability="beforeDescendants"
-    android:focusableInTouchMode="true">
-
-
+    android:layout_height="match_parent">
 
     <ScrollView
         style="@style/simple_sv"
-        android:layout_above="@+id/bt_save">
+        android:layout_above="@+id/btn_save_and_next">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        <RelativeLayout style="@style/rl_root">
+
+            <LinearLayout
+                android:id="@+id/ll_upload_image"
+                style="@style/ll_root">
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_upload_images"
+                    style="@style/tv_black_style_heading"
+                    android:text="@string/photos" />
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/tv_no_record"
+                    android:text="@string/no_image_found"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/ll_image"
+                    android:layout_height="wrap_content"
+                    android:weightSum="4">
+
+                    <simplifii.framework.widgets.CustomFontTextView
+                        android:id="@+id/tv_image_name"
+                        style="@style/tv_black_style_heading_without_background"
+                        android:text="Name"
+                        android:visibility="gone"
+                        android:layout_weight="2"/>
+                    <simplifii.framework.widgets.CustomFontTextView
+                        android:id="@+id/tv_upload_file"
+                        style="@style/tv_black_style_heading_without_background"
+                        android:text="Image"
+                        android:visibility="gone"
+
+                        android:layout_weight="2"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_image_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/tv_paddingBottom"
+                    android:paddingRight="@dimen/image_container"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+            </LinearLayout>
 
 
-     <include layout="@layout/layout_profile_pic"/>
+            <LinearLayout
+                android:id="@+id/ll"
+                style="@style/ll_style"
+                android:layout_below="@+id/ll_upload_image"
+                android:orientation="vertical"
+                >
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_contact_details"
+                    style="@style/tv_black_style_heading"
+                    android:text="@string/contact_details" />
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_contact_number"
+                    style="@style/tv_black_style_heading_without_background"
+                    android:text="@string/contact_number" />
+
+                <simplifii.framework.widgets.CustomFontTextInputEditText
+                    android:id="@+id/et_contact_number"
+                    style="@style/et_black_style_background"
+                    android:inputType="number" />
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_email"
+                    style="@style/tv_black_style_heading_without_background"
 
 
-    <simplifii.framework.widgets.CustomFontTextView
-        style="@style/tv_orange_headings"
-        android:text="Contact  details"
-        android:layout_marginTop="206dp"
-        android:id="@+id/tv_contact_details"
-         />
+                    android:text="@string/email_address" />
 
-    <simplifii.framework.widgets.CustomTextInputLayout
-        style="@style/text_input_layout_style1"
-        android:id="@+id/til_contact_number"
-        android:layout_below="@+id/tv_contact_details"
-        >
-    <simplifii.framework.widgets.CustomFontEditText
-       style="@style/edit_text_style"
-        android:id="@+id/et_contact_number"
-        android:hint="Contact Number *"/>
-    </simplifii.framework.widgets.CustomTextInputLayout>
+                <simplifii.framework.widgets.CustomFontTextInputEditText
+                    android:id="@+id/et_email"
+                    style="@style/et_black_style_background"
+                    android:inputType="textEmailAddress"
 
-    <simplifii.framework.widgets.CustomTextInputLayout
-        style="@style/text_input_layout_style1"
-        android:id="@+id/til_email"
-        android:layout_below="@+id/til_contact_number"
-        >
-
-        <simplifii.framework.widgets.CustomFontEditText
-            style="@style/edit_text_style"
-            android:id="@+id/et_email"
-            android:hint="Email Address *"/>
-    </simplifii.framework.widgets.CustomTextInputLayout>
+                    />
+            </LinearLayout>
 
 
-    <simplifii.framework.widgets.CustomTextInputLayout
-        style="@style/text_input_layout_style1"
-        android:id="@+id/til_clinic_name"
-        android:layout_below="@+id/tv_clinic_details"
-        >
-        <simplifii.framework.widgets.CustomFontEditText
-            style="@style/edit_text_style"
-            android:id="@+id/et_clinic_name"
-            android:hint="Clinic Name *"/>
-    </simplifii.framework.widgets.CustomTextInputLayout>
+            <LinearLayout
+                android:id="@+id/ll_clinic_detail"
+                style="@style/ll_style"
+                android:layout_below="@+id/ll"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_clinic_details"
+                    style="@style/tv_black_style_heading"
+                    android:text="@string/clinic_details" />
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_clinic_name"
+                    style="@style/tv_black_style_heading_without_background"
+                    android:text="@string/clinic_name" />
+
+                <simplifii.framework.widgets.CustomFontTextInputEditText
+                    android:id="@+id/et_clinic_name"
+                    style="@style/et_black_style_background"
+                    android:enabled="false"
+                    android:inputType="text" />
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_about_clinic"
+                    style="@style/tv_black_style_heading_without_background"
+                    android:text="@string/about_clinic" />
+
+                <simplifii.framework.widgets.CustomFontTextInputEditText
+                    android:id="@+id/et_about_clinic"
+                    style="@style/et_black_style_background"
+                    android:inputType="text" />
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_upload_image"
+                    style="@style/tv_black_style_heading_without_background"
+
+                    android:text="@string/upload_image" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_choose_image"
+                    style="@style/et_black_style_background"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_image"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+
+                        android:src="@mipmap/photocamera2" />
+
+                    <simplifii.framework.widgets.CustomFontTextView
+                        android:id="@+id/tv_clinic_type_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="12dp"
+                        android:layout_toRightOf="@id/iv_image"
+                        android:clickable="true"
+                        android:text="Choose Image" />
+
+                </RelativeLayout>
 
 
-    <simplifii.framework.widgets.CustomFontTextView
-        style="@style/tv_orange_headings"
-        android:layout_below="@+id/til_email"
-        android:text="Clinic details"
-        android:id="@+id/tv_clinic_details"
-        android:layout_marginTop="10dp"
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_payment_mode"
+                    style="@style/tv_black_style_heading_without_background"
 
-        />
-    </RelativeLayout>
+                    android:text="@string/payment_mode" />
+
+                <simplifii.framework.widgets.ContactsCompletionView
+                    android:id="@+id/ccv_payment_mode"
+                    style="@style/ccv_style"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="6dp"
+                    android:hint="-Select-"
+                    android:textColorHint="@color/gray"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_document"
+                style="@style/ll_style"
+                android:paddingBottom="6dp"
+                android:layout_below="@+id/ll_clinic_detail"
+                android:orientation="vertical">
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_documents_image"
+                    style="@style/tv_black_style_heading"
+                    android:text="Documents/Certificates" />
+
+                <Spinner
+                    android:id="@+id/spin_documents_type"
+                    style="@style/spin_style" />
+
+                <RelativeLayout
+                    style="@style/et_black_style_background"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_image1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+
+                        android:src="@mipmap/photocamera2" />
+
+                    <simplifii.framework.widgets.CustomFontTextView
+                        android:id="@+id/tv_document_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="12dp"
+                        android:layout_toRightOf="@id/iv_image1"
+                        android:clickable="true"
+                        android:text="Choose Document" />
+
+                </RelativeLayout>
+
+                <simplifii.framework.widgets.CustomFontButton
+                    android:id="@+id/btn_upload"
+                    style="@style/button_style"
+                    android:background="@mipmap/locatebtn"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="@dimen/tv_paddingBottom"
+                    android:layout_gravity="center"
+                    android:text="Upload" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
     </ScrollView>
 
     <simplifii.framework.widgets.CustomFontButton
-
-        style="@style/button_style"
-        android:text="Save and Next"
-        android:id="@+id/bt_save"
-        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_save_and_next"
+        style="@style/simple_button_style"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="@dimen/margin_10dp"
-        />
+        android:padding="12dp"
+        android:text="@string/save_and_next" />
 
 </RelativeLayout>
+
+

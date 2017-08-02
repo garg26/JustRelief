@@ -3,19 +3,23 @@ package simplifii.framework.asyncmanager;
 /**
  * Created by raghu on 23/8/16.
  */
+
 import java.io.File;
 
-/**
- * Created by nbansal2211 on 09/08/16.
- */
-public class FileParamObject extends HttpParamObject {
+public  class FileParamObject extends HttpParamObject {
     private File file;
     private String fileKeyName;
     private String fileName;
-    public FileParamObject(File file, String fileName, String fileKeyName){
+
+    public FileParamObject(File file, String fileName, String fileKeyName) {
         this.file = file;
         this.fileKeyName = fileKeyName;
         this.fileName = fileName;
+    }
+
+    public FileParamObject(File file, String fileKeyName) {
+        this.file = file;
+        this.fileKeyName = fileKeyName;
     }
 
     public File getFile() {

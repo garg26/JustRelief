@@ -26,7 +26,7 @@ public class ClinicProfileItem {
         list.add(new ClinicProfileItem(AppConstants.LocationPhotosConstants.LOCATION_PHOTOS_DETAILS,AppConstants.LocationPhotosConstants.LOCATION_PHOTOS_ITEM_ID));
         list.add(new ClinicProfileItem(AppConstants.DoctorsConstants.DOCTORS_DETAILS,AppConstants.DoctorsConstants.DOCTORS_ITEM_ID));
         list.add(new ClinicProfileItem(AppConstants.ServiceConstants.SPECIALIZATIONS_SERVICE_DETAILS,AppConstants.ServiceConstants.SPECIALIZATIONS_SERVICE_ITEM_ID));
-        list.add(new ClinicProfileItem(AppConstants.AwardConstants.AWARD_ACCEREDATIONS_DETAILS,AppConstants.AwardConstants.AWARD_ACCEREDATIONS_ITEM_ID));
+        list.add(new ClinicProfileItem(AppConstants.AwardConstants.AWARD_Accreditation_DETAILS,AppConstants.AwardConstants.AWARD_ACCREDITATION_ITEM_ID));
 
         return list;
     }

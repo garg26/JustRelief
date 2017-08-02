@@ -5,4 +5,13 @@
     <style name="Theme.DesignHome" parent="Base.Theme.DesignDemo">
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
+
+    <style name="text_input_layout_style">
+        <item name="android:theme">@style/black_style</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:colorControlNormal">@color/colorAccent</item>
+    </style>
 </resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_days"
+    android:paddingBottom="@dimen/image_container"
+    android:paddingRight="@dimen/image_container"
+    android:paddingTop="@dimen/image_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <simplifii.framework.widgets.CustomFontTextView
+            android:id="@+id/tv_award_title"
+            style="@style/tv_black_style_heading_without_background"
+            android:layout_weight="50"
+            android:text="Awards" />
+
+
+    </LinearLayout>
+</LinearLayout>

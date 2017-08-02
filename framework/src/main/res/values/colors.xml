@@ -14,8 +14,14 @@
     <color name="yellow">#fcff02</color>
     <color name="black">#000000</color>
     <color name="red_text">#f85b1c</color>
-    <color name="tranceparent_gray">#999999</color>
-    <color name="tranceparent_white">#99FFFFFF</color>
+    <color name="google_red">#d34836</color>
+    <color name="color_green_comment">#029985</color>
     <color name="list_divider">#f3f3f3</color>
     <color name="orange">#f85a1a</color>
+    <color name="dark_grey">#212121</color>
+    <color name="colorPrimaryLight">#28BDED</color>
+    <color name="line_gray">#cccccc</color>
+    <color name="grey_transparent">#55f1f1f1</color>
+    <color name="grey_white">#FFE8E9EB</color>
+
 </resources>

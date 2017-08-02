@@ -9,7 +9,7 @@
         style="@style/tv_white_style"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/color_primary"
+        android:background="@color/colorPrimary"
         android:hint="Heading"
         android:padding="12dp"
         android:textColor="@color/white"
@@ -40,7 +40,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:background="@color/bg_gray"></View>
+        android:background="@color/bg_gray" />
 
 
     <ListView

@@ -10,12 +10,17 @@ public class ServiceFactory {
     public static Service getInstance(Context context, int taskCode) {
         Service service = null;
         switch (taskCode) {
+            case AppConstants.TASKCODES.DOCTOR_CONTACT_DETAILS:
+            case AppConstants.TASKCODES.UPLOAD_DOCUMENT:
             case AppConstants.TASKCODES.UPLOAD_IMAGE:
-                service = new AudioUploadService();
+                service = new FileUploadService();
                 break;
             case AppConstants.TASKCODES.FILE_UPLOAD:
                 service = new AudioUploadService();
                 break;
+
+
+
             case AppConstants.TASKCODES.MARK_ATTENDANCE:
                 service = new AttendanceService();
                 break;
@@ -42,6 +47,9 @@ public class ServiceFactory {
                 break;
             case AppConstants.TASKCODES.MULTI_SESSION_DELETE:
                 service = new MultiSessionDeleteService();
+                break;
+            case AppConstants.TASKCODES.LOGIN:
+                service = new LoginResponseService();
                 break;
             default:
                 service = new OKHttpService();
