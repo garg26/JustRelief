@@ -29,18 +29,22 @@ import okhttp3.Response;
 import simplifii.framework.exceptionhandler.RestException;
 import simplifii.framework.utility.JsonUtil;
 
-/**
- * Created by robin on 9/27/16.
- */
+
 
 public class OKHttpService extends GenericService {
     private static final String TAG = "HttpRestService";
+    protected Response response;
 
     @Override
     public Object getData(Object... params) throws JSONException, SQLException, NullPointerException, RestException, ClassCastException, IOException {
         if (params != null && params.length > 0) {
             HttpParamObject param = (HttpParamObject) params[0];
-            final OkHttpClient client = OKHttpService.getUnsafeOkHttpClient();
+            OkHttpClient client = OKHttpService.getUnsafeOkHttpClient();
+            client = new OkHttpClient().newBuilder()
+                    .connectTimeout(120, TimeUnit.SECONDS)
+                    .readTimeout(120, TimeUnit.SECONDS)
+                    .writeTimeout(120, TimeUnit.SECONDS)
+                    .build();
 
             final MediaType mediaType = MediaType.parse(param.getContentType());
 
@@ -54,6 +58,7 @@ public class OKHttpService extends GenericService {
                 param.setUrl(url);
             }
             okhttp3.Request.Builder builder = new okhttp3.Request.Builder()
+
                     .url(param.getUrl());
 
             if ("GET".equalsIgnoreCase(param.getMethod())) {
@@ -79,7 +84,7 @@ public class OKHttpService extends GenericService {
                 builder.addHeader(pair.getKey(), pair.getValue());
             }
 
-            final Response response = client.newCall(builder.build()).execute();
+            response = client.newCall(builder.build()).execute();
             if (response.isSuccessful()) {
                 return parseJson(response.body().string(), param);
             } else {
@@ -103,7 +108,7 @@ public class OKHttpService extends GenericService {
                 }
             }
         } catch (JSONException e) {
-            e.printStackTrace();
+            e   .printStackTrace();
         }
         return "Please hang on! We are facing some technical issues";
     }

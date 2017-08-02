@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_days"
+    android:layout_marginTop="20dp"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="80"
+        android:gravity="center"
+        android:id="@+id/ll_time_layout"
+        android:padding="4dp"
+        android:layout_margin="2dp"
+        android:orientation="horizontal"
+        >
+
+        <com.lb.auto_fit_textview.AutoResizeTextView
+            android:id="@+id/tv_week_day"
+            android:layout_weight="20"
+            style="@style/tv_black_style_heading_without_background"
+
+            android:text="Week Day" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="20"
+
+            android:layout_height="wrap_content">
+        <com.lb.auto_fit_textview.AutoResizeTextView
+            android:id="@+id/tv_start_time"
+            android:gravity="center"
+            style="@style/tv_black_style_heading_without_background"
+            android:text="Start Time" />
+
+
+
+        <com.lb.auto_fit_textview.AutoResizeTextView
+            android:layout_below="@+id/tv_start_time"
+            android:visibility="gone"
+            android:gravity="center"
+            android:id="@+id/tv_start_time2"
+            style="@style/tv_black_style_heading_without_background"
+            android:text="Start Time" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="20"
+            android:layout_height="wrap_content">
+
+        <com.lb.auto_fit_textview.AutoResizeTextView
+            android:id="@+id/tv_end_time"
+            android:gravity="center"
+            style="@style/tv_black_style_heading_without_background"
+            android:text="End Time" />
+
+        <com.lb.auto_fit_textview.AutoResizeTextView
+            android:layout_below="@+id/tv_end_time"
+            android:visibility="gone"
+            android:gravity="center"
+            android:id="@+id/tv_end_time2"
+            style="@style/tv_black_style_heading_without_background"
+            android:text="End Time" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="20"
+            android:id="@+id/rl_delete"
+            android:layout_height="wrap_content">
+        <simplifii.framework.widgets.CustomFontTextView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/tv_delete"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/delete"
+            style="@style/tv_black_style_heading_without_length"
+             />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

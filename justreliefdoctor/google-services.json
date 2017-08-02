@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "437974437131",
+    "firebase_url": "https://justreliefdoctor-24196.firebaseio.com",
+    "project_id": "justreliefdoctor-24196",
+    "storage_bucket": "justreliefdoctor-24196.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:437974437131:android:a54cb0359892f4ef",
+        "android_client_info": {
+          "package_name": "com.justreliefdoctors"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "437974437131-bsv9vg61thn7355rihqq74int5ruare9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.justreliefdoctors",
+            "certificate_hash": "2e39ca5e8c76d4f589641847cbc7f6b7f28a77c5"
+          }
+        },
+        {
+          "client_id": "437974437131-6ecr0qs2o2rrki1ctjfde1ivd4t8mstg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsycHUM8YQ0pOfCXKfOsfs4G7uByhG6Ec"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "437974437131-6ecr0qs2o2rrki1ctjfde1ivd4t8mstg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

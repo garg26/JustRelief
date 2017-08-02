@@ -10,10 +10,7 @@
 
     <style name="mytv" parent="match_wrap"></style>
 
-    <style name="view_margins">
-        <item name="android:paddingLeft">16dp</item>
-        <item name="android:paddingRight">16dp</item>
-    </style>
+
 
     <style name="tv_orange_headings" parent="wrap_wrap">
         <item name="android:textColor">@color/orange</item>
@@ -61,19 +58,16 @@
     </style>
 
     <style name="multi_spinner_style" parent="tv_black_style">
-        <item name="android:layout_marginTop">10dp</item>
-        <item name="android:singleLine">true</item>
-        <item name="android:drawableRight">@mipmap/downarrow</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+
+
+
     </style>
 
-    <style name="text_view_style">
 
-        <item name="android:gravity">center</item>
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">15sp</item>
-        <item name="android:layout_marginTop">@dimen/margin_10dp</item>
-    </style>
 
     <style name="sv_style">
         <item name="android:scrollbars">none</item>
@@ -96,34 +90,6 @@
         <item name="android:imeOptions">actionDone</item>
     </style>
 
-    <style name="et_black_style" parent="fillText">
-        <item name="android:textColor">@color/black</item>
-        <item name="customFont">@string/font_regular</item>
-        <item name="android:textSize">14dp</item>
-        <item name="android:singleLine">true</item>
-        <item name="android:maxLines">1</item>
-        <item name="android:inputType">textCapSentences</item>
-    </style>
-
-    <style name="et_black_style_change_pass" parent="match_wrap">
-        <item name="android:textColor">@color/black</item>
-        <item name="customFont">@string/font_regular</item>
-        <item name="android:textSize">14dp</item>
-        <item name="android:singleLine">true</item>
-        <item name="android:maxLines">1</item>
-        <item name="android:imeOptions">actionNext</item>
-    </style>
-
-    <style name="et_black_style_match_wrap" parent="fillText">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textColor">@color/black</item>
-        <item name="customFont">@string/font_regular</item>
-        <item name="android:textSize">14dp</item>
-        <item name="android:singleLine">true</item>
-        <item name="android:maxLines">1</item>
-        <item name="android:imeOptions">actionNext</item>
-    </style>
 
 
     <style name="et_til_single_line" parent="fillText">
@@ -138,13 +104,6 @@
         <item name="android:imeOptions">actionNext</item>
     </style>
 
-    <style name="actv_black_style" parent="et_black_style">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:drawableRight">@mipmap/downarrow</item>
-        <item name="android:backgroundTint" tools:targetApi="lollipop">@color/darg_grey</item>
-        <item name="android:colorControlActivated" tools:targetApi="lollipop">@color/bg_gray</item>
-    </style>
 
     <style name="black_headings">
         <item name="customFont">@string/font_medium</item>
@@ -152,12 +111,7 @@
         <item name="android:textColor">@color/black</item>
     </style>
 
-    <style name="tv_grey_style">
-        <item name="android:textSize">14dp</item>
-        <item name="android:paddingLeft">4dp</item>
-        <item name="customFont">@string/font_light</item>
-        <item name="android:textColor">@color/tranceparent_gray</item>
-    </style>
+
 
 
     <style name="tv_label" parent="match_wrap">
@@ -168,20 +122,7 @@
         <item name="android:layout_marginTop">16dp</item>
     </style>
 
-    <style name="tv_grey_style_wrap_wrap" parent="wrap_wrap">
-        <item name="android:textSize">14dp</item>
-        <item name="android:paddingLeft">4dp</item>
-        <item name="customFont">@string/font_light</item>
-        <item name="android:textColor">@color/tranceparent_gray</item>
-    </style>
 
-
-    <style name="tv_grey_style_match_wrap" parent="match_wrap">
-        <item name="android:textSize">14dp</item>
-        <item name="android:paddingLeft">4dp</item>
-        <item name="customFont">@string/font_light</item>
-        <item name="android:textColor">@color/tranceparent_gray</item>
-    </style>
 
 
     <style name="tv_mctv_degree" parent="match_wrap">
@@ -192,29 +133,6 @@
     </style>
 
 
-    <style name="tv_black_style" parent="wrap_wrap">
-        <item name="android:textSize">14dp</item>
-        <item name="android:paddingLeft">4dp</item>
-        <item name="customFont">@string/font_light</item>
-        <item name="android:textColor">@color/black</item>
-        <item name="android:inputType">textCapSentences|textMultiLine</item>
-    </style>
-
-
-    <style name="tv_black_style_singleline" parent="tv_black_style">
-        <item name="android:inputType">textCapSentences</item>
-    </style>
-
-    <style name="tv_style_preview" parent="tv_black_style">
-        <item name="android:inputType">textMultiLine</item>
-    </style>
-
-    <style name="tv_black_style_chat" parent="wrap_wrap">
-        <item name="android:textSize">14dp</item>
-        <item name="customFont">@string/font_light</item>
-        <item name="android:textColor">@color/black</item>
-        <item name="android:inputType">textCapSentences</item>
-    </style>
 
     <style name="et_style_ask_query" parent="match_wrap">
         <item name="android:textSize">14dp</item>
@@ -226,12 +144,6 @@
         <item name="android:background">@color/full_transparent</item>
     </style>
 
-    <style name="tv_black_style_match_wrap" parent="match_wrap">
-        <item name="android:textSize">14dp</item>
-        <item name="android:paddingLeft">4dp</item>
-        <item name="customFont">@string/font_light</item>
-        <item name="android:textColor">@color/black</item>
-    </style>
 
     <style name="black_bold_headings">
         <item name="customFont">@string/font_medium</item>
@@ -313,12 +225,7 @@
         <item name="android:visibility">gone</item>
     </style>
 
-    <style name="tv_grey_style_profile" parent="wrap_wrap">
-        <item name="android:textSize">14dp</item>
-        <item name="android:paddingLeft">4dp</item>
-        <item name="customFont">@string/font_light</item>
-        <item name="android:textColor">@color/tranceparent_gray</item>
-    </style>
+
 
     <style name="rating_style">
         <item name="android:layout_width">match_parent</item>
@@ -354,7 +261,7 @@
         <item name="android:paddingRight">@dimen/padding_16dp</item>
         <item name="android:paddingTop">@dimen/padding_12dp</item>
         <item name="android:paddingBottom">@dimen/padding_12dp</item>
-        <item name="android:buttonTint">@color/color_primary</item>
+        <item name="android:buttonTint">@color/colorPrimary</item>
 
     </style>
 
@@ -405,7 +312,7 @@
     </style>
 
     <style name="layout_chip" parent="match_wrap">
-        <item name="chip_background">@color/color_primary</item>
+        <item name="chip_background">@color/colorPrimary</item>
         <item name="chip_corner_radius">2dp</item>
         <item name="chip_side_padding">8dp</item>
         <item name="chip_spacing">4dp</item>
@@ -588,7 +495,7 @@
     </style>
 
     <style name="chip_style_feed" parent="match_wrap">
-        <item name="chip_background">@color/color_primary</item>
+        <item name="chip_background">@color/colorPrimary</item>
         <item name="chip_corner_radius">2dp</item>
         <item name="chip_side_padding">8dp</item>
         <item name="chip_spacing">4dp</item>
@@ -624,14 +531,11 @@
 
     <style name="tab_strip_style" parent="wrap_match">
         <item name="pstsDividerColor">@color/gray</item>
-        <item name="pstsIndicatorColor">@color/color_primary</item>
+        <item name="pstsIndicatorColor">@color/colorPrimary</item>
         <item name="pstsIndicatorHeight">2dp</item>
     </style>
 
-    <style name="iv_logo">
-        <item name="android:layout_width">170dp</item>
-        <item name="android:layout_height">70dp</item>
-    </style>
+
 
     <style name="lay_chip_container_pamphlet" parent="match_wrap">
         <item name="android:paddingTop">16dp</item>
@@ -702,50 +606,24 @@
     </style>
 
 
-
     <style name="progress">
         <item name="android:layout_width">32dp</item>
         <item name="android:layout_height">32dp</item>
-        <item name="android:indeterminateTint" tools:targetApi="lollipop">@color/color_primary
+        <item name="android:indeterminateTint" tools:targetApi="lollipop">@color/colorPrimary
         </item>
-        <item name="android:tint">@color/color_primary</item>
+        <item name="android:tint">@color/colorPrimary</item>
         <item name="android:progressBackgroundTint" tools:targetApi="lollipop">
-            @color/color_primary
+            @color/colorPrimary
         </item>
     </style>
 
 
-    <style name="text_input_layout_style">
-        <item name="android:theme">@style/black_style</item>
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">8dp</item>
 
 
+    <style name="edit_text_style" parent="match_wrap">
+        <item name="android:textSize">14dp</item>
     </style>
 
-    <style name="text_input_layout_style1">
-        <item name="android:theme">@style/black_style</item>
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">60dp</item>
-
-    </style>
-
-
-    <style name="edit_text_style">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">match_parent</item>
-    </style>
-
-    <style name="button_style">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">18sp</item>
-        <item name="android:textAllCaps">false</item>
-        <item name="android:textColor">@color/white</item>
-        <item name="android:background">@color/colorPrimary</item>
-        <item name="android:layout_marginTop">@dimen/margin_20dp</item>
-    </style>
 
     <style name="btn_simple_style">
         <item name="android:layout_width">wrap_content</item>
@@ -753,25 +631,13 @@
         <item name="android:textAllCaps">false</item>
     </style>
 
-    <style name="text_view_style1">
+    <style name="simple_spinner_style">
+        <item name="android:layout_marginTop">@dimen/margin_20dp</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">20sp</item>
-        <item name="android:layout_marginTop">@dimen/margin_20dp</item>
-
     </style>
 
-    <style name="simple_spinner_style">
-       <item name="android:layout_marginTop">@dimen/margin_20dp</item>
-       <item name="android:layout_width">wrap_content</item>
-       <item name="android:layout_height">wrap_content</item>
-    </style>
 
-    <style name="simple_sv">
-        <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:scrollbars">none</item>
-    </style>
 
     <style name="button_style1">
         <item name="android:layout_width">wrap_content</item>
@@ -782,13 +648,19 @@
         <item name="android:background">@color/colorPrimary</item>
         <item name="android:layout_marginTop">@dimen/margin_20dp</item>
     </style>
-
-    <style name="black_style">
-    <item name="android:layout_width">match_parent</item>
-    <item name="android:layout_height">wrap_content</item>
-    <item name="android:backgroundTint" tools:targetApi="lollipop">@color/darg_grey</item>
-    <item name="android:colorControlActivated" tools:targetApi="lollipop">@color/bg_gray</item>
+    <style name="ll_style_without_background">
+        <item name="android:layout_marginTop">@dimen/ll_marginTop</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/margin_12dp</item>
+        <item name="android:layout_marginRight">@dimen/margin_12dp</item>
     </style>
+
+
+
+
+
+
 
 
     <string name="about_me">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>

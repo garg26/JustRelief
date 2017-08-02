@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/rl_root">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_logo">
+        <include layout="@layout/layout_logo"/>
+    </RelativeLayout>
+
+    <simplifii.framework.widgets.CustomFontTextView
+        style="@style/tv_black_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="@string/get_a_new_clinic_profile"
+        android:gravity="center"
+        android:id="@+id/tv_clinic_profile"
+        android:layout_marginTop="16dp"/>
+
+    <simplifii.framework.widgets.CustomFontTextView
+        style="@style/text_view_style"
+        android:text="@string/your_clinic_is_not_listed_on_justrelief_com_fill_in_all_n_your_clinic_details_and_create_a_new_clinic_profile"
+        android:textSize="12sp"
+        android:id="@+id/tv_clinic_description"
+        android:layout_marginTop="16dp"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/clinicimage"
+        android:layout_marginTop="30dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="32dp"
+        android:weightSum="6">
+
+
+        <simplifii.framework.widgets.CustomFontButton
+            android:id="@+id/btn_go_back"
+            style="@style/button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/go_back"
+            android:background="@mipmap/locatebtn"
+            android:layout_weight="3"/>
+
+        <simplifii.framework.widgets.CustomFontButton
+            android:id="@+id/btn_create_clinic_profile"
+            style="@style/button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@mipmap/locatebtn"
+            android:layout_marginLeft="@dimen/margin_20dp"
+            android:layout_weight="3"
+            android:text="@string/create_clinic_profile" />
+
+    </LinearLayout>
+
+    <simplifii.framework.widgets.CustomFontTextView
+        android:id="@+id/tv_resend_mail"
+        style="@style/text_view_style"
+        android:layout_width="wrap_content"
+        android:text="@string/resend_mail"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:textColor="@color/colorPrimaryDark" />
+
+
+
+
+</LinearLayout>

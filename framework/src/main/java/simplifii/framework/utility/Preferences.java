@@ -5,14 +5,11 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.text.TextUtils;
 
-
-/**
- * Created by nitin on 24/08/15.
- */
 public class Preferences {
 
     private static final String PREF_NAME = "Pioneer_Prefs";
     public static final String LOGIN_KEY = "isUserLoggedIn";
+    public static final String LOGIN_KEY1 = "isUserLoggedIn1";
     private static final String ADDRESS_STATE = "address_state";
     private static final String ADDRESS_CITY = "address_city";
     private static final String ADDRESS_LOCALITY = "address_locality";
@@ -23,6 +20,13 @@ public class Preferences {
     public static final String KEY_USER = "userProfile";
     public static final String GROUP = "group";
     public static final String KEY_CITIES = "cities";
+    public static final String DOCTOR_DETAIL = "doctorDetails";
+    public static final String USER_TYPE = "Doctor";
+    public static final String KEY_DOCTOR_AUTH_TOKEN = "Doctor_Authorization";
+    public static final String LOCALITY_KEY = "localityKey";
+    public static final String KEY_AUTH_TOKEN = "Authorization";
+    public static final String KEY_USER_DOCTOR = "Doctor";
+
 
     private static SharedPreferences xebiaSharedPrefs;
     private static SharedPreferences.Editor editor;
@@ -72,6 +76,9 @@ public class Preferences {
 
     public static boolean isUserLoggerIn() {
         return getData(LOGIN_KEY, false);
+    }
+    public static boolean isUserLoggerIn1() {
+        return getData(LOGIN_KEY1, false);
     }
 
 	/*
@@ -148,21 +155,21 @@ public class Preferences {
         getData(key, defValue);
     }
 
-    public static String getTutorsUrl() {
-        return String.format(AppConstants.PAGE_URL.TUTORSURL, getUserId());
-    }
-
-    public static String getTutorsUrl(String endPoint) {
-        return getTutorsUrl() + endPoint;
-    }
-
-    public static String getTutorsUrl(String endPoint, int id) {
-        return String.format(getTutorsUrl(endPoint), String.valueOf(id));
-    }
-
-    public static String getTutorFeedUrl(String endPoint) {
-        return getTutorsUrl() + endPoint;
-    }
+//    public static String getTutorsUrl() {
+//        return String.format(AppConstants.PAGE_URL.TUTORSURL, getUserId());
+//    }
+//
+//    public static String getTutorsUrl(String endPoint) {
+//        return getTutorsUrl() + endPoint;
+//    }
+//
+//    public static String getTutorsUrl(String endPoint, int id) {
+//        return String.format(getTutorsUrl(endPoint), String.valueOf(id));
+//    }
+//
+//    public static String getTutorFeedUrl(String endPoint) {
+//        return getTutorsUrl() + endPoint;
+//    }
 
 
 }

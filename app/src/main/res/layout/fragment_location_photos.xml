@@ -1,82 +1,225 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:descendantFocusability="beforeDescendants"
-    android:focusableInTouchMode="true">
+    android:layout_height="match_parent">
 
-    <simplifii.framework.widgets.CustomTextInputLayout
-        style="@style/text_input_layout_style1"
-        android:id="@+id/til_country">
+    <ScrollView
+        style="@style/scroll_style"
+        android:layout_above="@+id/btn_save_and_next">
 
-        <simplifii.framework.widgets.CustomFontEditText
-            style="@style/edit_text_style"
-            android:id="@+id/et_country"
-            android:hint="Country *"/>
-    </simplifii.framework.widgets.CustomTextInputLayout>
+        <RelativeLayout style="@style/rl_root">
 
-    <simplifii.framework.widgets.CustomTextInputLayout
-        style="@style/text_input_layout_style1"
-        android:id="@+id/til_city"
-        android:layout_below="@+id/til_country">
+            <LinearLayout
+                android:id="@+id/ll_upload_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_box"
+                android:orientation="vertical">
 
-        <simplifii.framework.widgets.CustomFontEditText
-            style="@style/edit_text_style"
-            android:id="@+id/et_city"
-            android:hint="City *" />
-    </simplifii.framework.widgets.CustomTextInputLayout>
-    <simplifii.framework.widgets.CustomTextInputLayout
-        style="@style/text_input_layout_style1"
-        android:id="@+id/til_area"
-        android:layout_below="@+id/til_city">
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_upload_images"
+                    style="@style/tv_black_style_heading"
+                    android:text="@string/clinic_photos" />
 
-        <simplifii.framework.widgets.CustomFontEditText
-            style="@style/edit_text_style"
-            android:id="@+id/et_area"
-            android:hint="Area *"/>
-    </simplifii.framework.widgets.CustomTextInputLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="4">
 
-    <simplifii.framework.widgets.CustomTextInputLayout
-        style="@style/text_input_layout_style1"
-        android:id="@+id/til_zip_code"
-        android:layout_below="@+id/til_area">
+                    <simplifii.framework.widgets.CustomFontTextView
+                        android:id="@+id/tv_image_name"
+                        style="@style/tv_black_style_heading_without_background"
+                        android:layout_weight="2"
 
-        <simplifii.framework.widgets.CustomFontEditText
-            style="@style/edit_text_style"
-            android:id="@+id/et_zip_code"
-            android:hint="Zip Code"/>
-    </simplifii.framework.widgets.CustomTextInputLayout>
+                        android:text="Name" />
 
-    <simplifii.framework.widgets.CustomTextInputLayout
-        style="@style/text_input_layout_style1"
-        android:id="@+id/til_landmark"
-        android:layout_below="@+id/til_zip_code">
+                    <simplifii.framework.widgets.CustomFontTextView
+                        android:id="@+id/tv_upload_file"
+                        style="@style/tv_black_style_heading_without_background"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="Image" />
 
-        <simplifii.framework.widgets.CustomFontEditText
-            style="@style/edit_text_style"
-            android:id="@+id/et_landmark"
-            android:hint="Landmark"/>
-    </simplifii.framework.widgets.CustomTextInputLayout>
+                </LinearLayout>
 
-    <simplifii.framework.widgets.CustomTextInputLayout
-        style="@style/text_input_layout_style1"
-        android:id="@+id/til_street_address"
-        android:layout_below="@+id/til_landmark">
 
-        <simplifii.framework.widgets.CustomFontEditText
-            style="@style/edit_text_style"
-            android:id="@+id/et_street_address"
-            android:hint="Street Address *"/>
-    </simplifii.framework.widgets.CustomTextInputLayout>
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_no_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_image_found"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/ll_image_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/tv_paddingBottom"
+                    android:paddingRight="@dimen/tv_paddingRight"
+                    >
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll"
+                style="@style/ll_style"
+                android:layout_below="@+id/ll_upload_image"
+                android:orientation="vertical"
+                android:paddingBottom="6dp"
+                >
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_location"
+                    style="@style/tv_black_style_heading"
+                    android:text="Location *" />
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_country"
+                    style="@style/tv_black_style_heading_without_background"
+                    android:text="Country *" />
+
+                <simplifii.framework.widgets.CustomFontTextInputEditText
+                    android:id="@+id/et_country"
+                    style="@style/et_black_style_background"
+                    android:enabled="false"
+                    android:inputType="text" />
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_city"
+                    style="@style/tv_black_style_heading_without_background"
+                    android:text="City *" />
+
+                <simplifii.framework.widgets.CustomFontTextInputEditText
+                    android:id="@+id/et_city"
+                    style="@style/et_black_style_background"
+                    android:enabled="false"
+                    android:inputType="text" />
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_area"
+                    style="@style/tv_black_style_heading_without_background"
+                    android:text="Area *" />
+
+                <simplifii.framework.widgets.CustomFontTextInputEditText
+                    android:id="@+id/et_area"
+                    style="@style/et_black_style_background"
+                    android:enabled="false"
+                    android:inputType="text" />
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_zip_code"
+                    style="@style/tv_black_style_heading_without_background"
+                    android:text="ZipCode *" />
+
+                <simplifii.framework.widgets.CustomFontTextInputEditText
+                    android:id="@+id/et_zip_code"
+                    style="@style/et_black_style_background"
+
+                    android:inputType="text" />
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_landmark"
+                    style="@style/tv_black_style_heading_without_background"
+                    android:text="Landmark *" />
+
+                <simplifii.framework.widgets.CustomFontTextInputEditText
+                    android:id="@+id/et_landmark"
+                    style="@style/et_black_style_background"
+                    android:inputType="text" />
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_street_address"
+                    style="@style/tv_black_style_heading_without_background"
+                    android:text="Street Address *" />
+
+                <simplifii.framework.widgets.CustomFontTextInputEditText
+                    android:id="@+id/et_street_address"
+                    style="@style/et_black_style_background"
+                    android:inputType="text" />
+
+                <simplifii.framework.widgets.CustomFontButton
+                    android:id="@+id/btn_locate"
+                    style="@style/button_style"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@mipmap/locatebtn"
+                    android:text="Locate On Map" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_document"
+                style="@style/ll_style"
+                android:layout_below="@+id/ll"
+                android:orientation="vertical"
+
+                >
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_documents_image"
+                    style="@style/tv_black_style_heading"
+                    android:text="Clinic Photo" />
+
+                <Spinner
+                    android:id="@+id/spin_clinic_image"
+                    style="@style/spin_style"
+
+
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/rl_clinic_image"
+
+                    style="@style/et_black_style_background">
+
+                    <ImageView
+                        android:id="@+id/iv_image1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+
+                        android:src="@mipmap/photocamera2" />
+
+                    <simplifii.framework.widgets.CustomFontTextView
+                        android:id="@+id/tv_clinic_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="12dp"
+                        android:layout_toRightOf="@id/iv_image1"
+                        android:clickable="true"
+                        android:text="Choose Image" />
+
+                </RelativeLayout>
+
+                <simplifii.framework.widgets.CustomFontButton
+                    android:id="@+id/btn_upload"
+                    style="@style/button_style"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:background="@mipmap/locatebtn"
+                    android:text="Upload" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
 
     <simplifii.framework.widgets.CustomFontButton
-        style="@style/button_style"
-        android:layout_below="@+id/til_street_address"
-        android:text="Save"/>
+        android:id="@+id/btn_save_and_next"
+        style="@style/simple_button_style"
+        android:layout_alignParentBottom="true"
+        android:padding="12dp"
+        android:text="Save and Next" />
 
 
 </RelativeLayout>

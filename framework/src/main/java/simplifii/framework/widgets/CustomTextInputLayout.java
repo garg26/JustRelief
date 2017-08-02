@@ -11,9 +11,6 @@ import simplifii.framework.R;
 import simplifii.framework.activity.BaseActivity;
 import simplifii.framework.utility.Util;
 
-/**
- * Created by raghu on 27/8/16.
- */
 public class CustomTextInputLayout extends TextInputLayout {
     private String errorMsg;
     private String emptyErrorMsg;
@@ -34,7 +31,7 @@ public class CustomTextInputLayout extends TextInputLayout {
 
     private void setCustomAttributes(Context ctx, AttributeSet attrs) {
         TypedArray a = ctx.obtainStyledAttributes(attrs,
-                R.styleable.CustomFontTxtView);
+                R.styleable.CustomTextInputLayout);
         errorMsg = a.getString(R.styleable.CustomTextInputLayout_errorMsg);
         emptyErrorMsg = a.getString(R.styleable.CustomTextInputLayout_emptyErrorMsg);
         a.recycle();
@@ -48,7 +45,7 @@ public class CustomTextInputLayout extends TextInputLayout {
                 setError(emptyErrorMsg);
             }
             return false;
-        } else if (getEditText().getInputType() == InputType.TYPE_CLASS_PHONE) {
+        } else if (getEditText().getInputType() == 2) {
             if(s.length()!=10){
                 if(TextUtils.isEmpty(errorMsg)){
                     setError(context.getString(R.string.invalid_phone_number));
@@ -57,8 +54,8 @@ public class CustomTextInputLayout extends TextInputLayout {
                 }
                 return false;
             }
-        } else if(getEditText().getInputType() == InputType.TYPE_TEXT_VARIATION_EMAIL_ADDRESS){
-            if(Util.isValidEmail(s)){
+        } else if(getEditText().getInputType() == 33){
+            if(!Util.isValidEmail(s)){
                 if(TextUtils.isEmpty(errorMsg)){
                     setError(context.getString(R.string.invalid_email));
                 }else {

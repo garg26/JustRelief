@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tv_paddingLeft"
+        android:layout_marginRight="@dimen/tv_paddingRight"
+        android:layout_marginTop="@dimen/tv_paddingTop">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_get_profile_pic"
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/profile" />
+
+        <LinearLayout
+            android:id="@+id/ll_doctor_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_get_profile_pic"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_get_doctor_name"
+                    style="@style/tv_black_bold_without_background"
+                    android:text="Kartikeya garg" />
+
+                <ImageView
+                    android:id="@+id/iv_offline"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_get_doctor_name"
+                    android:src="@drawable/offline" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_visited_clinic"
+                    style="@style/tv_black_normal_without_background"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="@dimen/tv_paddingTop"
+                    android:text="Visited Clinic :" />
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_get_visited_clinic"
+                    style="@style/tv_black_normal_without_background"
+                    android:maxLines="1"
+                    android:layout_marginTop="@dimen/tv_paddingTop"
+
+                    android:layout_marginRight="@dimen/tv_paddingRight"
+                    android:text="0(0 Unverified Clinic)" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_created_date"
+                    style="@style/tv_black_normal_without_background"
+                    android:text="Created Date :" />
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_get_created_date"
+                    style="@style/tv_black_normal_without_background"
+                    android:text="01-Jul-2017" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/im_popup_icon"
+            style="?android:attr/actionOverflowButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="-10dp"
+            android:layout_marginTop="-8dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

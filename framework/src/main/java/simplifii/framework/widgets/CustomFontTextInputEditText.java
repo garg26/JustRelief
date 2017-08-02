@@ -18,7 +18,7 @@ import simplifii.framework.utility.Util;
  */
 public class CustomFontTextInputEditText extends TextInputEditText {
     private static final String TAG = "CustomFont";
-    private String emptyErrorMsg ;
+    private String emptyErrorMsg;
     private String errorMsg;
 
     public CustomFontTextInputEditText(Context context) {
@@ -48,9 +48,9 @@ public class CustomFontTextInputEditText extends TextInputEditText {
         Typeface tf = null;
         try {
             if (asset == null || "".equals(asset)) {
-                asset = "fonts/" + AppConstants.DEF_REGULAR_FONT;
+                asset = AppConstants.DEF_REGULAR_FONT;
             }
-            tf = Typeface.createFromAsset(ctx.getAssets(), asset);
+            tf = Typeface.createFromAsset(ctx.getAssets(), "fonts/" + asset);
         } catch (Exception e) {
             Log.e(TAG, "Error to get typeface: " + e.getMessage());
             return false;
@@ -69,26 +69,26 @@ public class CustomFontTextInputEditText extends TextInputEditText {
     public boolean isValidate(Context context) {
         String s = getText().toString().trim();
         if (TextUtils.isEmpty(s)) {
-            if(TextUtils.isEmpty(emptyErrorMsg)){
+            if (TextUtils.isEmpty(emptyErrorMsg)) {
                 setError(context.getString(R.string.default_errore_msg));
-            }else {
+            } else {
                 setError(emptyErrorMsg);
             }
             return false;
         } else if (getInputType() == InputType.TYPE_CLASS_PHONE) {
-            if(s.length()!=10){
-                if(TextUtils.isEmpty(errorMsg)){
+            if (s.length() != 10) {
+                if (TextUtils.isEmpty(errorMsg)) {
                     setError(context.getString(R.string.invalid_phone_number));
-                }else {
+                } else {
                     setError(errorMsg);
                 }
                 return false;
             }
-        } else if(getInputType() == InputType.TYPE_TEXT_VARIATION_EMAIL_ADDRESS){
-            if(Util.isValidEmail(s)){
-                if(TextUtils.isEmpty(errorMsg)){
+        } else if (getInputType() == InputType.TYPE_TEXT_VARIATION_EMAIL_ADDRESS) {
+            if (Util.isValidEmail(s)) {
+                if (TextUtils.isEmpty(errorMsg)) {
                     setError(context.getString(R.string.invalid_email));
-                }else {
+                } else {
                     setError(errorMsg);
                 }
                 return false;

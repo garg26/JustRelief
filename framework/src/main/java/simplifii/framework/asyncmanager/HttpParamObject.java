@@ -1,11 +1,9 @@
 package simplifii.framework.asyncmanager;
 
 
-import android.provider.SyncStateContract;
 import android.text.TextUtils;
 
 import simplifii.framework.Network.ClientURLConnection;
-import simplifii.framework.utility.AppConstants;
 import simplifii.framework.utility.Preferences;
 
 import java.io.Serializable;
@@ -22,9 +20,22 @@ public class HttpParamObject implements Serializable {
     private String contentType = "application/x-www-form-urlencoded;charset=UTF-8";
 
     public HttpParamObject() {
-        String authToken = Preferences.getData(AppConstants.PREF_KEYS.USER_TOKEN, "");
+        addAuthToken();
+    }
+
+    public void addAuthToken() {
+        String authToken = Preferences.getData(Preferences.KEY_AUTH_TOKEN, "");
         if (!TextUtils.isEmpty(authToken)) {
-            addHeader(AppConstants.X_ACCESS_TOKEN, authToken);
+            addHeader(Preferences.KEY_AUTH_TOKEN, "Basic " + authToken);
+           // addHeader("cache-control", "no-cache");
+           // addHeader("postman-token", "adaba827-9d0a-be7a-8200-201af8ea9096");
+        }
+    }
+
+
+    public void removeAuthHeader() {
+        if (getHeaders().containsKey(Preferences.KEY_AUTH_TOKEN)) {
+            getHeaders().remove(Preferences.KEY_AUTH_TOKEN);
         }
     }
 
@@ -105,15 +116,15 @@ public class HttpParamObject implements Serializable {
         contentType = "application/json";
     }
 
-    public void setUserUrl() {
-        long userId = Preferences.getData(AppConstants.PREF_KEYS.USER_ID, 111L);
-        this.setUrl(AppConstants.PAGE_URL.GET_USER + userId);
-    }
-
-    public void setUserTypeUrl(String type) {
-        this.setUserUrl();
-        this.setUrl(url + "?type=" + type);
-    }
+//    public void setUserUrl() {
+//        long userId = Preferences.getData(AppConstants.PREF_KEYS.USER_ID, 111L);
+//        this.setUrl(AppConstants.PAGE_URL.GET_USER + userId);
+//    }
+//
+//    public void setUserTypeUrl(String type) {
+//        this.setUserUrl();
+//        this.setUrl(url + "?type=" + type);
+//    }
 
 
     public void setDeleteMethod() {

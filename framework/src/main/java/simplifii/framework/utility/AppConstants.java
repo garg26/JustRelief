@@ -1,9 +1,6 @@
 package simplifii.framework.utility;
 
-import android.os.Bundle;
-
 import java.util.LinkedHashMap;
-import java.util.Locale;
 
 public interface AppConstants {
 
@@ -12,6 +9,7 @@ public interface AppConstants {
     LinkedHashMap<Integer, String> storeCategory = new LinkedHashMap<Integer, String>();
     String REGISTRATION_COMPLETE = "registrationComplete";
     int REQUESTCODE_GOOGLE_SIGHN_IN = 101;
+    int PLACE_PICKER_REQUEST = 1;
 
     String USER_TUTION_CENTER = "tuition_centre";
     String USER_TUTOR = "tutor";
@@ -20,6 +18,83 @@ public interface AppConstants {
     String TOKEN = "token";
     String USER_CLINIC = "Clinic";
     String USER_DOCTOR = "Doctor";
+    String USER_ROLE = "Admin";
+    String PARENT_ID = "-1";
+    String START_TIME1 = "12:00 AM";
+    String END_TIME1 = "11:59 PM";
+    String START_TIME2 = "";
+    String END_TIME2 = "";
+    java.lang.String USER_TYPES = "1";
+    java.lang.String USER_DOCTOR_TYPES = "2";
+    String EXTENSIONS = "png";
+    String TIME = "time";
+    String RELATION_ID0 = "0";
+    String CONSTANT = "constant";
+    ;
+
+    interface Qualification {
+        int MBBS = 1;
+        int MPHARM = 2;
+        int MDS = 3;
+        int MD = 4;
+    }
+
+
+    interface AutoCompleteTypes {
+        String CITY = "C";
+        String LOCALITY = "L";
+        String SERVICES = "SE";
+        String SPECIALIZATION = "SP";
+        String DOCTOR_SPECIALIZATION = "DSP";
+        String AWARD = "award";
+        String REGISTRATION_COUNCIL = "CN";
+        String accreditation = "accr";
+        String COLLEGE = "CL";
+        String MEMBERSHIP = "MB";
+        String DOCTOR_SERVICE = "DSE";
+        String QUALIFICATION = "QL";
+    }
+
+    interface DRAWER_ITEM {
+
+    }
+
+    interface PATIENTS{
+
+        String PATIENTS = "Patients";
+        int PATIENTS_ID = 1;
+    }
+    interface  ALL_PATIENTS{
+
+        String ALL_PATIENTS = "All Patients V1";
+        int ALL_PATIENTS_ID = 2;
+    }
+    interface DOCTOR_PT{
+
+        String DOCTOR_PT = "Doctor/PT";
+        int DOCTOR_PT_ID = 3;
+    }
+    interface HOSPITAL_CLINICS{
+
+        String HOSPITAL_CLINICS = "Hospital/Clinics";
+        int HOSPITAL_CLINICS_ID = 4;
+    }
+    interface COMMUNICATIONS{
+
+        String COMMUNICATIONS = "Communications";
+        int COMMUNICATIONS_ID = 5;
+    }
+    interface REPORTS{
+
+        String REPORTS = "Reports";
+        int REPORTS_ID = 6;
+    }
+    interface FEEDBACK{
+
+        String FEEDBACK = "Feedback";
+        int FEEDBACK_ID = 7;
+    }
+
 
     interface FRAGMENT_TYPES {
         int PROFILE_LIST_FRAGMENT = 1;
@@ -28,7 +103,15 @@ public interface AppConstants {
         int LOCATION_PHOTOS_FRAGMENT = 4;
         int DOCTORS_FRAGMENT = 5;
         int SPECIALIZATIONS_SERVICES_FRAGMENT = 6;
-        int AWARD_ACCEREDATIONS_FRAGMENT = 7;
+        int AWARD_ACCREDITATION_FRAGMENT = 7;
+
+        int DOCTOR_LIST_FRAGMENT = 1;
+        int CONTACT_DOCTOR_DETAILS_FRAGMENT = 2;
+        int QUALIFICATION_FRAGMENT = 3;
+        int REGISTRATION_DETAILS_FRAGMENT = 4;
+        int CLINIC_FRAGMENT = 5;
+        int SERVICES_FRAGMENT = 6;
+        int AWARD_MEMBERSHIP_FRAGMENT = 7;
     }
 
     interface ASSETS_RESOURCES {
@@ -44,25 +127,66 @@ public interface AppConstants {
         String CONTACT_CLINIC_DETAILS = "Contact & Clinic Details";
         int CONTACT_CLINIC_ITEM_ID = 1;
     }
+
+    interface DoctorProfileConstants {
+        String DOCTOR_DOCTOR_DETAILS = "Contact & Doctor Details";
+        int DOCTOR_ITEM_ID = 1;
+    }
+
     interface TimingsConstants {
         String TIMINGS_DETAILS = "Timings";
         int TIMINGS_ITEM_ID = 2;
     }
+
     interface LocationPhotosConstants {
         String LOCATION_PHOTOS_DETAILS = "Location & Photos";
         int LOCATION_PHOTOS_ITEM_ID = 3;
     }
+
     interface DoctorsConstants {
         String DOCTORS_DETAILS = "Doctors";
         int DOCTORS_ITEM_ID = 4;
     }
+
     interface ServiceConstants {
         String SPECIALIZATIONS_SERVICE_DETAILS = "Specializations & Services";
         int SPECIALIZATIONS_SERVICE_ITEM_ID = 5;
     }
+
     interface AwardConstants {
-        String AWARD_ACCEREDATIONS_DETAILS = "Award & Acceredations";
-        int AWARD_ACCEREDATIONS_ITEM_ID = 6;
+        String AWARD_Accreditation_DETAILS = "Award & Accreditation";
+        int AWARD_ACCREDITATION_ITEM_ID = 6;
+    }
+
+    interface QualificationDetails {
+        String QUALIFICATION_DETAILS = "Qualification and Specialization Details";
+        int QUALIFICATION_ITEM_ID = 2;
+    }
+
+    interface RegistrationDetails {
+        String REGISTRATION_DETAIL = "Registration Details";
+        int REGISTRATION_ITEM_ID = 3;
+    }
+
+    interface Clinic {
+        String CLINIC_DETAILS = "Clinic";
+        int CLINIC_ITEM_ID = 4;
+    }
+
+    interface Services {
+        String SERVICES_DETAILS = "Services";
+        int SERVICE_ITEM_ID = 5;
+    }
+
+    interface AwardMembership {
+        String AWARD_DETAILS = "Award and Membership";
+        int AWARD_ITEM_ID = 6;
+    }
+    interface RESULT_CODE {
+        int CLINIC_CONTACT = 2;
+        int LOCATION = 3;
+
+        int NEW_APP = 4;
     }
 
 
@@ -88,6 +212,31 @@ public interface AppConstants {
         int OPEN_SUBJECTS = 26;
         int OPEN_FOLDER = 27;
         int CREATE_CALENDAR_EVENT = 28;
+        int VALIDATE_OTP = 29;
+        int CLINIC_DETAILS = 30;
+        int CREATE_CLINIC = 31;
+        int NEW_CLINIC = 32;
+        int FORGOT_PASSWORD = 33;
+        int CHANGE_PASSWORD = 34;
+        int SIGN_UP = 35;
+        int LOGIN = 36;
+        int DOCTOR_DETAILS = 37;
+        int NEW_DOCTOR = 38;
+        int CREATE_DOCTOR = 39;
+        int DOCTOR_CONTACT = 40;
+        int CONTACT = 41;
+        int CLINIC = 42;
+        int SERVICE_SPEC = 43;
+        int LOCATION = 44;
+        int LOCATION_DETAILS = 45;
+        int TIMINGS = 46;
+        int REGISTRATION = 47;
+        int QUALIFICATION = 48;
+        int SERVICE = 49;
+        int AWARD = 50;
+        int NEW_APP = 51;
+        int NEW_ACTIVITY = 52;
+        int HOME = 53;
     }
 
     public static interface VALIDATIONS {
@@ -113,115 +262,51 @@ public interface AppConstants {
     }
 
     public static interface PAGE_URL {
-        //        String PHOTO_URL = "http://ec2-54-201-39-154.us-west-2.compute.amazonaws.com:4000";
-//        String BASE_WEb_LINK = "http://161.202.30.30/";
-//        String PHOTO_URL = "http://161.202.30.30/mobile";
-//        String BASEURL = PHOTO_URL + "/";
-//        String BASE_HTTPS_URL = "https://161.202.30.30/mobile";
-        String BASE_WEb_LINK = "https://faqulty.club/";
-        String PHOTO_URL = "https://faqulty.club/mobile";
         String BASEURL = "http://api.soldemo.in/api/";
-        String BASE_HTTPS_URL = "https://faqulty.club/mobile";
-
-
-        String FEED_LINK = BASE_WEb_LINK + "forum/";
-        String TUTORSURL = BASEURL + "api/tutors/%s/";
-        String TUTION_CENTRE_URL = BASEURL + "api/tution-centre/";
         String SIGNUP = BASEURL + "CheckLogin/UserSignup";
-        String OTP_VERIFY = BASEURL + "verify-phone";
         String LOGIN = BASEURL + "CheckLogin/CheckLogIn";
-        String GET_CITIES = BASEURL + "api/cities";
-        String GET_LOCALITIES = BASEURL + "api/localities";
-        String GET_USER = BASEURL + "api/users/";
-        String UPDATE_USER = BASEURL + "api/users/";
-        String UPDATE_TUTION_DETAILS = BASEURL + "api/users/";
-        String GET_SUBJECTS = BASEURL + "api/subjects";
-        String GET_DEGREE_SUBJECTS = BASEURL + "api/degree-subjects";
-        String GET_CLASSES = BASEURL + "api/classes";
-        String GET_BOARDS = BASEURL + "api/boards";
-        String GET_MODES = BASEURL + "api/modes";
-        String GET_LANGUAGES = BASEURL + "api/languages";
-        String UPDATE_SOCIAL_DETAILS = BASEURL + "api/";
-        String GET_DEGREE = BASEURL + "api/degrees";
-        String GET_INSTITUTES = BASEURL + "api/institutes";
-        String FORGOT_PASSWORD = BASEURL + "forgot-password";
-        String RESET_PASSWORD = BASEURL + "reset-password";
-        String UPLOAD_IMAGE = BASEURL + "file-ingest";
-        String UPLOAD_FILE = BASEURL + "file-ingest/";
-        String GET_IMAGE = BASEURL;
-        String GET_SCHOOLS = BASEURL + "api/schools";
-        String SOCIAL_LOGIN = BASEURL + "pre-login";
-        String FACULTY_URL = TUTION_CENTRE_URL + "%s" + "/faculty";
-        String CREATEGROUP = BASEURL + "api/groups";
-        String INVITESTUDENTS = BASEURL + "api/students";
-        String UPDATE_STUDENT_INVITE = "students/%s";
-        String GETTUTORSTUDENT = BASEURL + "api/tutors/%s" + "/students";
-        String GET_STUDENT_DATA = BASEURL + "api/tutors/%s" + "/students/%s";
-        String GET_GROUP_DATA = BASEURL + "api/tutors/%s" + "/groups/%s";
-        String GET_STUDENT_TRANSACTION = BASEURL + "api/tutors/%s" + "/students/%s/transactions";
-        String GET_STUDENT_TRANSACTION_REMINDER = BASEURL + "api/tutors/%s" + "/students/%s/transactions/reminders";
-        String GETTUTORGROUP = BASEURL + "api/tutors/%s" + "/groups";
-        String GETATTENDANCE = BASEURL + "api/students/%s/tutors/%s/attendances";
-        String GET_GROUP_ATTENDANCE = BASEURL + "api/groups/%s/attendances";
-        String ATTENDANCE = BASEURL + "api/attendances";
-        String GROUP_URL = BASEURL + "api/groups/";
-        String FETCH_GROUP = GROUP_URL + "%s";
-        String ASSIGNMENT_GET = BASEURL + "api/classes?sort=sort_order";
-        String GET_ASSIGNMENT_SUBJECTS = BASEURL + "api/assignments/subjects";
-        String GET_SUBJECT_CHAPTERS = BASEURL + "api/assignments/chapters";
-        String INVOICE_URL = GET_STUDENT_DATA + "/invoice-data";
-        String INVOICE_URL_GROUP = GET_GROUP_DATA + "/invoice-data";
-        String CREATE_INVOICE = GET_STUDENT_DATA + "/payments";
-        String CREATE_NEW_INVOICE = GET_STUDENT_DATA + "/invoices";
-        String CREATE_NEW_TRANSACTION = GET_STUDENT_DATA + "/transactions";
-        String PAYMENT_URL = GET_STUDENT_DATA + "/payments";
-        String REMINDER_URL = GET_STUDENT_DATA + "/transactions/reminders";
-        String TUTOR_CONTENT = BASEURL + "api/tutors/%s" + "/contents";
-        String INVOICE_EDIT_URL = BASEURL + "api/invoices/";
-        String BOOKMARK_GET = "bookmarks";
-        String CREATE_BOOKMARK_FOLDER = "bookmark-folders";
-        String GET_COMMENT = "feed/%s/comments";
-        String POST_COMMENT = "comments?type=feed";
-        String CREATE_BOOKMARK = "bookmarks";
-        String FETCH_FEED_DATA = "my-feed?offset=%s&count=%s";
-        String POST_FEED_URL = "feed";
-        String DELETE_FEED = "feed/";
-        String LIKE_URL = "feed/%s/likes";
-        String LIKE_FEED_POST = BASEURL + "api/likes?type=feed";
-        String ASSIGNMENTS = BASEURL + "api/assignments";
-        String BOOKMARKS_FOLDER = "bookmark-folders/%s";
-        String RESENDOTP = BASEURL + "resend-otp";
-        String DELETE_TRANSACTION = BASEURL + "api/transactions/";
-        String DELETE_GROUP = BASEURL + "api/tutors/%s/groups";
-        String DELETE_GROUP_STUDENT = BASEURL + "api/groups/%s/students/%s";
-        String SEND_REVIEW = BASEURL + "api/reviews/invites";
-        String GET_HASH_TAGS = BASEURL + "api/tags";
-        String FETCH_BOOKMARK_FEED = "feed/";
-        String GET_NOTIFICATIONS = BASEURL + "api/tutors/%S/notifications";
-        String GET_RECENT_ASSIGNMENTS = TUTORSURL + "assignments";
-        // questions/answers/fullset
-        String DOWNLOAD_ASSIGNMENT_LINK = BASEURL + "api/assignments/%s/document-links";
-        String UPDATE_CONTENT = "contents/%s";
-        String FEED_VIEWS = "feed/views";
-        String DELETE_FOLDER = BASEURL + "api/tutors/%s/bookmark-folders/%s";
-        String FEATCH_ALL_PAMPHLETS = BASEURL + "api/pamphlets/templates";
-        String FEATCH_USER_PAMPGLETS = BASEURL + "api/tutors/%s/pamphlets";
-        String CREATE_PAMPHLETS = BASEURL + "api/tutors/%s/pamphlets";
-        String GENERATE_TEMPLATE = BASEURL + "api/tutors/%s/pamphlets/%s/generate";
-        String CERATE_LOGO = BASEURL + "api/tutors/%s/brandings";
-        String GET_LOGO_DATA = BASEURL + "api/tutors/%s/brandings";
-        String DELETE_PAMPHLET = BASEURL + "api/tutors/%s/pamphlets/%s";
-        String FEED_LIKES = "feed/%s/likes";
-        String ASK_QUERY = BASEURL + "api/contact";
-        String CHAT_URL = "http://161.202.30.26:4000/";
-        //        String CHAT_URL = BASEURL;
-        String FCM_UPDATE_TOKEN = BASEURL + "api/push-token";
-        String DELETE_STUDENT_FROM_GROUP = BASEURL + "api/groups/%s/students/%s";
-        String GET_PROFILE_COMMENTS = BASE_WEb_LINK + "api/tutorinfo/";
-        String EMAIL_SHARE = BASEURL + "api/share";
-//        String CHAT_URL = BASEURL;
-//        api/students/548/tutors/99/attendances?offset=0&count=2
-//        String MOBILEVERIFY = BASEURL + "/api/users/" + Preferences.getData(PREF_KEYS.USER_ID);
+        String CHECK_LOGIN = BASEURL + "CheckLogin/";
+        String MASTER = BASEURL + "Master/";
+        String SEND_OTP = CHECK_LOGIN + "SendOTP";
+        String CHECK_OTP = CHECK_LOGIN + "CheckOTP";
+        String AUTO_COMPLETE = MASTER + "AutoComplete";
+        String SET_CLINIC = BASEURL + "DocFacilityMaster/SetClinicDetails";
+
+        String FORGOT_PASSWORD = BASEURL + "CheckLogin/ForgetPass";
+        String CHANGE_PASSWORD = BASEURL + "CheckLogin/UpdatePass";
+        String EMAIL_VERIFY = BASEURL + "CheckLogin/CheckEmailVerify";
+        String RESEND_EMAIL = BASEURL + "CheckLogin/SendEmail";
+        String CLINIC_TIMINGS = BASEURL + "DocFacilityMaster/SetclinicTiming";
+        String FIND_DOCTOR = BASEURL + "DocMaster/SetDoctorDetails";
+        String SET_DOCTOR = BASEURL + "DocMaster/SetDoctorDetails";
+        String FIND_CLINIC = BASEURL + "Master/FindClinic";
+
+        String LOCATION = BASEURL + "DocFacilityMaster/SetClinicLocation";
+        String SERVICE = BASEURL + "DocFacilityMaster/SetClinicServices";
+        String AWARD = BASEURL + "DocFacilityMaster/SetclinicAward";
+        String UPLOAD_IMAGE = BASEURL + "DocFacilityMaster/SetClinicContactDetails";
+
+
+        String MASTER_LIST = BASEURL + "Master/GetMasters";
+        String GET_FILES = BASEURL + "Master/GetFiles";
+        String DELETE_FILES = BASEURL + "Master/DeleteFiles";
+        String USER_PROFILE = BASEURL + "Master/GetUserProfile";
+        String UPLOAD_DOCUMENT = BASEURL + "DocFacilityMaster/FileUpload";
+        String GET_CLINIC_DETAIL = BASEURL + "Master/GetClinicDetails";
+        String GET_DOCTOR_DETAIL = BASEURL + "Master/GetDoctorDetails";
+        String DOCTOR_EDUCATION = BASEURL + "DocMaster/SetDoctorEducation";
+        String MEMBERSHIP = BASEURL + "DocMaster/SetDoctorMembership";
+        String SET_DOCTOR_AWARD = BASEURL + "DocMaster/SetDoctorAward";
+        String GET_DOC_FILES = BASEURL + "Master/GetDocFiles";
+        String DELETE_DOC_FILE = BASEURL + "Master/DeleteDocFiles";
+        String DOCTOR_SERVICES = BASEURL + "DocMaster/SetDoctorServices";
+        String SET_DOCTOR_EXPERIENCE = BASEURL + "DocMaster/SetDoctorExperience";
+        String SET_DOCTOR_REGISTRATION = BASEURL + "DocMaster/SetDoctorRegistration";
+        String UPLOAD_DOCTOR_DOCUMENT = BASEURL + "DocMaster/SetDoctorDocument";
+        String SET_DOCTOR_SPEC = BASEURL + "DocMaster/SetDoctorSpecialization";
+        String SET_DOCTOR_CONTACT = BASEURL + "DocMaster/SetDoctorContactDetails";
+        String SET_DOCTOR_DETAIL = BASEURL + "Master/FinalDocSubmit";
+        String SET_CLINIC_FINAL = BASEURL + "Master/FinalSubmit";
     }
 
     public static interface PREF_KEYS {
@@ -245,6 +330,12 @@ public interface AppConstants {
         String FCM_TOKEN = "fcm_token";
         String KEY_PAMPHLETS = "pamphlet_data";
         String COMMENTS_COUNT = "commentsCount";
+        String EMAIL_VERIFIED = "verification";
+        String CLINIC_SUCCESS = "clinic_success";
+        String EMAIL_SUCCESS = "email_success";
+        String USER_LOGIN = "user_login";
+        String MOBILE_VERIFY = "mobile_verify";
+        String EMAIL_VERIFY = "email_verify";
     }
 
     public static interface BUNDLE_KEYS {
@@ -309,6 +400,41 @@ public interface AppConstants {
         String IS_QUE_ONLY = "is_question_only";
         String MESSAGE_TYPE = "message_type";
         String KEY_CALENDAR_EVENT = "calendarEvent";
+        String EMAIL = "email";
+        String CLINIC_NAME = "clinic_name";
+        String CITY_NAME = "city_name";
+        String LOCALITY_NAME = "locality_name";
+        String DOCTOR_NAME = "doctor_name";
+        String SPECIALIZATION_ID = "spec_id";
+        String CITY_ID = "city_id";
+        String REGISTRATION_NUMBER = "registration_no";
+        String REGISTRATION_COUNCIL = "registration_council";
+        String YEAR = "year";
+        String DOC_FILE_URL = "docfileurl";
+        String CLINIC_PHOTO = "clinic_photo";
+
+
+        String CLINIC_EMAIL = "clinic_email";
+        String CLINIC_PHONE = "clinic_phone";
+        String CLINIC_CITY = "clinic_city";
+        String CLINIC_LOCALITY = "clinic_locality";
+        String CLINIC_OVERVIEW = "clinic_overview";
+        String FACILITYID = "clinic_id";
+        String CLINIC_IMAGE = "clinic_image";
+
+
+        String CLINIC_PAYMENT = "clinic_payment";
+        String CLINIC_DETAIL = "clinic_detail";
+        String DOCTOR_ID = "doctor_id";
+        String DOCTOR_DETAILS = "doctor_details";
+        String IMG_FILE_URL = "imageUrl";
+        String LOCATION = "location";
+        String LOCATION_LATITUDE = "latitude";
+        String LOCATION_LONGITUDE = "longitude";
+        String LATITUDE = "latitude";
+        String LONGITUDE = "longitude";
+        String AUTH_TOKEN = "authToken";
+        String CONSTANT = "constant";
     }
 
 
@@ -354,13 +480,9 @@ public interface AppConstants {
         String IMAGE = "img";
         String AUDIO = "audio";
         String VIDEO = "video";
+        String DOC = "doc";
     }
 
-    interface USER_TYPES {
-        String STUDENT = "STUDENT";
-        String TUTOR = "TUTOR";
-        String TCENTRE = "TCENTRE";
-    }
 
     public interface TASKCODES {
         int LOGIN = 20;
@@ -469,6 +591,63 @@ public interface AppConstants {
         int SHARE_EMAIL = 140;
         int SHORT_URL = 141;
         int SHARE_CHAT = 142;
+        int CHECK_OTP = 143;
+        int FIND_CLINIC = 144;
+        int CHANGE_PASSWORD = 145;
+        int EMAIL_VERIFIY = 146;
+        int CITY = 147;
+        int LOCALITY = 148;
+        int RESEND_EMAIL = 149;
+        int CLINIC_TIMINGS = 150;
+        int FIND_DOCTOR = 151;
+        int NEW_CLINIC = 152;
+        int SPECIALIZATION = 153;
+        int NEW_DOCTOR = 154;
+
+
+        int REGISTARTION_COUNCIL = 155;
+
+        int GET_ADDRESS_FROM_LATLONG = 156;
+        int LOCATION = 157;
+        int SERVICES = 158;
+        int SERVICES_SPECIALIZATION = 159;
+        int AWARD = 160;
+        int accreditation = 161;
+        int MASTER_LIST = 162;
+        int TIMINGS = 163;
+        int DELETE_FILE = 164;
+        int USER_PROFILE = 165;
+        int UPLOAD_DOCUMENT = 166;
+        int IMAGE_FILE = 167;
+        int DOC_FILE = 169;
+        int GET_CLINIC_DETAILS = 170;
+        int GET_AWARD = 171;
+        int GET_accreditation = 172;
+        int GET_DOCTOR_PROFILE = 173;
+        int GET_DOCTOR_DETAILS = 174;
+        int DOCTOR_CONTACT_DETAILS = 175;
+        int GET_COLLEGE = 176;
+        int DOCTOR_EDUCATION = 177;
+        int GET_MEMBERSHIP = 178;
+        int SET_MEMBERSHIP = 179;
+        int SET_AWARD = 180;
+        int GET_DOCTOR_AWARD = 181;
+        int GET_DOCTOR_SERVICE = 182;
+        int SET_DOCTOR_SERVICE = 183;
+        int SET_DOCTOR_EXPERIENCE = 184;
+        int GET_DOCTOR_DOCUMENT = 185;
+        int SET_DOCTOR_REGISTRATION = 186;
+        int DELETE_COUNCIL = 187;
+        int DELETE_EDUCATION = 188;
+        int GET_DOCTOR_EXPERIENCE = 189;
+        int DELETE_DOCTOR_EXPERIENCE = 190;
+        int GET_DOCTOR_SPECIALIZATION = 191;
+        int SET_DOCTOR_SPEC = 192;
+        int GET_DOCTOR = 193;
+        int SET_FINAL_DOCTOR = 194;
+        int GET_QUALIFICATION_LIST = 195;
+        int GET_CLINIC_FILE = 196;
+        int SET_FINAL_CLINIC = 197;
     }
 
     interface ProfileStructureType {
@@ -489,11 +668,18 @@ public interface AppConstants {
 
     public interface FILE_TYPES {
 
-        String IMAGE = "image";
+        String IMAGE = "img";
         String AUDIO = "audio";
         String VIDEO = "video";
-        String PDF = "pdf";
+        String PDF = "doc";
         String CALENDAR = "calendar";
+        String AWARD = "award";
+        String accreditation = "accr";
+        String DOCTOR_COUNCIL = "CL";
+        String DOCTOR_EDUCATION = "QL";
+        String DOCTOR_DOCUMENT = "DOC";
+        String EXPERIENCE = "EXP";
+        String IMG = "image";
     }
 
     public interface FILE_REQUEST_CODE {

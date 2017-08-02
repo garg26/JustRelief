@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/rl_root"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/layout_logo" />
+    </RelativeLayout>
+
+    <simplifii.framework.widgets.CustomFontTextView
+        android:id="@+id/tv_clinic_details"
+        style="@style/tv_black_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/enter_your_clinic_details"
+        app:customFont="@string/font_medium" />
+
+    <simplifii.framework.widgets.CustomFontTextView
+        android:id="@+id/tv_text"
+        style="@style/tv_grey_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/please_help_us_with_the_below_information" />
+
+
+    <simplifii.framework.widgets.CustomFontEditText
+        android:id="@+id/et_name"
+        style="@style/et_black_style"
+        android:layout_marginTop="42dp"
+        android:hint="@string/name">
+
+    </simplifii.framework.widgets.CustomFontEditText>
+
+
+
+    <AutoCompleteTextView
+        android:id="@+id/actv_city"
+        style="@style/actv_black_style"
+        android:imeOptions="actionNext|actionDone"
+        android:hint="@string/city">
+
+    </AutoCompleteTextView>
+
+
+
+    <AutoCompleteTextView
+        android:id="@+id/actv_locality"
+        android:imeOptions="actionDone"
+        style="@style/actv_black_style"
+        android:hint="@string/locality">
+
+    </AutoCompleteTextView>
+
+
+
+    <simplifii.framework.widgets.CustomFontButton
+        android:id="@+id/btn_find_my_clinic"
+        style="@style/button_style"
+        android:layout_marginTop="32dp"
+        android:text="@string/find_my_clinic" />
+
+
+</LinearLayout>

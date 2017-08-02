@@ -144,19 +144,19 @@ public class FileUtil {
         return "com.android.providers.media.documents".equals(uri.getAuthority());
     }
 
-    public static void downloadFile(Context ctx, List<String> list) {
-        DownloadManager dm = (DownloadManager) ctx.getSystemService(DOWNLOAD_SERVICE);
-        for (String s : list) {
-            downloadFile(dm, s);
-        }
-        Toast.makeText(ctx, "Downloading...", Toast.LENGTH_LONG).show();
-    }
+//    public static void downloadFile(Context ctx, List<String> list) {
+//        DownloadManager dm = (DownloadManager) ctx.getSystemService(DOWNLOAD_SERVICE);
+//        for (String s : list) {
+//            downloadFile(dm, s);
+//        }
+//        Toast.makeText(ctx, "Downloading...", Toast.LENGTH_LONG).show();
+//    }
 
-    public static void downloadFile(DownloadManager dm, String fileUrl) {
-        fileUrl = fileUrl.replaceAll(AppConstants.PAGE_URL.BASE_HTTPS_URL, AppConstants.PAGE_URL.PHOTO_URL);
-        DownloadManager.Request request = new DownloadManager.Request(
-                Uri.parse(fileUrl));
-        request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
-        long enqueue = dm.enqueue(request);
-    }
+//    public static void downloadFile(DownloadManager dm, String fileUrl) {
+//        fileUrl = fileUrl.replaceAll(AppConstants.PAGE_URL.BASE_HTTPS_URL, AppConstants.PAGE_URL.PHOTO_URL);
+//        DownloadManager.Request request = new DownloadManager.Request(
+//                Uri.parse(fileUrl));
+//        request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+//        long enqueue = dm.enqueue(request);
+//    }
 }

@@ -2,73 +2,179 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
+    >
 
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
+    <ScrollView
+       style="@style/scroll_style"
+        android:layout_above="@+id/btn_save_and_next">
 
-    android:descendantFocusability="beforeDescendants"
-    android:focusableInTouchMode="true">
+    <RelativeLayout
+       style="@style/rl_root">
 
-    <simplifii.framework.widgets.CustomFontTextView
-        style="@style/text_view_style1"
-        android:text="Services *"
-        android:id="@+id/tv_services"
-        android:textColor="@color/black"
-        />
+        <!--<LinearLayout-->
+            <!--android:id="@+id/ll_upload_services"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/rectangle_box"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<simplifii.framework.widgets.CustomFontTextView-->
+                <!--android:id="@+id/tv_services_specialization"-->
+                <!--style="@style/tv_black_style_heading"-->
+                <!--android:text="@string/services_specializations" />-->
+
+            <!--<simplifii.framework.widgets.CustomFontTextView-->
+                <!--android:id="@+id/tv_service"-->
+                <!--android:paddingTop="0dp"-->
+                <!--style="@style/tv_black_style_heading_without_background"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:text="Services :-"-->
+                <!--/>-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/ll_upload_service_container"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingBottom="@dimen/image_containerBottom"-->
+                <!--android:paddingRight="@dimen/image_container"-->
+                <!--android:orientation="vertical">-->
+
+            <!--</LinearLayout>-->
+            <!--<simplifii.framework.widgets.CustomFontTextView-->
+                <!--android:id="@+id/tv_specializations"-->
+                <!--style="@style/tv_black_style_heading_without_background"-->
+                <!--android:paddingTop="0dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:text="Specializations :-"-->
+                <!--/>-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/ll_upload_specialization_container"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingBottom="@dimen/image_containerBottom"-->
+                <!--android:paddingRight="@dimen/image_container"-->
+                <!--android:orientation="vertical">-->
+
+            <!--</LinearLayout>-->
 
 
-    <simplifii.framework.widgets.CustomFontTextView
-        style="@style/text_view_style1"
-        android:text="Add Services"
-        android:id="@+id/tv_add_services"
-        android:textColor="@color/black"
-        android:layout_marginLeft="34dp"
-        android:layout_below="@+id/tv_services" />
+            <!--<simplifii.framework.widgets.CustomFontTextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="2dp"-->
+                <!--android:layout_marginBottom="@dimen/margin_8dp"-->
+                <!--android:visibility="gone"-->
+                <!--android:id="@+id/tv_no_record"/>-->
 
-    <simplifii.framework.widgets.CustomTextInputLayout
-        style="@style/text_input_layout_style1"
-        android:id="@+id/til_services"
-        android:layout_below="@+id/tv_add_services"
-        android:layout_alignLeft="@+id/tv_add_services">
-        <simplifii.framework.widgets.CustomFontEditText
-            style="@style/edit_text_style"
-            android:id="@+id/et_services"
-            android:hint="Services"/>
-    </simplifii.framework.widgets.CustomTextInputLayout>
+            <!--</LinearLayout>-->
 
-    <simplifii.framework.widgets.CustomFontTextView
-        style="@style/text_view_style1"
-        android:text="Specilization *"
-        android:id="@+id/tv_specilization"
-        android:textColor="@color/black"
-        android:layout_below="@+id/til_services"
-        />
+        <LinearLayout
+            android:id="@+id/ll_service"
+            style="@style/ll_style"
+            android:orientation="vertical">
 
+        <simplifii.framework.widgets.CustomFontTextView
+            android:id="@+id/tv_services"
+            style="@style/tv_black_style_heading"
+            android:text="@string/services" />
 
-    <simplifii.framework.widgets.CustomFontTextView
-        style="@style/text_view_style1"
-        android:text="Add Specilization"
-        android:id="@+id/tv_add_specilization"
-        android:textColor="@color/black"
-        android:layout_marginLeft="34dp"
-        android:layout_below="@+id/tv_specilization" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <simplifii.framework.widgets.CustomFontTextView
+                android:id="@+id/tv_add_service"
+                style="@style/tv_black_style_heading_without_background"
+                android:layout_width="wrap_content"
 
-    <simplifii.framework.widgets.CustomTextInputLayout
-        style="@style/text_input_layout_style1"
-        android:id="@+id/til_specilization"
-        android:layout_below="@+id/tv_add_specilization"
-        android:layout_alignLeft="@+id/tv_add_services">
-        <simplifii.framework.widgets.CustomFontEditText
-            style="@style/edit_text_style"
-            android:id="@+id/et_specilization"
-            android:hint="Specilization"/>
-    </simplifii.framework.widgets.CustomTextInputLayout>
+                android:text="Add Services"
+                />
 
+            <ImageView
+                android:id="@+id/iv_plus"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/tv_paddingRight"
+                android:padding="8dp"
+                android:layout_width="42dp"
+                android:src="@mipmap/plus_3"
+                android:layout_height="42dp"
+                 />
+            </RelativeLayout>
+
+        <AutoCompleteTextView
+            android:id="@+id/actv_service"
+            style="@style/ccv_style"
+            android:layout_marginBottom="@dimen/tv_paddingBottom"
+             />
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/ll_service_container"
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"
+             android:orientation="vertical"
+             >
+
+         </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_specialization"
+            android:layout_below="@+id/ll_service"
+            style="@style/ll_style"
+            android:orientation="vertical">
+
+            <simplifii.framework.widgets.CustomFontTextView
+                android:id="@+id/tv_specialization"
+                style="@style/tv_black_style_heading"
+                android:text="@string/specialization" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_add_specialization"
+                    style="@style/tv_black_style_heading_without_background"
+                    android:layout_width="wrap_content"
+                    android:text="Add Specialization"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_plus1"
+                    android:layout_alignParentRight="true"
+                    android:padding="8dp"
+                    android:layout_marginRight="@dimen/tv_paddingRight"
+                    android:layout_width="42dp"
+                    android:src="@mipmap/plus_3"
+                    android:layout_height="42dp"
+                    />
+            </RelativeLayout>
+
+            <AutoCompleteTextView
+                android:id="@+id/actv_specialization"
+                style="@style/ccv_style"
+                android:layout_marginBottom="@dimen/tv_paddingBottom"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_specialization_container"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+
+                android:layout_marginRight="10dp"
+                >
+
+            </LinearLayout>
+        </LinearLayout>
+      </RelativeLayout>
+    </ScrollView>
     <simplifii.framework.widgets.CustomFontButton
-        style="@style/button_style"
-        android:layout_below="@+id/til_specilization"
-        android:text="Save"/>
-
-
-
+        style="@style/simple_button_style"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_save_and_next"
+        android:padding="12dp"
+        android:text="Save and Next"/>
 </RelativeLayout>

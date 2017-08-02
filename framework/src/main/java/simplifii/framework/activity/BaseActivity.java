@@ -1,5 +1,6 @@
 package simplifii.framework.activity;
 
+import android.Manifest;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
@@ -21,18 +22,29 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.gun0912.tedpermission.PermissionListener;
+import com.gun0912.tedpermission.TedPermission;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import simplifii.framework.R;
 import simplifii.framework.exceptionhandler.RestException;
 import simplifii.framework.fragments.TaskFragment;
+import simplifii.framework.utility.CollectionUtils;
 import simplifii.framework.utility.Util;
 import simplifii.framework.widgets.CustomFontEditText;
 import simplifii.framework.widgets.CustomTextInputLayout;
@@ -102,6 +114,26 @@ public class BaseActivity extends AppCompatActivity implements
         super.onStart();
     }
 
+    protected void askPermissions() {
+        new TedPermission(this)
+                .setPermissions(Manifest.permission.RECEIVE_SMS)
+                .setPermissionListener(new PermissionListener() {
+                    @Override
+                    public void onPermissionGranted() {
+                        onPermissionVerify();
+                    }
+
+                    @Override
+                    public void onPermissionDenied(ArrayList<String> deniedPermissions) {
+                        Log.e("Denied", "denied");
+                    }
+                }).check();
+    }
+
+    protected void onPermissionVerify() {
+
+    }
+
     @Override
     protected void onStop() {
         super.onStop();
@@ -144,6 +176,7 @@ public class BaseActivity extends AppCompatActivity implements
         return super.onKeyDown(keyCode, event);
     }
 
+
     public void setFullScreenWindow() {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         WindowManager.LayoutParams attrs = this.getWindow().getAttributes();
@@ -185,8 +218,10 @@ public class BaseActivity extends AppCompatActivity implements
 
 
     protected void onInternetException() {
-//        findViewById(R.id.frame_noInternet).setVisibility(View.VISIBLE);
+
     }
+
+
 
     public boolean isNetworkAvailable() {
         if (Util.isConnectingToInternet(this)) {
@@ -389,17 +424,23 @@ public class BaseActivity extends AppCompatActivity implements
     }
 
     protected void onServerError() {
-//        FrameLayout errorLayout = (FrameLayout) findViewById(R.id.frame_noInternet);
-//        if (errorLayout != null) {
-//            errorLayout.setVisibility(View.VISIBLE);
-//            ImageView errorImage = (ImageView) errorLayout.findViewById(R.id.iv_error);
-//            TextView errorMsg = (TextView) errorLayout.findViewById(R.id.tv_errorMsg);
-//            TextView errorInfo = (TextView) errorLayout.findViewById(R.id.tv_errorInfo);
-//
-//            errorImage.setImageResource(R.drawable.icon_server_error);
-//            errorMsg.setText("SERVER ERROR");
-//            errorInfo.setText("Oops! Something went wrong...");
-//        }
+        FrameLayout errorLayout = (FrameLayout) findViewById(R.id.frame_noInternet);
+        if (errorLayout != null) {
+            errorLayout.setVisibility(View.VISIBLE);
+            ImageView errorImage = (ImageView) errorLayout.findViewById(R.id.iv_error);
+            TextView errorMsg = (TextView) errorLayout.findViewById(R.id.tv_errorMsg);
+            TextView errorInfo = (TextView) errorLayout.findViewById(R.id.tv_errorInfo);
+
+           // errorImage.setImageResource(R.drawable.icon_server_error);
+            errorMsg.setText("SERVER ERROR");
+            errorInfo.setText("Oops! Something went wrong...");
+            findViewById(R.id.btn_retry).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    onRetryClicked(v);
+                }
+            });
+        }
     }
 
     protected void hideVisibility(int... viewIds) {
@@ -478,5 +519,14 @@ public class BaseActivity extends AppCompatActivity implements
         EditText et = (EditText) findViewById(editTextId);
         et.setText(text);
     }
+    protected void setadapter_actv(List<String> str, int id) {
+        AutoCompleteTextView autoCompleteTextView = (AutoCompleteTextView) findViewById(id);
+        if (CollectionUtils.isNotEmpty(str)) {
+            ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_dropdown_item_1line, str);
+            autoCompleteTextView.setAdapter(adapter);
+            autoCompleteTextView.setThreshold(1);
+        }
+    }
+
 
 }

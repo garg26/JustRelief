@@ -48,6 +48,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -63,6 +66,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 import java.util.Random;
 import java.util.TimeZone;
 import java.util.regex.Pattern;
@@ -194,6 +198,12 @@ public class Util {
     public static String convertDateToString(Date date, String dateFormat) {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(dateFormat);
         return simpleDateFormat.format(date);
+    }
+
+    public static int convertPixelsToDp(int px, Context context){
+        Resources resources = context.getResources();
+        DisplayMetrics metrics = resources.getDisplayMetrics();
+        return (px/(metrics.densityDpi / DisplayMetrics.DENSITY_DEFAULT));
     }
 
     public static Bitmap getResizeBitmap(Bitmap bitmap, int maxSize) {
@@ -823,11 +833,11 @@ public class Util {
         return defValue;
     }
 
-    public static String getCompleteUrl(String image) {
-        String url = AppConstants.PAGE_URL.PHOTO_URL + image;
-        url = url.replace(" ", "%20");
-        return url;
-    }
+//    public static String getCompleteUrl(String image) {
+//        String url = AppConstants.PAGE_URL.PHOTO_URL + image;
+//        url = url.replace(" ", "%20");
+//        return url;
+//    }
 
     public static String getStudentUrl(String pageUrl, int studentId) {
         return String.format(pageUrl, Preferences.getUserId(), studentId);
@@ -925,16 +935,16 @@ public class Util {
         textView.setHighlightColor(0);
     }
 
-    public static String getImageUrlBasedOnMimeType(String fileUrl, String mimeType) {
-        if (!TextUtils.isEmpty(mimeType)) {
-            if (mimeType.contains("image")) {
-                return Util.getCompleteUrl(fileUrl) + "&thumb=true";
-            } else {
-                return Util.getCompleteUrl(fileUrl) + "&thumb=true";
-            }
-        }
-        return Util.getCompleteUrl(fileUrl);
-    }
+//    public static String getImageUrlBasedOnMimeType(String fileUrl, String mimeType) {
+//        if (!TextUtils.isEmpty(mimeType)) {
+//            if (mimeType.contains("image")) {
+//                return Util.getCompleteUrl(fileUrl) + "&thumb=true";
+//            } else {
+//                return Util.getCompleteUrl(fileUrl) + "&thumb=true";
+//            }
+//        }
+//        return Util.getCompleteUrl(fileUrl);
+//    }
 
     public static void shareViaEmail(Activity activity, String email, String subject, String body) {
         Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:" + email));
@@ -1090,6 +1100,12 @@ public class Util {
         }
         return "" + value;
     }
-
+    public static <T> List<T> toList(String json, Class<T> clazz) {
+        if (null == json) {
+            return null;
+        }
+        Gson gson = new Gson();
+        return gson.fromJson(json, new TypeToken<T>(){}.getType());
+    }
 }
 
