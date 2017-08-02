@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/menu/edit_profile.xml",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/menu/edit_profile.xml"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/menu/create_new_clinic.xml",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/menu/create_new_clinic.xml"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/menu/submit_button.xml",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/menu/submit_button.xml"
+    }
+]

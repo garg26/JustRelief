@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/margin_8dp"
+    android:paddingRight="@dimen/margin_8dp"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:background="@drawable/chip_label_selected">
+
+    <simplifii.framework.widgets.CustomFontTextView
+        android:layout_width="match_parent"
+        android:id="@+id/tv_days"
+        android:textColor="@color/white"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+</LinearLayout>

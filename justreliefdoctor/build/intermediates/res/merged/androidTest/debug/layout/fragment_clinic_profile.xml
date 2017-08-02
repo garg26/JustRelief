@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/tv_paddingTop"
+        android:layout_marginLeft="@dimen/tv_paddingLeft"
+        android:layout_marginRight="@dimen/tv_paddingRight"
+        android:layout_height="match_parent">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_clinic_profile_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/profile" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_clinic_profile_pic"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_clinic_user_name"
+                    style="@style/tv_black_style_heading_without_background_style_bold"
+                    android:layout_width="match_parent"
+                    android:gravity="start"
+                    android:ellipsize="end"
+                    android:ems="10"
+                    android:text="Kartikeyta garg" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_total_doctor"
+                    style="@style/tv_black_style_heading_without_background"
+                    android:layout_width="wrap_content"
+                    android:text="Total Doctor :" />
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_get_visited_clinic"
+                    style="@style/tv_black_style_heading_without_background"
+                    android:layout_width="wrap_content"
+                    android:ellipsize="end"
+                    android:ems="6"
+                    android:text="0(0 Unverified Clinic)" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_created_date"
+                    style="@style/tv_black_style_heading_without_background"
+                    android:layout_width="wrap_content"
+                    android:text="Created Date :" />
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_get_created_date"
+                    style="@style/tv_black_style_heading_without_background"
+                    android:layout_width="wrap_content"
+                    android:ellipsize="end"
+                    android:ems="6"
+                    android:text="01-Jul-2017" />
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/im_popup_icon"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="-10dp"
+            style="?android:attr/actionOverflowButtonStyle"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="-8dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

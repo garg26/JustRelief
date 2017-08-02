@@ -1,0 +1,2737 @@
+[
+    {
+        "outputFile": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-fi/values-fi.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 105,
+                    "endLine": 7,
+                    "endColumn": 19,
+                    "endOffset": 330
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 250,
+                        "endLine": 9,
+                        "endColumn": 19,
+                        "endOffset": 475
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 335,
+                    "endLine": 14,
+                    "endColumn": 19,
+                    "endOffset": 631
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 480,
+                        "endLine": 16,
+                        "endColumn": 19,
+                        "endOffset": 776
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 636,
+                    "endLine": 21,
+                    "endColumn": 19,
+                    "endOffset": 932
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 781,
+                        "endLine": 23,
+                        "endColumn": 19,
+                        "endOffset": 1077
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 937,
+                    "endLine": 28,
+                    "endColumn": 19,
+                    "endOffset": 1228
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 1082,
+                        "endLine": 30,
+                        "endColumn": 19,
+                        "endOffset": 1373
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 1233,
+                    "endLine": 35,
+                    "endColumn": 19,
+                    "endOffset": 1529
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 31,
+                        "startColumn": 4,
+                        "startOffset": 1378,
+                        "endLine": 37,
+                        "endColumn": 19,
+                        "endOffset": 1674
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 1534,
+                    "endLine": 42,
+                    "endColumn": 19,
+                    "endOffset": 1822
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 38,
+                        "startColumn": 4,
+                        "startOffset": 1679,
+                        "endLine": 44,
+                        "endColumn": 19,
+                        "endOffset": 1967
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 43,
+                    "startColumn": 4,
+                    "startOffset": 1827,
+                    "endLine": 49,
+                    "endColumn": 19,
+                    "endOffset": 2114
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 45,
+                        "startColumn": 4,
+                        "startOffset": 1972,
+                        "endLine": 51,
+                        "endColumn": 19,
+                        "endOffset": 2259
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 50,
+                    "startColumn": 4,
+                    "startOffset": 2119,
+                    "endLine": 56,
+                    "endColumn": 19,
+                    "endOffset": 2421
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 52,
+                        "startColumn": 4,
+                        "startOffset": 2264,
+                        "endLine": 58,
+                        "endColumn": 19,
+                        "endOffset": 2566
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 57,
+                    "startColumn": 4,
+                    "startOffset": 2426,
+                    "endLine": 60,
+                    "endColumn": 14,
+                    "endOffset": 2594
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 61,
+                        "startColumn": 4,
+                        "startOffset": 2717,
+                        "endLine": 64,
+                        "endColumn": 14,
+                        "endOffset": 2885
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 61,
+                    "startColumn": 4,
+                    "startOffset": 2599,
+                    "endLine": 64,
+                    "endColumn": 14,
+                    "endOffset": 2771
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 65,
+                        "startColumn": 4,
+                        "startOffset": 2890,
+                        "endLine": 68,
+                        "endColumn": 14,
+                        "endOffset": 3062
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 65,
+                    "startColumn": 4,
+                    "startOffset": 2776,
+                    "endLine": 68,
+                    "endColumn": 14,
+                    "endOffset": 3008
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 69,
+                        "startColumn": 4,
+                        "startOffset": 3067,
+                        "endLine": 72,
+                        "endColumn": 14,
+                        "endOffset": 3299
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 69,
+                    "startColumn": 4,
+                    "startOffset": 3013,
+                    "endLine": 72,
+                    "endColumn": 14,
+                    "endOffset": 3234
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 73,
+                        "startColumn": 4,
+                        "startOffset": 3304,
+                        "endLine": 76,
+                        "endColumn": 14,
+                        "endOffset": 3525
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 73,
+                    "startColumn": 4,
+                    "startOffset": 3239,
+                    "endLine": 76,
+                    "endColumn": 14,
+                    "endOffset": 3468
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 77,
+                        "startColumn": 4,
+                        "startOffset": 3530,
+                        "endLine": 80,
+                        "endColumn": 14,
+                        "endOffset": 3759
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 77,
+                    "startColumn": 4,
+                    "startOffset": 3473,
+                    "endLine": 80,
+                    "endColumn": 14,
+                    "endOffset": 3695
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 81,
+                        "startColumn": 4,
+                        "startOffset": 3764,
+                        "endLine": 84,
+                        "endColumn": 14,
+                        "endOffset": 3986
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 81,
+                    "startColumn": 4,
+                    "startOffset": 3700,
+                    "endLine": 84,
+                    "endColumn": 14,
+                    "endOffset": 3922
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 85,
+                        "startColumn": 4,
+                        "startOffset": 3991,
+                        "endLine": 88,
+                        "endColumn": 14,
+                        "endOffset": 4213
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 85,
+                    "startColumn": 4,
+                    "startOffset": 3927,
+                    "endLine": 88,
+                    "endColumn": 14,
+                    "endOffset": 4187
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 89,
+                        "startColumn": 4,
+                        "startOffset": 4218,
+                        "endLine": 92,
+                        "endColumn": 14,
+                        "endOffset": 4478
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 89,
+                    "startColumn": 4,
+                    "startOffset": 4192,
+                    "endColumn": 107,
+                    "endOffset": 4295
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/078a818f46eb2ac0ac7926f9fcc35455818de613/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 107,
+                        "endOffset": 158
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 90,
+                    "startColumn": 4,
+                    "startOffset": 4300,
+                    "endColumn": 107,
+                    "endOffset": 4403
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/078a818f46eb2ac0ac7926f9fcc35455818de613/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 163,
+                        "endColumn": 107,
+                        "endOffset": 266
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 91,
+                    "startColumn": 4,
+                    "startOffset": 4408,
+                    "endColumn": 122,
+                    "endOffset": 4526
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/078a818f46eb2ac0ac7926f9fcc35455818de613/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 271,
+                        "endColumn": 122,
+                        "endOffset": 389
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 92,
+                    "startColumn": 4,
+                    "startOffset": 4531,
+                    "endColumn": 99,
+                    "endOffset": 4626
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/078a818f46eb2ac0ac7926f9fcc35455818de613/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 394,
+                        "endColumn": 99,
+                        "endOffset": 489
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 93,
+                    "startColumn": 4,
+                    "startOffset": 4631,
+                    "endColumn": 100,
+                    "endOffset": 4727
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/078a818f46eb2ac0ac7926f9fcc35455818de613/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 494,
+                        "endColumn": 100,
+                        "endOffset": 590
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 94,
+                    "startColumn": 4,
+                    "startOffset": 4732,
+                    "endColumn": 85,
+                    "endOffset": 4813
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/078a818f46eb2ac0ac7926f9fcc35455818de613/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 595,
+                        "endColumn": 85,
+                        "endOffset": 676
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 95,
+                    "startColumn": 4,
+                    "startOffset": 4818,
+                    "endColumn": 104,
+                    "endOffset": 4918
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/078a818f46eb2ac0ac7926f9fcc35455818de613/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 681,
+                        "endColumn": 104,
+                        "endOffset": 781
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 96,
+                    "startColumn": 4,
+                    "startOffset": 4923,
+                    "endColumn": 117,
+                    "endOffset": 5036
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/078a818f46eb2ac0ac7926f9fcc35455818de613/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 786,
+                        "endColumn": 117,
+                        "endOffset": 899
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 97,
+                    "startColumn": 4,
+                    "startOffset": 5041,
+                    "endColumn": 86,
+                    "endOffset": 5123
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/078a818f46eb2ac0ac7926f9fcc35455818de613/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 904,
+                        "endColumn": 86,
+                        "endOffset": 986
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 98,
+                    "startColumn": 4,
+                    "startOffset": 5128,
+                    "endColumn": 81,
+                    "endOffset": 5205
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/078a818f46eb2ac0ac7926f9fcc35455818de613/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 991,
+                        "endColumn": 81,
+                        "endOffset": 1068
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 99,
+                    "startColumn": 4,
+                    "startOffset": 5210,
+                    "endColumn": 79,
+                    "endOffset": 5285
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/078a818f46eb2ac0ac7926f9fcc35455818de613/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1073,
+                        "endColumn": 79,
+                        "endOffset": 1148
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 100,
+                    "startColumn": 4,
+                    "startOffset": 5290,
+                    "endColumn": 106,
+                    "endOffset": 5392
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/078a818f46eb2ac0ac7926f9fcc35455818de613/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1153,
+                        "endColumn": 106,
+                        "endOffset": 1255
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 101,
+                    "startColumn": 4,
+                    "startOffset": 5397,
+                    "endColumn": 102,
+                    "endOffset": 5495
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/078a818f46eb2ac0ac7926f9fcc35455818de613/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1260,
+                        "endColumn": 102,
+                        "endOffset": 1358
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 102,
+                    "startColumn": 4,
+                    "startOffset": 5500,
+                    "endColumn": 96,
+                    "endOffset": 5592
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/078a818f46eb2ac0ac7926f9fcc35455818de613/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1363,
+                        "endColumn": 96,
+                        "endOffset": 1455
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 103,
+                    "startColumn": 4,
+                    "startOffset": 5597,
+                    "endColumn": 105,
+                    "endOffset": 5698
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/078a818f46eb2ac0ac7926f9fcc35455818de613/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1460,
+                        "endColumn": 105,
+                        "endOffset": 1561
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 104,
+                    "startColumn": 4,
+                    "startOffset": 5703,
+                    "endColumn": 98,
+                    "endOffset": 5797
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/078a818f46eb2ac0ac7926f9fcc35455818de613/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1566,
+                        "endColumn": 98,
+                        "endOffset": 1660
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 105,
+                    "startColumn": 4,
+                    "startOffset": 5802,
+                    "endColumn": 103,
+                    "endOffset": 5901
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/078a818f46eb2ac0ac7926f9fcc35455818de613/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1665,
+                        "endColumn": 103,
+                        "endOffset": 1764
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 106,
+                    "startColumn": 4,
+                    "startOffset": 5906,
+                    "endColumn": 118,
+                    "endOffset": 6020
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/078a818f46eb2ac0ac7926f9fcc35455818de613/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1769,
+                        "endColumn": 118,
+                        "endOffset": 1883
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 107,
+                    "startColumn": 4,
+                    "startOffset": 6025,
+                    "endColumn": 98,
+                    "endOffset": 6119
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/078a818f46eb2ac0ac7926f9fcc35455818de613/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1888,
+                        "endColumn": 98,
+                        "endOffset": 1982
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 108,
+                    "startColumn": 4,
+                    "startOffset": 6124,
+                    "endColumn": 72,
+                    "endOffset": 6192
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/19bf24478295fb718c4e6f66edac4ff23d33d03e/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 237,
+                        "endColumn": 68,
+                        "endOffset": 305
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 109,
+                    "startColumn": 4,
+                    "startOffset": 6197,
+                    "endColumn": 101,
+                    "endOffset": 6294
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 93,
+                        "startColumn": 4,
+                        "startOffset": 4483,
+                        "endColumn": 101,
+                        "endOffset": 4580
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 110,
+                    "startColumn": 4,
+                    "startOffset": 6299,
+                    "endColumn": 44,
+                    "endOffset": 6339
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 94,
+                        "startColumn": 4,
+                        "startOffset": 4585,
+                        "endColumn": 44,
+                        "endOffset": 4625
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 111,
+                    "startColumn": 4,
+                    "startOffset": 6344,
+                    "endColumn": 78,
+                    "endOffset": 6418
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/0aebfc37253b05f779e137895549e42304f7e5c4/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 298,
+                        "endColumn": 74,
+                        "endOffset": 372
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 112,
+                    "startColumn": 4,
+                    "startOffset": 6423,
+                    "endColumn": 112,
+                    "endOffset": 6531
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/0aebfc37253b05f779e137895549e42304f7e5c4/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 0,
+                        "startOffset": 373,
+                        "endColumn": 108,
+                        "endOffset": 481
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 113,
+                    "startColumn": 4,
+                    "startOffset": 6536,
+                    "endColumn": 91,
+                    "endOffset": 6623
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/0aebfc37253b05f779e137895549e42304f7e5c4/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 0,
+                        "startOffset": 482,
+                        "endColumn": 87,
+                        "endOffset": 569
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 114,
+                    "startColumn": 4,
+                    "startOffset": 6628,
+                    "endColumn": 128,
+                    "endOffset": 6752
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/0aebfc37253b05f779e137895549e42304f7e5c4/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 0,
+                        "startOffset": 570,
+                        "endColumn": 124,
+                        "endOffset": 694
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 115,
+                    "startColumn": 4,
+                    "startOffset": 6757,
+                    "endColumn": 89,
+                    "endOffset": 6842
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/0aebfc37253b05f779e137895549e42304f7e5c4/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 0,
+                        "startOffset": 695,
+                        "endColumn": 85,
+                        "endOffset": 780
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 116,
+                    "startColumn": 4,
+                    "startOffset": 6847,
+                    "endColumn": 154,
+                    "endOffset": 6997
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/0aebfc37253b05f779e137895549e42304f7e5c4/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 0,
+                        "startOffset": 781,
+                        "endColumn": 150,
+                        "endOffset": 931
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 117,
+                    "startColumn": 4,
+                    "startOffset": 7002,
+                    "endColumn": 115,
+                    "endOffset": 7113
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/0aebfc37253b05f779e137895549e42304f7e5c4/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 0,
+                        "startOffset": 932,
+                        "endColumn": 111,
+                        "endOffset": 1043
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 118,
+                    "startColumn": 4,
+                    "startOffset": 7118,
+                    "endColumn": 117,
+                    "endOffset": 7231
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/0aebfc37253b05f779e137895549e42304f7e5c4/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 0,
+                        "startOffset": 1044,
+                        "endColumn": 113,
+                        "endOffset": 1157
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 119,
+                    "startColumn": 4,
+                    "startOffset": 7236,
+                    "endColumn": 116,
+                    "endOffset": 7348
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/0aebfc37253b05f779e137895549e42304f7e5c4/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 0,
+                        "startOffset": 1158,
+                        "endColumn": 112,
+                        "endOffset": 1270
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 120,
+                    "startColumn": 4,
+                    "startOffset": 7353,
+                    "endColumn": 100,
+                    "endOffset": 7449
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/0aebfc37253b05f779e137895549e42304f7e5c4/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 0,
+                        "startOffset": 1271,
+                        "endColumn": 96,
+                        "endOffset": 1367
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 121,
+                    "startColumn": 4,
+                    "startOffset": 7454,
+                    "endColumn": 102,
+                    "endOffset": 7552
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/0aebfc37253b05f779e137895549e42304f7e5c4/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 0,
+                        "startOffset": 1368,
+                        "endColumn": 98,
+                        "endOffset": 1466
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 122,
+                    "startColumn": 4,
+                    "startOffset": 7557,
+                    "endColumn": 86,
+                    "endOffset": 7639
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/0aebfc37253b05f779e137895549e42304f7e5c4/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 0,
+                        "startOffset": 1467,
+                        "endColumn": 82,
+                        "endOffset": 1549
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 123,
+                    "startColumn": 4,
+                    "startOffset": 7644,
+                    "endColumn": 101,
+                    "endOffset": 7741
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/0aebfc37253b05f779e137895549e42304f7e5c4/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 0,
+                        "startOffset": 1550,
+                        "endColumn": 97,
+                        "endOffset": 1647
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 124,
+                    "startColumn": 4,
+                    "startOffset": 7746,
+                    "endColumn": 101,
+                    "endOffset": 7843
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/0aebfc37253b05f779e137895549e42304f7e5c4/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 0,
+                        "startOffset": 1648,
+                        "endColumn": 97,
+                        "endOffset": 1745
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 125,
+                    "startColumn": 4,
+                    "startOffset": 7848,
+                    "endColumn": 107,
+                    "endOffset": 7951
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/0aebfc37253b05f779e137895549e42304f7e5c4/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 0,
+                        "startOffset": 1746,
+                        "endColumn": 103,
+                        "endOffset": 1849
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 126,
+                    "startColumn": 4,
+                    "startOffset": 7956,
+                    "endColumn": 75,
+                    "endOffset": 8027
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/0aebfc37253b05f779e137895549e42304f7e5c4/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 0,
+                        "startOffset": 1850,
+                        "endColumn": 71,
+                        "endOffset": 1921
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 127,
+                    "startColumn": 4,
+                    "startOffset": 8032,
+                    "endColumn": 143,
+                    "endOffset": 8171
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/699aba88dd624a9ce07608111853e3082205b3d5/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 288,
+                        "endColumn": 143,
+                        "endOffset": 431
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 128,
+                    "startColumn": 4,
+                    "startOffset": 8176,
+                    "endColumn": 145,
+                    "endOffset": 8317
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/699aba88dd624a9ce07608111853e3082205b3d5/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 0,
+                        "startOffset": 432,
+                        "endColumn": 145,
+                        "endOffset": 577
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 129,
+                    "startColumn": 4,
+                    "startOffset": 8322,
+                    "endColumn": 102,
+                    "endOffset": 8420
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/699aba88dd624a9ce07608111853e3082205b3d5/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 0,
+                        "startOffset": 578,
+                        "endColumn": 98,
+                        "endOffset": 676
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 130,
+                    "startColumn": 4,
+                    "startOffset": 8425,
+                    "endColumn": 77,
+                    "endOffset": 8498
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/0aebfc37253b05f779e137895549e42304f7e5c4/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 0,
+                        "startOffset": 1922,
+                        "endColumn": 73,
+                        "endOffset": 1995
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 131,
+                    "startColumn": 4,
+                    "startOffset": 8503,
+                    "endColumn": 74,
+                    "endOffset": 8573
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/0aebfc37253b05f779e137895549e42304f7e5c4/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 0,
+                        "startOffset": 1996,
+                        "endColumn": 70,
+                        "endOffset": 2066
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 132,
+                    "startColumn": 4,
+                    "startOffset": 8578,
+                    "endColumn": 86,
+                    "endOffset": 8660
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/0aebfc37253b05f779e137895549e42304f7e5c4/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 0,
+                        "startOffset": 2067,
+                        "endColumn": 82,
+                        "endOffset": 2149
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 133,
+                    "startColumn": 4,
+                    "startOffset": 8665,
+                    "endColumn": 101,
+                    "endOffset": 8762
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/0aebfc37253b05f779e137895549e42304f7e5c4/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 0,
+                        "startOffset": 2150,
+                        "endColumn": 97,
+                        "endOffset": 2247
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 134,
+                    "startColumn": 4,
+                    "startOffset": 8767,
+                    "endColumn": 101,
+                    "endOffset": 8864
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/0aebfc37253b05f779e137895549e42304f7e5c4/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 0,
+                        "startOffset": 2248,
+                        "endColumn": 97,
+                        "endOffset": 2345
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 135,
+                    "startColumn": 4,
+                    "startOffset": 8869,
+                    "endColumn": 91,
+                    "endOffset": 8956
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/0aebfc37253b05f779e137895549e42304f7e5c4/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 0,
+                        "startOffset": 2346,
+                        "endColumn": 87,
+                        "endOffset": 2433
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 136,
+                    "startColumn": 4,
+                    "startOffset": 8961,
+                    "endColumn": 101,
+                    "endOffset": 9058
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/0aebfc37253b05f779e137895549e42304f7e5c4/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 0,
+                        "startOffset": 2434,
+                        "endColumn": 97,
+                        "endOffset": 2531
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 137,
+                    "startColumn": 4,
+                    "startOffset": 9063,
+                    "endColumn": 101,
+                    "endOffset": 9160
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/0aebfc37253b05f779e137895549e42304f7e5c4/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 0,
+                        "startOffset": 2532,
+                        "endColumn": 97,
+                        "endOffset": 2629
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 138,
+                    "startColumn": 4,
+                    "startOffset": 9165,
+                    "endColumn": 75,
+                    "endOffset": 9236
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/0aebfc37253b05f779e137895549e42304f7e5c4/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 0,
+                        "startOffset": 2630,
+                        "endColumn": 71,
+                        "endOffset": 2701
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 139,
+                    "startColumn": 4,
+                    "startOffset": 9241,
+                    "endColumn": 94,
+                    "endOffset": 9331
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/0aebfc37253b05f779e137895549e42304f7e5c4/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 0,
+                        "startOffset": 2702,
+                        "endColumn": 90,
+                        "endOffset": 2792
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 140,
+                    "startColumn": 4,
+                    "startOffset": 9336,
+                    "endColumn": 95,
+                    "endOffset": 9427
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/0aebfc37253b05f779e137895549e42304f7e5c4/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 0,
+                        "startOffset": 2793,
+                        "endColumn": 91,
+                        "endOffset": 2884
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 141,
+                    "startColumn": 4,
+                    "startOffset": 9432,
+                    "endColumn": 99,
+                    "endOffset": 9527
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/0aebfc37253b05f779e137895549e42304f7e5c4/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 31,
+                        "startColumn": 0,
+                        "startOffset": 2885,
+                        "endColumn": 95,
+                        "endOffset": 2980
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 142,
+                    "startColumn": 4,
+                    "startOffset": 9532,
+                    "endColumn": 113,
+                    "endOffset": 9641
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/0aebfc37253b05f779e137895549e42304f7e5c4/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 0,
+                        "startOffset": 2981,
+                        "endColumn": 109,
+                        "endOffset": 3090
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 143,
+                    "startColumn": 4,
+                    "startOffset": 9646,
+                    "endColumn": 143,
+                    "endOffset": 9785
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/0aebfc37253b05f779e137895549e42304f7e5c4/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 33,
+                        "startColumn": 0,
+                        "startOffset": 3091,
+                        "endColumn": 143,
+                        "endOffset": 3234
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 144,
+                    "startColumn": 4,
+                    "startOffset": 9790,
+                    "endColumn": 129,
+                    "endOffset": 9915
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/0aebfc37253b05f779e137895549e42304f7e5c4/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 0,
+                        "startOffset": 3235,
+                        "endColumn": 125,
+                        "endOffset": 3360
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 145,
+                    "startColumn": 4,
+                    "startOffset": 9920,
+                    "endColumn": 130,
+                    "endOffset": 10046
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/0aebfc37253b05f779e137895549e42304f7e5c4/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 35,
+                        "startColumn": 0,
+                        "startOffset": 3361,
+                        "endColumn": 126,
+                        "endOffset": 3487
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 146,
+                    "startColumn": 4,
+                    "startOffset": 10051,
+                    "endColumn": 100,
+                    "endOffset": 10147
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/0aebfc37253b05f779e137895549e42304f7e5c4/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 36,
+                        "startColumn": 0,
+                        "startOffset": 3488,
+                        "endColumn": 96,
+                        "endOffset": 3584
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 147,
+                    "startColumn": 4,
+                    "startOffset": 10152,
+                    "endColumn": 90,
+                    "endOffset": 10238
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/0aebfc37253b05f779e137895549e42304f7e5c4/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 37,
+                        "startColumn": 0,
+                        "startOffset": 3585,
+                        "endColumn": 86,
+                        "endOffset": 3671
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 148,
+                    "startColumn": 4,
+                    "startOffset": 10243,
+                    "endColumn": 107,
+                    "endOffset": 10346
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/0aebfc37253b05f779e137895549e42304f7e5c4/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 38,
+                        "startColumn": 0,
+                        "startOffset": 3672,
+                        "endColumn": 103,
+                        "endOffset": 3775
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 149,
+                    "startColumn": 4,
+                    "startOffset": 10351,
+                    "endColumn": 85,
+                    "endOffset": 10432
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/0aebfc37253b05f779e137895549e42304f7e5c4/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 39,
+                        "startColumn": 0,
+                        "startOffset": 3776,
+                        "endColumn": 81,
+                        "endOffset": 3857
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 150,
+                    "startColumn": 4,
+                    "startOffset": 10437,
+                    "endColumn": 112,
+                    "endOffset": 10545
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/dfdde79251f3f5f140fbbfeb2eaba2571f738eba/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 283,
+                        "endColumn": 108,
+                        "endOffset": 391
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 151,
+                    "startColumn": 4,
+                    "startOffset": 10550,
+                    "endColumn": 184,
+                    "endOffset": 10730
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/dfdde79251f3f5f140fbbfeb2eaba2571f738eba/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 0,
+                        "startOffset": 392,
+                        "endColumn": 184,
+                        "endOffset": 576
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 152,
+                    "startColumn": 4,
+                    "startOffset": 10735,
+                    "endColumn": 132,
+                    "endOffset": 10863
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/dfdde79251f3f5f140fbbfeb2eaba2571f738eba/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 0,
+                        "startOffset": 577,
+                        "endColumn": 128,
+                        "endOffset": 705
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 153,
+                    "startColumn": 4,
+                    "startOffset": 10868,
+                    "endColumn": 107,
+                    "endOffset": 10971
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/dfdde79251f3f5f140fbbfeb2eaba2571f738eba/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 0,
+                        "startOffset": 706,
+                        "endColumn": 103,
+                        "endOffset": 809
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 154,
+                    "startColumn": 4,
+                    "startOffset": 10976,
+                    "endColumn": 201,
+                    "endOffset": 11173
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/dfdde79251f3f5f140fbbfeb2eaba2571f738eba/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 0,
+                        "startOffset": 810,
+                        "endColumn": 201,
+                        "endOffset": 1011
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 155,
+                    "startColumn": 4,
+                    "startOffset": 11178,
+                    "endColumn": 127,
+                    "endOffset": 11301
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/dfdde79251f3f5f140fbbfeb2eaba2571f738eba/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 0,
+                        "startOffset": 1012,
+                        "endColumn": 123,
+                        "endOffset": 1135
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 156,
+                    "startColumn": 4,
+                    "startOffset": 11306,
+                    "endColumn": 135,
+                    "endOffset": 11437
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/dfdde79251f3f5f140fbbfeb2eaba2571f738eba/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 0,
+                        "startOffset": 1136,
+                        "endColumn": 131,
+                        "endOffset": 1267
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 157,
+                    "startColumn": 4,
+                    "startOffset": 11442,
+                    "endColumn": 208,
+                    "endOffset": 11646
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/3b23be3667ca27ef14639da80a806caec4ddcd8f/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 285,
+                        "endColumn": 208,
+                        "endOffset": 493
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 158,
+                    "startColumn": 4,
+                    "startOffset": 11651,
+                    "endColumn": 199,
+                    "endOffset": 11846
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/dfdde79251f3f5f140fbbfeb2eaba2571f738eba/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 0,
+                        "startOffset": 1268,
+                        "endColumn": 199,
+                        "endOffset": 1467
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 159,
+                    "startColumn": 4,
+                    "startOffset": 11851,
+                    "endColumn": 107,
+                    "endOffset": 11954
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/dfdde79251f3f5f140fbbfeb2eaba2571f738eba/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 0,
+                        "startOffset": 1468,
+                        "endColumn": 103,
+                        "endOffset": 1571
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 160,
+                    "startColumn": 4,
+                    "startOffset": 11959,
+                    "endColumn": 179,
+                    "endOffset": 12134
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/dfdde79251f3f5f140fbbfeb2eaba2571f738eba/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 0,
+                        "startOffset": 1572,
+                        "endColumn": 179,
+                        "endOffset": 1751
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 161,
+                    "startColumn": 4,
+                    "startOffset": 12139,
+                    "endColumn": 127,
+                    "endOffset": 12262
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/dfdde79251f3f5f140fbbfeb2eaba2571f738eba/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 0,
+                        "startOffset": 1752,
+                        "endColumn": 123,
+                        "endOffset": 1875
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 162,
+                    "startColumn": 4,
+                    "startOffset": 12267,
+                    "endColumn": 206,
+                    "endOffset": 12469
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/dfdde79251f3f5f140fbbfeb2eaba2571f738eba/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 0,
+                        "startOffset": 1876,
+                        "endColumn": 206,
+                        "endOffset": 2082
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 163,
+                    "startColumn": 4,
+                    "startOffset": 12474,
+                    "endColumn": 168,
+                    "endOffset": 12638
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/dfdde79251f3f5f140fbbfeb2eaba2571f738eba/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 0,
+                        "startOffset": 2083,
+                        "endColumn": 164,
+                        "endOffset": 2247
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 164,
+                    "startColumn": 4,
+                    "startOffset": 12643,
+                    "endColumn": 95,
+                    "endOffset": 12734
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/dfdde79251f3f5f140fbbfeb2eaba2571f738eba/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 0,
+                        "startOffset": 2248,
+                        "endColumn": 91,
+                        "endOffset": 2339
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 165,
+                    "startColumn": 4,
+                    "startOffset": 12739,
+                    "endColumn": 99,
+                    "endOffset": 12834
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/dfdde79251f3f5f140fbbfeb2eaba2571f738eba/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 0,
+                        "startOffset": 2340,
+                        "endColumn": 95,
+                        "endOffset": 2435
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 166,
+                    "startColumn": 4,
+                    "startOffset": 12839,
+                    "endColumn": 111,
+                    "endOffset": 12946
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/dfdde79251f3f5f140fbbfeb2eaba2571f738eba/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 0,
+                        "startOffset": 2436,
+                        "endColumn": 107,
+                        "endOffset": 2543
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 167,
+                    "startColumn": 4,
+                    "startOffset": 12951,
+                    "endColumn": 139,
+                    "endOffset": 13086
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/19bf24478295fb718c4e6f66edac4ff23d33d03e/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 0,
+                        "startOffset": 306,
+                        "endColumn": 135,
+                        "endOffset": 441
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 168,
+                    "startColumn": 4,
+                    "startOffset": 13091,
+                    "endColumn": 102,
+                    "endOffset": 13189
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/19bf24478295fb718c4e6f66edac4ff23d33d03e/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 0,
+                        "startOffset": 442,
+                        "endColumn": 98,
+                        "endOffset": 540
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 169,
+                    "startColumn": 4,
+                    "startOffset": 13194,
+                    "endColumn": 80,
+                    "endOffset": 13270
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 95,
+                        "startColumn": 4,
+                        "startOffset": 4630,
+                        "endColumn": 80,
+                        "endOffset": 4706
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 170,
+                    "startColumn": 4,
+                    "startOffset": 13275,
+                    "endColumn": 100,
+                    "endOffset": 13371
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/19bf24478295fb718c4e6f66edac4ff23d33d03e/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 0,
+                        "startOffset": 541,
+                        "endColumn": 96,
+                        "endOffset": 637
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 171,
+                    "startColumn": 4,
+                    "startOffset": 13376,
+                    "endColumn": 106,
+                    "endOffset": 13478
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/19bf24478295fb718c4e6f66edac4ff23d33d03e/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 0,
+                        "startOffset": 638,
+                        "endColumn": 102,
+                        "endOffset": 740
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 172,
+                    "startColumn": 4,
+                    "startOffset": 13483,
+                    "endColumn": 102,
+                    "endOffset": 13581
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/19bf24478295fb718c4e6f66edac4ff23d33d03e/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 0,
+                        "startOffset": 741,
+                        "endColumn": 98,
+                        "endOffset": 839
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 173,
+                    "startColumn": 4,
+                    "startOffset": 13586,
+                    "endColumn": 96,
+                    "endOffset": 13678
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/19bf24478295fb718c4e6f66edac4ff23d33d03e/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 0,
+                        "startOffset": 840,
+                        "endColumn": 92,
+                        "endOffset": 932
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 174,
+                    "startColumn": 4,
+                    "startOffset": 13683,
+                    "endColumn": 72,
+                    "endOffset": 13751
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/19bf24478295fb718c4e6f66edac4ff23d33d03e/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 0,
+                        "startOffset": 933,
+                        "endColumn": 68,
+                        "endOffset": 1001
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 175,
+                    "startColumn": 4,
+                    "startOffset": 13756,
+                    "endColumn": 82,
+                    "endOffset": 13834
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 96,
+                        "startColumn": 4,
+                        "startOffset": 4711,
+                        "endColumn": 82,
+                        "endOffset": 4789
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 176,
+                    "startColumn": 4,
+                    "startOffset": 13839,
+                    "endColumn": 74,
+                    "endOffset": 13909
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 97,
+                        "startColumn": 4,
+                        "startOffset": 4794,
+                        "endColumn": 74,
+                        "endOffset": 4864
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 177,
+                    "startColumn": 4,
+                    "startOffset": 13914,
+                    "endColumn": 66,
+                    "endOffset": 13976
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 98,
+                        "startColumn": 4,
+                        "startOffset": 4869,
+                        "endColumn": 66,
+                        "endOffset": 4931
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 178,
+                    "startColumn": 4,
+                    "startOffset": 13981,
+                    "endColumn": 87,
+                    "endOffset": 14064
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 99,
+                        "startColumn": 4,
+                        "startOffset": 4936,
+                        "endColumn": 87,
+                        "endOffset": 5019
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 179,
+                    "startColumn": 4,
+                    "startOffset": 14069,
+                    "endColumn": 51,
+                    "endOffset": 14116
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 100,
+                        "startColumn": 4,
+                        "startOffset": 5024,
+                        "endColumn": 51,
+                        "endOffset": 5071
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 180,
+                    "startColumn": 4,
+                    "startOffset": 14121,
+                    "endColumn": 100,
+                    "endOffset": 14217
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/e39fbbda30b2096806be58e7c2895436c602c7b2/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 100,
+                        "endOffset": 151
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 181,
+                    "startColumn": 4,
+                    "startOffset": 14222,
+                    "endColumn": 97,
+                    "endOffset": 14315
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/e39fbbda30b2096806be58e7c2895436c602c7b2/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 156,
+                        "endColumn": 97,
+                        "endOffset": 249
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 182,
+                    "startColumn": 4,
+                    "startOffset": 14320,
+                    "endColumn": 92,
+                    "endOffset": 14408
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/e39fbbda30b2096806be58e7c2895436c602c7b2/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 254,
+                        "endColumn": 92,
+                        "endOffset": 342
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 183,
+                    "startColumn": 4,
+                    "startOffset": 14413,
+                    "endColumn": 99,
+                    "endOffset": 14508
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/e39fbbda30b2096806be58e7c2895436c602c7b2/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 347,
+                        "endColumn": 99,
+                        "endOffset": 442
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 184,
+                    "startColumn": 4,
+                    "startOffset": 14513,
+                    "endColumn": 110,
+                    "endOffset": 14619
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/e39fbbda30b2096806be58e7c2895436c602c7b2/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 447,
+                        "endColumn": 110,
+                        "endOffset": 553
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 185,
+                    "startColumn": 4,
+                    "startOffset": 14624,
+                    "endColumn": 95,
+                    "endOffset": 14715
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/e39fbbda30b2096806be58e7c2895436c602c7b2/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 558,
+                        "endColumn": 95,
+                        "endOffset": 649
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 186,
+                    "startColumn": 4,
+                    "startOffset": 14720,
+                    "endColumn": 95,
+                    "endOffset": 14811
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/e39fbbda30b2096806be58e7c2895436c602c7b2/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 654,
+                        "endColumn": 95,
+                        "endOffset": 745
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 187,
+                    "startColumn": 4,
+                    "startOffset": 14816,
+                    "endColumn": 98,
+                    "endOffset": 14910
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/e39fbbda30b2096806be58e7c2895436c602c7b2/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 750,
+                        "endColumn": 98,
+                        "endOffset": 844
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 188,
+                    "startColumn": 4,
+                    "startOffset": 14915,
+                    "endColumn": 93,
+                    "endOffset": 15004
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/e39fbbda30b2096806be58e7c2895436c602c7b2/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 849,
+                        "endColumn": 93,
+                        "endOffset": 938
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 189,
+                    "startColumn": 4,
+                    "startOffset": 15009,
+                    "endColumn": 115,
+                    "endOffset": 15120
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/e39fbbda30b2096806be58e7c2895436c602c7b2/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 943,
+                        "endColumn": 115,
+                        "endOffset": 1054
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 190,
+                    "startColumn": 4,
+                    "startOffset": 15125,
+                    "endColumn": 109,
+                    "endOffset": 15230
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/e39fbbda30b2096806be58e7c2895436c602c7b2/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1059,
+                        "endColumn": 109,
+                        "endOffset": 1164
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 191,
+                    "startColumn": 4,
+                    "startOffset": 15235,
+                    "endColumn": 86,
+                    "endOffset": 15317
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/e39fbbda30b2096806be58e7c2895436c602c7b2/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1169,
+                        "endColumn": 86,
+                        "endOffset": 1251
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 192,
+                    "startColumn": 4,
+                    "startOffset": 15322,
+                    "endColumn": 82,
+                    "endOffset": 15400
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/e39fbbda30b2096806be58e7c2895436c602c7b2/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1256,
+                        "endColumn": 82,
+                        "endOffset": 1334
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 193,
+                    "startColumn": 4,
+                    "startOffset": 15405,
+                    "endColumn": 95,
+                    "endOffset": 15496
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/e39fbbda30b2096806be58e7c2895436c602c7b2/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1339,
+                        "endColumn": 95,
+                        "endOffset": 1430
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 194,
+                    "startColumn": 4,
+                    "startOffset": 15501,
+                    "endColumn": 90,
+                    "endOffset": 15587
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/e39fbbda30b2096806be58e7c2895436c602c7b2/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1435,
+                        "endColumn": 90,
+                        "endOffset": 1521
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 195,
+                    "startColumn": 4,
+                    "startOffset": 15592,
+                    "endColumn": 94,
+                    "endOffset": 15682
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/e39fbbda30b2096806be58e7c2895436c602c7b2/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1526,
+                        "endColumn": 94,
+                        "endOffset": 1616
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 196,
+                    "startColumn": 4,
+                    "startOffset": 15687,
+                    "endColumn": 35,
+                    "endOffset": 15718
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 101,
+                        "startColumn": 4,
+                        "startOffset": 5076,
+                        "endColumn": 35,
+                        "endOffset": 5107
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 197,
+                    "startColumn": 4,
+                    "startOffset": 15723,
+                    "endColumn": 104,
+                    "endOffset": 15823
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/7926ea2c27c3bf100750651a88aac2a7b84b3fea/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 233,
+                        "endColumn": 100,
+                        "endOffset": 333
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 198,
+                    "startColumn": 4,
+                    "startOffset": 15828,
+                    "endColumn": 93,
+                    "endOffset": 15917
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/7926ea2c27c3bf100750651a88aac2a7b84b3fea/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 0,
+                        "startOffset": 334,
+                        "endColumn": 89,
+                        "endOffset": 423
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 199,
+                    "startColumn": 4,
+                    "startOffset": 15922,
+                    "endColumn": 66,
+                    "endOffset": 15984
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 102,
+                        "startColumn": 4,
+                        "startOffset": 5112,
+                        "endColumn": 66,
+                        "endOffset": 5174
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 200,
+                    "startColumn": 4,
+                    "startOffset": 15989,
+                    "endColumn": 71,
+                    "endOffset": 16056
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 103,
+                        "startColumn": 4,
+                        "startOffset": 5179,
+                        "endColumn": 71,
+                        "endOffset": 5246
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 201,
+                    "startColumn": 4,
+                    "startOffset": 16061,
+                    "endColumn": 84,
+                    "endOffset": 16141
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 104,
+                        "startColumn": 4,
+                        "startOffset": 5251,
+                        "endColumn": 84,
+                        "endOffset": 5331
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 202,
+                    "startColumn": 4,
+                    "startOffset": 16146,
+                    "endColumn": 79,
+                    "endOffset": 16221
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 105,
+                        "startColumn": 4,
+                        "startOffset": 5336,
+                        "endColumn": 79,
+                        "endOffset": 5411
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 203,
+                    "startColumn": 4,
+                    "startOffset": 16226,
+                    "endColumn": 82,
+                    "endOffset": 16304
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 106,
+                        "startColumn": 4,
+                        "startOffset": 5416,
+                        "endColumn": 82,
+                        "endOffset": 5494
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 204,
+                    "startColumn": 4,
+                    "startOffset": 16309,
+                    "endColumn": 79,
+                    "endOffset": 16384
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/078a818f46eb2ac0ac7926f9fcc35455818de613/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1987,
+                        "endColumn": 79,
+                        "endOffset": 2062
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 205,
+                    "startColumn": 4,
+                    "startOffset": 16389,
+                    "endColumn": 66,
+                    "endOffset": 16451
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 107,
+                        "startColumn": 4,
+                        "startOffset": 5499,
+                        "endColumn": 66,
+                        "endOffset": 5561
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 206,
+                    "startColumn": 4,
+                    "startOffset": 16456,
+                    "endColumn": 57,
+                    "endOffset": 16509
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 108,
+                        "startColumn": 4,
+                        "startOffset": 5566,
+                        "endColumn": 57,
+                        "endOffset": 5619
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 207,
+                    "startColumn": 4,
+                    "startOffset": 16514,
+                    "endColumn": 61,
+                    "endOffset": 16571
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 109,
+                        "startColumn": 4,
+                        "startOffset": 5624,
+                        "endColumn": 61,
+                        "endOffset": 5681
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 208,
+                    "startColumn": 4,
+                    "startOffset": 16576,
+                    "endColumn": 55,
+                    "endOffset": 16627
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 110,
+                        "startColumn": 4,
+                        "startOffset": 5686,
+                        "endColumn": 55,
+                        "endOffset": 5737
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 209,
+                    "startColumn": 4,
+                    "startOffset": 16632,
+                    "endColumn": 100,
+                    "endOffset": 16728
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/078a818f46eb2ac0ac7926f9fcc35455818de613/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 2067,
+                        "endColumn": 100,
+                        "endOffset": 2163
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 210,
+                    "startColumn": 4,
+                    "startOffset": 16733,
+                    "endColumn": 138,
+                    "endOffset": 16867
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/19bf24478295fb718c4e6f66edac4ff23d33d03e/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 0,
+                        "startOffset": 1002,
+                        "endColumn": 134,
+                        "endOffset": 1136
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 211,
+                    "startColumn": 4,
+                    "startOffset": 16872,
+                    "endColumn": 91,
+                    "endOffset": 16959
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/19bf24478295fb718c4e6f66edac4ff23d33d03e/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 0,
+                        "startOffset": 1137,
+                        "endColumn": 87,
+                        "endOffset": 1224
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 212,
+                    "startColumn": 4,
+                    "startOffset": 16964,
+                    "endColumn": 108,
+                    "endOffset": 17068
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/9824f8a5756a281ca3131ca0b4e9030564a92656/output/res/values-fi/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 240,
+                        "endColumn": 104,
+                        "endOffset": 344
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 213,
+                    "startColumn": 4,
+                    "startOffset": 17073,
+                    "endColumn": 67,
+                    "endOffset": 17136
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 111,
+                        "startColumn": 4,
+                        "startOffset": 5742,
+                        "endColumn": 67,
+                        "endOffset": 5805
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 214,
+                    "startColumn": 4,
+                    "startOffset": 17141,
+                    "endColumn": 53,
+                    "endOffset": 17190
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-fi/values-fi.xml",
+                    "position": {
+                        "startLine": 112,
+                        "startColumn": 4,
+                        "startOffset": 5810,
+                        "endColumn": 53,
+                        "endOffset": 5859
+                    }
+                }
+            }
+        ]
+    }
+]

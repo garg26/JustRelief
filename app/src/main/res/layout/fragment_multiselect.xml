@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <simplifii.framework.widgets.CustomFontTextView
+        android:id="@+id/tv_select_title"
+        style="@style/tv_white_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_primary"
+        android:hint="Heading"
+        android:padding="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="14dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <simplifii.framework.widgets.CustomFontEditText
+            android:id="@+id/et_search"
+            style="@style/tv_black_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/search"
+            android:padding="16dp"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/iv_clear"
+            style="@style/iBtn_delete"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/ic_delete_degree" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/bg_gray"></View>
+
+
+    <ListView
+        android:id="@+id/lv_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadeScrollbars="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+
+    </ListView>
+</LinearLayout>

@@ -1,0 +1,45 @@
+[
+    {
+        "outputFile": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-ldrtl-v17/values-ldrtl-v17.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 66,
+                    "endOffset": 117
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-ldrtl/values-ldrtl.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 205,
+                        "endColumn": 66,
+                        "endOffset": 267
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 122,
+                    "endColumn": 68,
+                    "endOffset": 186
+                },
+                "from": {
+                    "file": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/values-ldrtl/values-ldrtl.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 272,
+                        "endColumn": 68,
+                        "endOffset": 336
+                    }
+                }
+            }
+        ]
+    }
+]

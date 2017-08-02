@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        style="@style/simple_sv"
+        android:layout_above="@+id/btn_save_and_next">
+
+        <RelativeLayout style="@style/rl_root">
+
+            <LinearLayout
+                android:id="@+id/ll_upload_council"
+                style="@style/ll_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/rectangle_textview_shape"
+                    android:paddingBottom="@dimen/tv_paddingBottom"
+                    android:paddingTop="@dimen/tv_paddingTop"
+                    android:weightSum="100">
+
+                    <simplifii.framework.widgets.CustomAutoResizeTextView
+                        android:id="@+id/tv_upload_council_number"
+                        style="@style/tv_autoResize_black_style_heading_style_bold"
+                        android:layout_weight="23"
+                        android:layout_marginLeft="@dimen/tv_paddingLeft"
+                        android:gravity="start"
+                        android:text="Council Name" />
+
+                    <simplifii.framework.widgets.CustomAutoResizeTextView
+                        android:id="@+id/tv_upload_council_name"
+                        style="@style/tv_autoResize_black_style_heading_style_bold"
+                        android:layout_weight="25"
+
+                        android:text="Number" />
+
+                    <simplifii.framework.widgets.CustomAutoResizeTextView
+                        android:id="@+id/tv_upload_council_year"
+                        style="@style/tv_autoResize_black_style_heading_style_bold"
+                        android:layout_weight="25"
+                        android:text="Council Year" />
+
+                    <simplifii.framework.widgets.CustomAutoResizeTextView
+                        android:id="@+id/tv_upload_delete"
+                        style="@style/tv_autoResize_black_style_heading_style_bold"
+                        android:layout_weight="26"
+                        android:layout_marginRight="@dimen/tv_paddingRight"
+                        android:text="@string/delete" />
+
+                </LinearLayout>
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_council_no_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_6dp"
+                    android:text="@string/no_record_found"
+                    android:visibility="gone" />
+
+                <include layout="@layout/layout_container" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_upload_document"
+                style="@style/ll_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_upload_council"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/rectangle_textview_shape"
+                    android:paddingTop="@dimen/tv_paddingTop"
+                    android:weightSum="6">
+
+                    <simplifii.framework.widgets.CustomAutoResizeTextView
+                        android:id="@+id/tv_upload_document_type"
+                        style="@style/tv_autoResize_black_style_heading"
+                        android:layout_weight="3"
+                        android:gravity="start"
+                        android:text="Document Type" />
+
+                    <simplifii.framework.widgets.CustomAutoResizeTextView
+                        android:id="@+id/tv_upload_document"
+                        style="@style/tv_autoResize_black_style_heading"
+                        android:layout_weight="3"
+                        android:text="Image" />
+
+                </LinearLayout>
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_document_no_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_6dp"
+                    android:text="@string/no_record_found"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/ll_document_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/tv_paddingTop"
+                    android:paddingRight="@dimen/image_container">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_registration"
+                style="@style/ll_style"
+                android:layout_below="@+id/ll_upload_document"
+                android:orientation="vertical"
+                android:paddingBottom="0dp">
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_registration"
+                    style="@style/tv_black_style_heading"
+                    android:text="@string/registration_details" />
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_council_registration_number"
+                    style="@style/tv_black_style_heading_without_background"
+                    android:text="@string/council_registration_number" />
+
+                <simplifii.framework.widgets.CustomFontTextInputEditText
+                    android:id="@+id/et_council_registration_number"
+                    style="@style/et_black_style_background"
+                    android:inputType="text" />
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_council_name"
+                    style="@style/tv_black_style_heading_without_background"
+                    android:text="@string/council_name" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/actv_council_name"
+                    style="@style/et_black_style_background"
+                    android:inputType="text" />
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_year"
+                    style="@style/tv_black_style_heading_without_background"
+                    android:text="@string/year" />
+
+                <Spinner
+                    android:id="@+id/spin_year"
+                    style="@style/spin_style">
+
+                </Spinner>
+
+
+            </LinearLayout>
+
+            <simplifii.framework.widgets.CustomFontButton
+                android:id="@+id/btn_registration_save"
+                style="@style/button_style_different_background"
+                android:layout_below="@+id/ll_registration"
+                android:layout_gravity="center"
+                android:text="Save" />
+
+            <LinearLayout
+                android:id="@+id/ll_document"
+                style="@style/ll_style"
+
+                android:layout_below="@+id/btn_registration_save"
+                android:orientation="vertical">
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_document"
+                    style="@style/tv_black_style_heading"
+                    android:text="@string/documents_certificates" />
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_document_type"
+                    style="@style/tv_black_style_heading_without_background"
+                    android:text="@string/document_type" />
+
+                <Spinner
+                    android:id="@+id/spin_document_type"
+                    style="@style/spin_style">
+
+                </Spinner>
+
+                <RelativeLayout
+                    android:id="@+id/rl_document_image"
+                    style="@style/et_black_style_background"
+                    android:layout_height="match_parent"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/iv_image"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/photocamera2" />
+
+                    <simplifii.framework.widgets.CustomFontTextView
+                        android:id="@+id/tv_document_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="12dp"
+                        android:layout_toRightOf="@id/iv_image"
+                        android:text="@string/choose_document" />
+
+                </RelativeLayout>
+
+                <simplifii.framework.widgets.CustomFontButton
+                    android:id="@+id/btn_upload"
+                    style="@style/button_style_different_background"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="0dp"
+                    android:text="Upload" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

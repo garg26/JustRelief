@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lay_profile_complete"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_divider_linetop"
+        android:layout_marginTop="52dp">
+
+        <include layout="@layout/section_profile_completeness_progress"></include>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/lay_profile_complete"
+        android:background="@color/line_gray" />
+
+    <View
+        android:id="@+id/view_blank"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_below="@+id/view_divider_line" />
+</LinearLayout>

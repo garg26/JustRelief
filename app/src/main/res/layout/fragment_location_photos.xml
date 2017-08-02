@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <simplifii.framework.widgets.CustomTextInputLayout
+        style="@style/text_input_layout_style1"
+        android:id="@+id/til_country">
+
+        <simplifii.framework.widgets.CustomFontEditText
+            style="@style/edit_text_style"
+            android:id="@+id/et_country"
+            android:hint="Country *"/>
+    </simplifii.framework.widgets.CustomTextInputLayout>
+
+    <simplifii.framework.widgets.CustomTextInputLayout
+        style="@style/text_input_layout_style1"
+        android:id="@+id/til_city"
+        android:layout_below="@+id/til_country">
+
+        <simplifii.framework.widgets.CustomFontEditText
+            style="@style/edit_text_style"
+            android:id="@+id/et_city"
+            android:hint="City *" />
+    </simplifii.framework.widgets.CustomTextInputLayout>
+    <simplifii.framework.widgets.CustomTextInputLayout
+        style="@style/text_input_layout_style1"
+        android:id="@+id/til_area"
+        android:layout_below="@+id/til_city">
+
+        <simplifii.framework.widgets.CustomFontEditText
+            style="@style/edit_text_style"
+            android:id="@+id/et_area"
+            android:hint="Area *"/>
+    </simplifii.framework.widgets.CustomTextInputLayout>
+
+    <simplifii.framework.widgets.CustomTextInputLayout
+        style="@style/text_input_layout_style1"
+        android:id="@+id/til_zip_code"
+        android:layout_below="@+id/til_area">
+
+        <simplifii.framework.widgets.CustomFontEditText
+            style="@style/edit_text_style"
+            android:id="@+id/et_zip_code"
+            android:hint="Zip Code"/>
+    </simplifii.framework.widgets.CustomTextInputLayout>
+
+    <simplifii.framework.widgets.CustomTextInputLayout
+        style="@style/text_input_layout_style1"
+        android:id="@+id/til_landmark"
+        android:layout_below="@+id/til_zip_code">
+
+        <simplifii.framework.widgets.CustomFontEditText
+            style="@style/edit_text_style"
+            android:id="@+id/et_landmark"
+            android:hint="Landmark"/>
+    </simplifii.framework.widgets.CustomTextInputLayout>
+
+    <simplifii.framework.widgets.CustomTextInputLayout
+        style="@style/text_input_layout_style1"
+        android:id="@+id/til_street_address"
+        android:layout_below="@+id/til_landmark">
+
+        <simplifii.framework.widgets.CustomFontEditText
+            style="@style/edit_text_style"
+            android:id="@+id/et_street_address"
+            android:hint="Street Address *"/>
+    </simplifii.framework.widgets.CustomTextInputLayout>
+
+    <simplifii.framework.widgets.CustomFontButton
+        style="@style/button_style"
+        android:layout_below="@+id/til_street_address"
+        android:text="Save"/>
+
+
+</RelativeLayout>

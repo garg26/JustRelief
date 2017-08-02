@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        style="@style/simple_sv"
+        android:layout_above="@+id/btn_save_and_next">
+
+        <RelativeLayout style="@style/rl_root">
+
+            <LinearLayout
+                android:id="@+id/ll_upload_education"
+                style="@style/ll_root"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/rectangle_textview_shape"
+                    android:paddingTop="@dimen/tv_paddingTop"
+                    android:weightSum="100">
+
+                    <simplifii.framework.widgets.CustomAutoResizeTextView
+                        android:id="@+id/tv_upload_qualification"
+                        style="@style/tv_autoResize_black_style_heading_style_bold"
+                        android:layout_weight="24"
+                        android:gravity="start"
+                        android:padding="0dp"
+                        android:layout_marginLeft="@dimen/tv_paddingLeft"
+                        android:text="@string/qualifications" />
+
+                    <simplifii.framework.widgets.CustomAutoResizeTextView
+                        android:id="@+id/tv_upload_college_name"
+                        style="@style/tv_autoResize_black_style_heading_style_bold"
+                        android:layout_weight="24"
+                        android:gravity="center"
+                        android:layout_marginLeft="4dp"
+                        android:padding="0dp"
+                        android:text="@string/college_name" />
+
+                    <simplifii.framework.widgets.CustomAutoResizeTextView
+                        android:id="@+id/tv_upload_passing_year"
+                        style="@style/tv_autoResize_black_style_heading_style_bold"
+                        android:layout_weight="24"
+                        android:padding="0dp"
+                        android:layout_marginLeft="4dp"
+                        android:text="@string/passing_year" />
+
+                    <simplifii.framework.widgets.CustomAutoResizeTextView
+                        android:id="@+id/tv_upload_delete"
+                        style="@style/tv_autoResize_black_style_heading_style_bold"
+                        android:layout_weight="28"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="@dimen/tv_paddingRight"
+                        android:text="@string/delete" />
+                </LinearLayout>
+
+
+                <include layout="@layout/layout_no_record_found"/>
+                <include layout="@layout/layout_container"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_education"
+                style="@style/ll_style"
+                android:paddingBottom="0dp"
+                android:layout_below="@+id/ll_upload_education"
+                android:orientation="vertical">
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_education"
+                    style="@style/tv_black_style_heading"
+                    android:text="@string/educations" />
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_qualification"
+                    style="@style/tv_black_style_heading_without_background"
+                    android:text="@string/qualification" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/actv_qualification"
+                    style="@style/et_black_style_background"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" />
+
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_college"
+
+                    style="@style/tv_black_style_heading_without_background"
+                    android:text="@string/college" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/actv_college"
+                    android:imeOptions="actionDone"
+
+                    style="@style/et_black_style_background"
+                    />
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_year"
+                    style="@style/tv_black_style_heading_without_background"
+                    android:text="@string/year" />
+
+                <Spinner
+                    android:id="@+id/spin_year"
+                    style="@style/spin_style">
+
+                </Spinner>
+
+
+            </LinearLayout>
+            <simplifii.framework.widgets.CustomFontButton
+                android:id="@+id/btn_save_education"
+                style="@style/button_style_different_background"
+                android:layout_below="@+id/ll_education"
+                android:text="Save" />
+
+            <LinearLayout
+                android:id="@+id/ll_specialization"
+                style="@style/ll_style"
+                android:layout_below="@+id/btn_save_education"
+                android:orientation="vertical">
+
+            <simplifii.framework.widgets.CustomFontTextView
+                android:id="@+id/tv_specialization"
+                style="@style/tv_black_style_heading"
+                android:text="Specialization" />
+
+            <simplifii.framework.widgets.CustomFontTextView
+                android:id="@+id/tv_add_specialization"
+                style="@style/tv_black_style_heading_without_background"
+                android:text="Specialization" />
+
+                <simplifii.framework.widgets.ContactsCompletionView
+                    android:id="@+id/spin_specialization"
+                    android:textSize="14dp"
+                    style="@style/ccv_style"
+                    android:hint="Choose Specialization" />
+            </LinearLayout>
+
+            <simplifii.framework.widgets.CustomFontButton
+                android:id="@+id/btn_save_specialization"
+                style="@style/button_style_different_background"
+                android:layout_below="@+id/ll_specialization"
+                android:text="Save" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

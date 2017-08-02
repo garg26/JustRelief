@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/tv_paddingTop"
+        android:weightSum="12">
+
+        <simplifii.framework.widgets.CustomFontTextView
+            android:id="@+id/tv_upload_fromDate"
+            android:textSize="11dp"
+            style="@style/tv_autoResize_black_style_heading_without_maxLine"
+            android:layout_weight="2"
+            android:gravity="start"
+
+            android:text="From Date" />
+
+        <simplifii.framework.widgets.CustomFontTextView
+            android:id="@+id/tv_upload_toDate"
+            android:textSize="11dp"
+            style="@style/tv_autoResize_black_style_heading_without_maxLine"
+
+            android:layout_weight="2"
+            android:text="To Date" />
+
+        <simplifii.framework.widgets.CustomFontTextView
+            android:id="@+id/tv_upload_role"
+            android:textSize="11dp"
+            style="@style/tv_autoResize_black_style_heading_without_maxLine"
+            android:layout_marginLeft="0dp"
+            android:layout_weight="2"
+            android:text="Role" />
+        <simplifii.framework.widgets.CustomFontTextView
+            android:id="@+id/tv_upload_council_city"
+            android:textSize="11dp"
+            android:gravity="start"
+            style="@style/tv_autoResize_black_style_heading_without_maxLine"
+
+            android:layout_weight="2"
+            android:text="City Name" />
+        <simplifii.framework.widgets.CustomFontTextView
+            android:id="@+id/tv_upload_council_clinic_name"
+            android:textSize="11dp"
+            style="@style/tv_autoResize_black_style_heading_without_maxLine"
+
+            android:layout_weight="2"
+            android:text="Clinic Name" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:id="@+id/rl_delete"
+            android:paddingRight="@dimen/tv_paddingRight"
+            android:layout_gravity="center"
+            android:gravity="top|center"
+            android:layout_height="match_parent">
+            <simplifii.framework.widgets.CustomFontTextView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:id="@+id/tv_delete"
+                android:background="@mipmap/delete"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+
+
+    <ScrollView
+        style="@style/simple_sv"
+        android:layout_above="@+id/bt_save">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+     <include layout="@layout/layout_profile_pic"/>
+
+
+    <simplifii.framework.widgets.CustomFontTextView
+        style="@style/tv_orange_headings"
+        android:text="Contact  details"
+        android:layout_marginTop="206dp"
+        android:id="@+id/tv_contact_details"
+         />
+
+    <simplifii.framework.widgets.CustomTextInputLayout
+        style="@style/text_input_layout_style1"
+        android:id="@+id/til_contact_number"
+        android:layout_below="@+id/tv_contact_details"
+        >
+    <simplifii.framework.widgets.CustomFontEditText
+       style="@style/edit_text_style"
+        android:id="@+id/et_contact_number"
+        android:hint="Contact Number *"/>
+    </simplifii.framework.widgets.CustomTextInputLayout>
+
+    <simplifii.framework.widgets.CustomTextInputLayout
+        style="@style/text_input_layout_style1"
+        android:id="@+id/til_email"
+        android:layout_below="@+id/til_contact_number"
+        >
+
+        <simplifii.framework.widgets.CustomFontEditText
+            style="@style/edit_text_style"
+            android:id="@+id/et_email"
+            android:hint="Email Address *"/>
+    </simplifii.framework.widgets.CustomTextInputLayout>
+
+
+    <simplifii.framework.widgets.CustomTextInputLayout
+        style="@style/text_input_layout_style1"
+        android:id="@+id/til_clinic_name"
+        android:layout_below="@+id/tv_clinic_details"
+        >
+        <simplifii.framework.widgets.CustomFontEditText
+            style="@style/edit_text_style"
+            android:id="@+id/et_clinic_name"
+            android:hint="Clinic Name *"/>
+    </simplifii.framework.widgets.CustomTextInputLayout>
+
+
+    <simplifii.framework.widgets.CustomFontTextView
+        style="@style/tv_orange_headings"
+        android:layout_below="@+id/til_email"
+        android:text="Clinic details"
+        android:id="@+id/tv_clinic_details"
+        android:layout_marginTop="10dp"
+
+        />
+    </RelativeLayout>
+    </ScrollView>
+
+    <simplifii.framework.widgets.CustomFontButton
+
+        style="@style/button_style"
+        android:text="Save and Next"
+        android:id="@+id/bt_save"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_10dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    style="@style/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <include layout="@layout/layout_logo" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/view_margins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        android:orientation="vertical">
+
+        <simplifii.framework.widgets.CustomFontTextView
+            android:id="@+id/tv_otp"
+            style="@style/text_view_style"
+            android:text="OTP Verification" />
+
+        <include layout="@layout/layout_pinview" />
+
+        <simplifii.framework.widgets.CustomFontButton
+            android:id="@+id/btn_next"
+            style="@style/button_style"
+            android:layout_width="match_parent"
+            android:layout_marginTop="62dp"
+            android:background="@mipmap/loginbtn"
+            android:text="Next" />
+
+    </LinearLayout>
+
+
+    <simplifii.framework.widgets.CustomFontTextView
+        android:id="@+id/tv_resend_otp"
+        style="@style/text_view_style"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="14dp"
+        android:text="Resend OTP ?"
+        android:textColor="@color/colorPrimaryDark" />
+
+
+</LinearLayout>

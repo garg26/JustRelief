@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/debug/layout-land/time_picker_layout.xml",
+        "source": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/layout-land/time_picker_layout.xml"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/debug/layout-land/date_picker_layout.xml",
+        "source": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/layout-land/date_picker_layout.xml"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/debug/layout-land/date_picker_header.xml",
+        "source": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/layout-land/date_picker_header.xml"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/debug/layout-land/sublime_picker_view_layout.xml",
+        "source": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/layout-land/sublime_picker_view_layout.xml"
+    }
+]

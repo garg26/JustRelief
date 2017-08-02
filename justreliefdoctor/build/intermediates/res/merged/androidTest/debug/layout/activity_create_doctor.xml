@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/layout_logo" />
+    </RelativeLayout>
+
+    <ScrollView
+        style="@style/simple_sv"
+        android:layout_above="@+id/btn_find_my_doctor"
+        android:layout_below="@+id/rv_logo">
+
+        <RelativeLayout
+            android:id="@+id/rl_doctor_detail"
+            style="@style/rl_root">
+
+            <LinearLayout
+                android:id="@+id/ll"
+                style="@style/ll_style"
+                android:layout_marginTop="@dimen/margin_12dp"
+                android:orientation="vertical">
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_contact_details"
+                    style="@style/tv_black_style_heading"
+                    android:text="@string/doctors_details" />
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_contact_number"
+                    style="@style/tv_black_style_heading_without_background"
+                    android:text="@string/doctor_name" />
+
+                <simplifii.framework.widgets.CustomFontTextInputEditText
+                    android:id="@+id/et_doctor_name"
+                    style="@style/et_black_style_background"
+                    android:inputType="text" />
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_specialization"
+                    style="@style/tv_black_style_heading_without_background"
+                    android:text="@string/specialization" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/actv_specialization"
+                    style="@style/et_black_style_background"
+                    android:inputType="text"
+                    android:imeOptions="actionNext"
+                    android:drawableRight="@mipmap/downarrow" />
+
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_city"
+                    style="@style/tv_black_style_heading_without_background"
+                    android:text="@string/city" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/actv_city"
+                    style="@style/et_black_style_background"
+                    android:imeOptions="actionNext"
+                    android:drawableRight="@mipmap/downarrow" />
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_registration_number"
+                    style="@style/tv_black_style_heading_without_background"
+                    android:text="@string/registration_number" />
+
+                <simplifii.framework.widgets.CustomFontTextInputEditText
+                    android:id="@+id/et_registration_number"
+                    style="@style/et_black_style_background"
+                    android:inputType="text" />
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_registration_council"
+                    style="@style/tv_black_style_heading_without_background"
+                    android:text="@string/registration_council" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/actv_registration_council"
+                    style="@style/et_black_style_background"
+                    android:imeOptions="actionDone"
+                    android:drawableRight="@mipmap/downarrow" />
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    android:id="@+id/tv_year"
+                    style="@style/tv_black_style_heading_without_background"
+                    android:text="@string/year" />
+
+                <Spinner
+                    android:id="@+id/spin_year"
+                    style="@style/spin_style" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <simplifii.framework.widgets.CustomFontButton
+        android:id="@+id/btn_find_my_doctor"
+        style="@style/button_style"
+        android:layout_marginBottom="12dp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/find_my_doctor"
+        android:layout_marginTop="24dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/ll_style"
+                android:orientation="vertical"
+                android:paddingBottom="2dp">
+
+                <simplifii.framework.widgets.CustomFontTextView
+                    style="@style/tv_black_style_heading"
+                    android:text="My Profile" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_profile_pic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="@dimen/tv_paddingBottom"
+                        android:layout_marginLeft="@dimen/tv_paddingLeft"
+                        android:layout_marginTop="@dimen/tv_paddingTop"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/profile" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_user_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/iv_profile_pic">
+
+                        <simplifii.framework.widgets.CustomFontTextView
+                            android:id="@+id/tv_user_name"
+                            style="@style/tv_black_style_heading_without_background_style_bold"
+                            android:layout_width="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Kartikeyta garg" />
+
+                        <ImageView
+                            android:id="@+id/iv_offline"
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/tv_user_name"
+                            android:src="@drawable/offline" />
+
+                        <ImageButton
+                            android:id="@+id/im_popup_icon"
+                            style="?android:attr/actionOverflowButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-10dp"
+                            android:layout_marginTop="-8dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_user_profile"
+                        android:layout_toRightOf="@+id/iv_profile_pic">
+
+                        <simplifii.framework.widgets.CustomFontTextView
+                            android:id="@+id/tv_practice"
+                            style="@style/tv_black_style_heading_without_background"
+                            android:layout_width="wrap_content"
+                            android:text="Practice in" />
+
+                        <simplifii.framework.widgets.CustomFontTextView
+                            android:id="@+id/tv_clinic_count"
+                            style="@style/tv_black_style_heading_without_background"
+                            android:layout_width="wrap_content"
+                            android:layout_toRightOf="@+id/tv_practice"
+                            android:text="0 Clinic"
+
+                            />
+
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_doctor_profile"
+                style="@style/ll_style"
+                android:layout_height="142dp"
+                android:orientation="vertical"
+                android:paddingBottom="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <simplifii.framework.widgets.CustomFontTextView
+                        android:id="@+id/tv_doctor_profile"
+                        style="@style/tv_black_style_heading"
+                        android:text="Doctor Profile" />
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/view_pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/view_pager_indicator_doctor"
+                        android:layout_below="@+id/tv_doctor_profile" />
+
+                    <RelativeLayout
+                        android:id="@+id/view_pager_indicator_doctor"
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#EEEEEE">
+
+
+                        <LinearLayout
+
+                            android:id="@+id/ll_doctor_indicator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_clinic_profile"
+                style="@style/ll_style"
+                android:layout_height="142dp"
+                android:orientation="vertical"
+                android:paddingBottom="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <simplifii.framework.widgets.CustomFontTextView
+                        android:id="@+id/tv_clinic_profile"
+                        style="@style/tv_black_style_heading"
+                        android:text="Clinic Profile" />
+
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/view_pager1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/view_pager_indicator"
+                        android:layout_below="@+id/tv_clinic_profile" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/view_pager_indicator"
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp"
+
+                        android:layout_alignParentBottom="true"
+                        android:background="#EEEEEE">
+
+
+                        <LinearLayout
+
+                            android:id="@+id/ll_indicator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context="com.justrelief.activity.SignUpActivity">
+
+    <ScrollView
+        style="@style/simple_sv"
+        android:layout_above="@+id/bt_signup">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_12dp"
+        android:gravity="center_vertical">
+        
+    <simplifii.framework.widgets.CustomFontRadio
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:id="@+id/radio_clinic"
+        android:text="Clinic"
+        android:checked="true"
+        android:layout_weight="1"/>
+
+    <simplifii.framework.widgets.CustomFontRadio
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/radio_doctor"
+        android:text="Doctor"
+        android:layout_weight="1"/>
+        
+    </RadioGroup>
+
+
+    <simplifii.framework.widgets.CustomTextInputLayout
+        style="@style/text_input_layout_style1"
+        android:id="@+id/til_first_name"
+        android:layout_marginTop="40dp">
+
+        <simplifii.framework.widgets.CustomFontEditText
+            style="@style/edit_text_style"
+            android:drawableRight="@drawable/usersilhouette"
+            android:inputType="text"
+            android:id="@+id/et_first_name"
+            android:hint="@string/first_name"/>
+
+    </simplifii.framework.widgets.CustomTextInputLayout>
+
+    <simplifii.framework.widgets.CustomTextInputLayout
+            style="@style/text_input_layout_style1"
+            android:id="@+id/til_last_name"
+            android:layout_below="@+id/til_first_name"
+            >
+
+            <simplifii.framework.widgets.CustomFontEditText
+                style="@style/edit_text_style"
+                android:drawableRight="@drawable/usersilhouette"
+                android:inputType="text"
+                android:id="@+id/et_last_name"
+                android:hint="@string/last_name"/>
+
+    </simplifii.framework.widgets.CustomTextInputLayout>
+
+
+        <simplifii.framework.widgets.CustomTextInputLayout
+        style="@style/text_input_layout_style1"
+        android:id="@+id/til_email"
+        android:layout_below="@+id/til_last_name"
+        >
+
+        <simplifii.framework.widgets.CustomFontEditText
+            style="@style/edit_text_style"
+            android:drawableRight="@drawable/closeenvelope"
+            android:inputType="textEmailAddress"
+            android:id="@+id/et_email"
+            android:hint="@string/email_address"/>
+
+    </simplifii.framework.widgets.CustomTextInputLayout>
+
+    <simplifii.framework.widgets.CustomTextInputLayout
+        style="@style/text_input_layout_style1"
+        android:id="@+id/til_number"
+        android:layout_below="@+id/til_email"
+
+        >
+
+        <simplifii.framework.widgets.CustomFontEditText
+            style="@style/edit_text_style"
+            android:drawableRight="@drawable/number"
+            android:inputType="number"
+            android:id="@+id/et_number"
+            android:hint="@string/mobile_number"/>
+
+    </simplifii.framework.widgets.CustomTextInputLayout>
+
+    <simplifii.framework.widgets.CustomTextInputLayout
+        style="@style/text_input_layout_style1"
+        android:id="@+id/til_password"
+        android:layout_below="@+id/til_number"
+
+        >
+
+        <simplifii.framework.widgets.CustomFontEditText
+            style="@style/edit_text_style"
+            android:drawableRight="@drawable/padlock"
+            android:inputType="textPassword"
+            android:id="@+id/et_password"
+            android:hint="@string/password"/>
+
+    </simplifii.framework.widgets.CustomTextInputLayout>
+
+    <simplifii.framework.widgets.CustomTextInputLayout
+        style="@style/text_input_layout_style1"
+        android:id="@+id/til_confirm_password"
+        android:layout_below="@+id/til_password"
+
+        >
+
+        <simplifii.framework.widgets.CustomFontEditText
+            style="@style/edit_text_style"
+            android:drawableRight="@drawable/padlock"
+            android:inputType="textPassword"
+            android:id="@+id/et_confirm_password"
+            android:hint="@string/confirm_password"/>
+
+    </simplifii.framework.widgets.CustomTextInputLayout>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_yes"
+        android:layout_below="@+id/til_confirm_password"
+        />
+
+    <simplifii.framework.widgets.CustomFontTextView
+        style="@style/text_view_style"
+        android:text="@string/yes_i_agree_to_terms_of_use"
+        android:id="@+id/textView1"
+        android:layout_alignBaseline="@+id/cb_yes"
+        android:layout_toRightOf="@+id/cb_yes"
+        android:gravity="start"
+       />
+
+
+       </RelativeLayout>
+    </ScrollView>
+
+
+    <simplifii.framework.widgets.CustomFontButton
+
+        style="@style/button_style"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        android:id="@+id/bt_signup"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_10dp"
+        />
+
+</RelativeLayout>

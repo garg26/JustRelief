@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:paddingTop="@dimen/tv_paddingTop"
+        android:weightSum="11">
+
+        <simplifii.framework.widgets.CustomAutoResizeTextView
+            android:id="@+id/tv_upload_award"
+            style="@style/tv_autoResize_black_style_heading_style_normal"
+            android:layout_weight="3"
+            android:layout_marginLeft="@dimen/tv_paddingLeft"
+            android:gravity="start"
+            android:text="@string/award_description" />
+
+        <simplifii.framework.widgets.CustomAutoResizeTextView
+            android:id="@+id/tv_upload_award_year"
+            style="@style/tv_autoResize_black_style_heading_style_normal"
+            android:layout_weight="4"
+            android:text="@string/award_year" />
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:gravity="center"
+             android:paddingRight="@dimen/tv_paddingRight"
+             android:layout_weight="4"
+             >
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@mipmap/delete"
+            android:id="@+id/iv_delete"
+            />
+         </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

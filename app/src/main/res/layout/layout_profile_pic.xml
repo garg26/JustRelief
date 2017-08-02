@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <simplifii.framework.widgets.CustomFontTextView
+
+        style="@style/tv_orange_headings"
+        android:id="@+id/lbl_clinic_photo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:text="@string/clinic_photo"
+        />
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/lbl_clinic_photo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/iv_clinic_photo"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/accountselected"
+            />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_delete_degree"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@mipmap/editpicure"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

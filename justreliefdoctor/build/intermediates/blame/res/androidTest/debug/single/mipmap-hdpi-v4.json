@@ -1,0 +1,186 @@
+[
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/arrowright.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/arrowright.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/delete.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/delete.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/ic_remove_segment_view.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/ic_remove_segment_view.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/editpicure.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/editpicure.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/passwordicon.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/passwordicon.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/plus_3.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/plus_3.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/logo.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/logo.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/pin2.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/pin2.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/inputborder.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/inputborder.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/pin5.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/pin5.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/divider2x.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/divider2x.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/rubbishbin1.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/rubbishbin1.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/rightarrowgrey.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/rightarrowgrey.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/placeholder.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/placeholder.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/locatebtn.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/locatebtn.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/edit2x.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/edit2x.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/downarrow.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/downarrow.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/pin4.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/pin4.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/pin1.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/pin1.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/back.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/back.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/placeholder3.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/placeholder3.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/setting2x.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/setting2x.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/loginbtn.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/loginbtn.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/greencheck.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/greencheck.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/logout2x.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/logout2x.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/loginbg.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/loginbg.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/pin3.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/pin3.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/placeholder2.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/placeholder2.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/ic_delete_degree.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/ic_delete_degree.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/negativebutton.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/negativebutton.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/pin.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/pin.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/phoneicon.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/phoneicon.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/registerbtn.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/registerbtn.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/photocamera2.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/photocamera2.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/placeholder1.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/placeholder1.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/usericon.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/usericon.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/placeholder4.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/placeholder4.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/bacon2x.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/bacon2x.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/splashfull.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/splashfull.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/savenext.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/savenext.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/divider.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/divider.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/ic_launcher.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/bundles/debug/res/mipmap-hdpi-v4/ic_launcher.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/arrowleft.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/arrowleft.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/rubbishbin.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/rubbishbin.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/profile.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/profile.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/androidTest/debug/mipmap-hdpi-v4/emailicon.png",
+        "source": "/home/kartikeya/Documents/Android/justreliefclinics/framework/build/intermediates/bundles/default/res/mipmap-hdpi-v4/emailicon.png"
+    }
+]

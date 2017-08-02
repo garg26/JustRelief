@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <simplifii.framework.widgets.CustomFontTextView
+        style="@style/text_view_style"
+        android:text="Session 1"
+        android:gravity="start"
+        android:textSize="20sp"
+        android:id="@+id/tv_session1"
+        android:textColor="@color/black"
+      />
+    <simplifii.framework.widgets.CustomFontTextView
+        style="@style/text_view_style1"
+        android:text="Start Time"
+        android:layout_below="@+id/tv_session1"
+        android:id="@+id/tv_start_time1"
+        />
+    <Spinner
+        style="@style/simple_spinner_style"
+        android:layout_below="@+id/tv_session1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true">
+    </Spinner>
+    <Spinner
+        style="@style/simple_spinner_style"
+        android:layout_below="@+id/tv_start_time1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true">
+    </Spinner>
+
+    <simplifii.framework.widgets.CustomFontTextView
+        style="@style/text_view_style1"
+
+        android:text="End Time"
+        android:layout_below="@+id/tv_start_time1"
+        android:id="@+id/tv_end_time1"
+        />
+
+    <simplifii.framework.widgets.CustomFontTextView
+        style="@style/text_view_style1"
+        android:text="Session 1"
+        android:id="@+id/tv_session2"
+        android:textColor="@color/black"
+        android:layout_below="@+id/tv_end_time1"
+        />
+    <simplifii.framework.widgets.CustomFontTextView
+        style="@style/text_view_style1"
+        android:text="Start Time"
+        android:layout_below="@+id/tv_session2"
+        android:id="@+id/tv_start_time2"
+        />
+    <Spinner
+        style="@style/simple_spinner_style"
+        android:layout_below="@+id/tv_session2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true">
+    </Spinner>
+    <simplifii.framework.widgets.CustomFontTextView
+        style="@style/text_view_style1"
+        android:text="End Time"
+        android:layout_below="@+id/tv_start_time2"
+        android:id="@+id/tv_end_time2"
+        />
+    <Spinner
+        style="@style/simple_spinner_style"
+        android:layout_below="@+id/tv_start_time2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true">
+    </Spinner>
+
+    <simplifii.framework.widgets.CustomFontButton
+        style="@style/button_style"
+        android:layout_below="@+id/tv_end_time2"
+        android:text="Save and Next">
+    </simplifii.framework.widgets.CustomFontButton>
+
+</RelativeLayout>

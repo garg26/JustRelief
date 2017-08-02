@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/release/drawable-tvdpi-v4/sp_chevron_start.png",
+        "source": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/drawable-tvdpi/sp_chevron_start.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/release/drawable-tvdpi-v4/ic_plusone_small_off_client.png",
+        "source": "/home/kartikeya/.android/build-cache/c87d9f91a6762721c033be6228b3a972b11ec7ce/output/res/drawable-tvdpi-v4/ic_plusone_small_off_client.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/release/drawable-tvdpi-v4/ic_plusone_medium_off_client.png",
+        "source": "/home/kartikeya/.android/build-cache/c87d9f91a6762721c033be6228b3a972b11ec7ce/output/res/drawable-tvdpi-v4/ic_plusone_medium_off_client.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/release/drawable-tvdpi-v4/ic_plusone_standard_off_client.png",
+        "source": "/home/kartikeya/.android/build-cache/c87d9f91a6762721c033be6228b3a972b11ec7ce/output/res/drawable-tvdpi-v4/ic_plusone_standard_off_client.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/release/drawable-tvdpi-v4/ic_plusone_tall_off_client.png",
+        "source": "/home/kartikeya/.android/build-cache/c87d9f91a6762721c033be6228b3a972b11ec7ce/output/res/drawable-tvdpi-v4/ic_plusone_tall_off_client.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/release/drawable-tvdpi-v4/checkmark_medium_ff.png",
+        "source": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/drawable-tvdpi/checkmark_medium_ff.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/release/drawable-tvdpi-v4/cancel_medium_ff.png",
+        "source": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/drawable-tvdpi/cancel_medium_ff.png"
+    },
+    {
+        "merged": "/home/kartikeya/Documents/Android/justreliefclinics/justreliefdoctor/build/intermediates/res/merged/release/drawable-tvdpi-v4/sp_chevron_end.png",
+        "source": "/home/kartikeya/.android/build-cache/1e15bcc31b02a5ad4d04bb32a08a7a32f71e455e/output/res/drawable-tvdpi/sp_chevron_end.png"
+    }
+]

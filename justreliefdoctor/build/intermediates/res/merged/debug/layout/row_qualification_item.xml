@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/tv_paddingTop"
+        android:paddingBottom="@dimen/tv_paddingBottom"
+        android:weightSum="100">
+
+        <simplifii.framework.widgets.CustomAutoResizeTextView
+            android:id="@+id/tv_upload_qualification"
+            style="@style/tv_autoResize_black_style_heading_style_normal"
+            android:gravity="start"
+            android:layout_marginLeft="@dimen/tv_paddingLeft"
+            android:padding="0dp"
+            android:layout_weight="24"
+            android:text="@string/qualifications" />
+
+        <simplifii.framework.widgets.CustomAutoResizeTextView
+            android:id="@+id/tv_upload_college_name"
+            style="@style/tv_autoResize_black_style_heading_style_normal"
+            android:layout_weight="24"
+            android:layout_marginLeft="@dimen/tv_paddingLeft"
+            android:padding="0dp"
+            android:text="@string/college_name" />
+
+        <simplifii.framework.widgets.CustomAutoResizeTextView
+            android:id="@+id/tv_upload_passing_year"
+            style="@style/tv_autoResize_black_style_heading_style_normal"
+            android:layout_weight="24"
+            android:layout_marginLeft="@dimen/tv_paddingLeft"
+            android:padding="0dp"
+            android:text="@string/passing_year" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="28"
+            android:id="@+id/rl_delete"
+            android:gravity="center"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="@dimen/tv_paddingRight"
+            android:layout_height="wrap_content">
+            <simplifii.framework.widgets.CustomFontTextView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:id="@+id/tv_delete"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/delete"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

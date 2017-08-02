@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<simplifii.framework.widgets.CustomFontRadio xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rb_selector"
+    style="@style/rb_gender_billing"
+    app:buttonTint="@color/color_primary" />
