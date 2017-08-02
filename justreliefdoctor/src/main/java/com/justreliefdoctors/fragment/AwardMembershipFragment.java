@@ -78,13 +78,13 @@ public class AwardMembershipFragment extends BaseFragment implements AdapterView
 
     @Override
     public void onClick(View v) {
-        int i = v.getId();
-        if (i == R.id.btn_membership_save) {
-            saveMembership();
-
-        } else if (i == R.id.btn_award_save) {
-            saveAward(getEditText(R.id.et_title), year);
-
+        switch (v.getId()) {
+            case R.id.btn_membership_save:
+                saveMembership();
+                break;
+            case R.id.btn_award_save:
+                saveAward(getEditText(R.id.et_title), year);
+                break;
         }
     }
 
@@ -286,10 +286,10 @@ public class AwardMembershipFragment extends BaseFragment implements AdapterView
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        int i = parent.getId();
-        if (i == R.id.spin_year) {
-            year = parent.getItemAtPosition(position).toString();
-
+        switch (parent.getId()) {
+            case R.id.spin_year:
+                year = parent.getItemAtPosition(position).toString();
+                break;
         }
     }
 

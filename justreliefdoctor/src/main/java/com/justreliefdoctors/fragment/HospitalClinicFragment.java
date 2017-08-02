@@ -15,9 +15,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
+import com.justrelief.activity.CreateClinic;
 import com.justreliefdoctors.R;
 import com.justreliefdoctors.activity.HomeActivity;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -62,10 +63,10 @@ public class HospitalClinicFragment extends AppBaseFragment {
     @Override
     public void onClick(View v) {
 
-        int i = v.getId();
-        if (i == R.id.im_popup_icon) {
-            showPopup(v);
-
+        switch (v.getId()) {
+            case R.id.im_popup_icon:
+                showPopup(v);
+                break;
         }
     }
 
@@ -80,23 +81,7 @@ public class HospitalClinicFragment extends AppBaseFragment {
         int id = item.getItemId();
         if (id == R.id.btn_create_new_clinic) {
 
-            Bundle bundle = new Bundle();
-            bundle.putString(AppConstants.BUNDLE_KEYS.AUTH_TOKEN, Preferences.getData(Preferences.KEY_AUTH_TOKEN, ""));
-            bundle.putString(AppConstants.BUNDLE_KEYS.CONSTANT, AppConstants.CONSTANT);
-
-
-            Intent myIntent = new Intent();
-            try {
-                myIntent.setClassName("com.justrelief", "com.justrelief.activity.CreateClinic");
-                myIntent.putExtras(bundle);
-                startActivityForResult(myIntent, AppConstants.REQUEST_CODES.NEW_APP);
-            }catch (ActivityNotFoundException e){
-                showToast(getString(R.string.install_clinic_app));
-                e.printStackTrace();
-            }
-
-
-
+            startNextActivityForResult(null, CreateClinic.class,AppConstants.REQUEST_CODES.CREATE_CLINIC);
             return true;
         }
 
@@ -163,10 +148,12 @@ public class HospitalClinicFragment extends AppBaseFragment {
                         profileFragment = DoctorProfileFragment.getInstance(doctorResponse);
 
                         Boolean isPublished = doctorResponse.getIsPublished();
-                        if (isPublished) {
-                            iv_offline.setImageResource(R.drawable.online);
-                        } else {
-                            iv_offline.setImageResource(R.drawable.offline);
+                        if(isPublished!=null) {
+                            if (isPublished) {
+                                iv_offline.setImageResource(R.drawable.online);
+                            } else {
+                                iv_offline.setImageResource(R.drawable.offline);
+                            }
                         }
 
                         String doctorName = doctorResponse.getDoctorName();
@@ -176,7 +163,7 @@ public class HospitalClinicFragment extends AppBaseFragment {
 
                         String doctorImage = doctorResponse.getDoctorImage();
                         if (CollectionUtils.isNotEmpty(doctorImage)) {
-                            Glide.with(getActivity())
+                            Picasso.with(getActivity())
                                     .load(doctorImage)
                                     .into(iv_profile_pic);
                         }

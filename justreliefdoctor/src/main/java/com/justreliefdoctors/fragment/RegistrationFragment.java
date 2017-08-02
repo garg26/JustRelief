@@ -81,15 +81,16 @@ public class RegistrationFragment extends AppBaseFragment implements AdapterView
 
     @Override
     public void onClick(View v) {
-        int i = v.getId();
-        if (i == R.id.btn_upload) {
-            upload();
-
-        } else if (i == R.id.btn_registration_save) {
-            saveCouncil();
-
-        } else if (i == R.id.tv_document_image) {
-            askPermissions();
+        switch (v.getId()) {
+            case R.id.btn_upload:
+                upload();
+                break;
+            case R.id.btn_registration_save:
+                saveCouncil();
+                break;
+            case R.id.tv_document_image:
+                askPermissions();
+                break;
 
         }
     }
@@ -113,12 +114,12 @@ public class RegistrationFragment extends AppBaseFragment implements AdapterView
             if (file.exists()) {
                 String doctorID = getDoctorID();
                 String fileExtension = getFileExtension(file);
-                if (CollectionUtils.isNotEmpty(doctorID) && CollectionUtils.isNotEmpty(documentType) && !documentType.equals("Select")) {
+                if (CollectionUtils.isNotEmpty(doctorID) && CollectionUtils.isNotEmpty(documentType) && !documentType.equals("Select Document Type")) {
                     SetDoctorDocument doctorDocument = new SetDoctorDocument(doctorID, documentType, fileExtension);
                     FileParamObject fileParamObject = ApiGenerator.setDoctorDocument(doctorDocument, file);
                     executeTask(AppConstants.TASKCODES.UPLOAD_DOCUMENT, fileParamObject);
                 } else {
-                    showToast(R.string.error);
+                    showToast("Please Select Document Type");
                 }
             } else {
                 showToast(getString(R.string.error_document_empty));
@@ -311,7 +312,6 @@ public class RegistrationFragment extends AppBaseFragment implements AdapterView
                     tv_document_title.setText(documentResponse.getDocumentType());
 
                     final String documentPath = documentResponse.getDocumentPath();
-                    System.out.println("documentPath = " + documentPath);
                     String documentName = documentPath.substring(documentPath.lastIndexOf("/") + 1);
                     iv_upload_document.setText(documentName);
 
@@ -336,6 +336,8 @@ public class RegistrationFragment extends AppBaseFragment implements AdapterView
                             } else {
                                 startNextActivity(bundle, IMAGEViewer.class);
                             }
+
+
                         }
                     });
 
@@ -428,13 +430,13 @@ public class RegistrationFragment extends AppBaseFragment implements AdapterView
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        int i = parent.getId();
-        if (i == R.id.spin_document_type) {
-            documentType = parent.getItemAtPosition(position).toString();
-
-        } else if (i == R.id.spin_year) {
-            year = parent.getItemAtPosition(position).toString();
-
+        switch (parent.getId()) {
+            case R.id.spin_document_type:
+                documentType = parent.getItemAtPosition(position).toString();
+                break;
+            case R.id.spin_year:
+                year = parent.getItemAtPosition(position).toString();
+                break;
         }
 
     }

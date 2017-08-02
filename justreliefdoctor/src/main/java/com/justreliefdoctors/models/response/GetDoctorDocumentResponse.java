@@ -14,7 +14,7 @@ public class GetDoctorDocumentResponse {
     @SerializedName("DocumentType")
     @Expose
     private String documentType;
-    @SerializedName("DocumentPath")
+    @SerializedName("DocPath")
     @Expose
     private String documentPath;
 

@@ -55,18 +55,8 @@ public class DoctorListFragment extends BaseFragment implements CustomListAdapte
     public void initViews() {
         setHasOptionsMenu(true);
 
-        Bundle extrasbundle = getActivity().getIntent().getExtras();
-        if (extrasbundle != null) {
-            doctorID = extrasbundle.getString(AppConstants.BUNDLE_KEYS.DOCTOR_ID);
-            String authToken = extrasbundle.getString(AppConstants.BUNDLE_KEYS.AUTH_TOKEN);
-            if (CollectionUtils.isNotEmpty(authToken)) {
-                Preferences.saveData(Preferences.KEY_AUTH_TOKEN, authToken);
-            }
-            bundle.putString(AppConstants.BUNDLE_KEYS.DOCTOR_ID, doctorID);
-            getDoctorDetails(doctorID);
-        } else {
             getDoctorID();
-        }
+
 
 
         itemsList = DoctorProfileItem.getList();
@@ -163,8 +153,9 @@ public class DoctorListFragment extends BaseFragment implements CustomListAdapte
 
     @Override
     public void onClick(View v) {
-        int i = v.getId();
-        if (i == R.id.btn_retry) {
+        switch (v.getId()) {
+            case R.id.btn_retry:
+                break;
         }
     }
 

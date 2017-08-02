@@ -25,10 +25,10 @@ public class SignUpActivity extends BaseSignUpActivity {
     public void onClick(View v) {
         super.onClick(v);
 
-        switch (v.getId()){
-            case R.id.tv_registered:
-                startNextActivity(null,LoginActivity.class);
-                finish();
+        int i = v.getId();
+        if (i == R.id.tv_registered) {
+            startNextActivity(null, LoginActivity.class);
+            finish();
         }
     }
 }

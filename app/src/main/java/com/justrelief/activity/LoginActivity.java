@@ -25,12 +25,12 @@ public class LoginActivity extends BaseLoginActivity {
     private UserLoginResponse userLoginResponse = new UserLoginResponse();
     private List<ClinicResponse> clinicResponses;
 
-    @Override
-    protected void login() {
-        UserSIgnUp userSignUp = new UserSIgnUp(getTextFromTil(simplifii.framework.R.id.til_email), getTextFromTil(simplifii.framework.R.id.til_password), AppConstants.USER_TYPES);
-        HttpParamObject httpParamObject = BaseApiGenerator.loginrequest(userSignUp);
-        executeTask(AppConstants.TASKCODES.LOGIN, httpParamObject);
-    }
+//    @Override
+//    protected void login() {
+//        UserSIgnUp userSignUp = new UserSIgnUp(getTextFromTil(simplifii.framework.R.id.til_email), getTextFromTil(simplifii.framework.R.id.til_password), AppConstants.USER_TYPES);
+//        HttpParamObject httpParamObject = BaseApiGenerator.loginrequest(userSignUp);
+//        executeTask(AppConstants.TASKCODES.LOGIN, httpParamObject);
+//    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -45,12 +45,12 @@ public class LoginActivity extends BaseLoginActivity {
                 login();
                 break;
             case AppConstants.REQUEST_CODES.CLINIC_DETAILS:
-                getUserClinicProfileData();
+                //getUserClinicProfileData();
 
                 break;
             case AppConstants.REQUEST_CODES.NEW_CLINIC:
-                 login();
-                 getUserClinicProfileData();
+                 //login();
+                 //getUserClinicProfileData();
 
                 break;
 
@@ -66,34 +66,33 @@ public class LoginActivity extends BaseLoginActivity {
 
     }
 
-    @Override
-    protected void method(UserLoginResponse userLoginResponse) throws NullPointerException {
-        this.userLoginResponse=userLoginResponse;
-        getUserClinicProfileData();
-
-    }
+//    @Override
+//    protected void method(UserLoginResponse userLoginResponse) throws NullPointerException {
+//        this.userLoginResponse=userLoginResponse;
+//        getUserClinicProfileData();
+//
+//    }
 
     private void clinicResponse(){
 
-
-        if (clinicResponses.size()==0){
-            if (userLoginResponse.isEmailVerified()) {
-                startNextActivityForResult(null, CreateClinic.class, AppConstants.REQUEST_CODES.CLINIC_DETAILS);
-            } else {
-                showErrorDialog(getString(R.string.error_verify_not_email));
-            }
-        }
-        else {
-            Preferences.saveData(Preferences.LOGIN_KEY, true);
-            startActivity(new Intent(this, HomeActivity.class));
-            finish();
-        }
+//        if (clinicResponses.size()==0){
+//            if (userLoginResponse.isEmailVerified()) {
+//                startNextActivityForResult(null, CreateClinic.class, AppConstants.REQUEST_CODES.CLINIC_DETAILS);
+//            } else {
+//                showErrorDialog(getString(R.string.error_verify_not_email));
+//            }
+//        }
+//        else {
+//            Preferences.saveData(Preferences.LOGIN_KEY, true);
+//            startActivity(new Intent(this, HomeActivity.class));
+//            finish();
+//        }
     }
 
-    private void getUserClinicProfileData() {
-        HttpParamObject httpParamObject = BaseApiGenerator.getUserProfileData();
-        executeTask(AppConstants.TASKCODES.USER_PROFILE,httpParamObject);
-    }
+//    private void getUserClinicProfileData() {
+//        HttpParamObject httpParamObject = BaseApiGenerator.getUserProfileData();
+//        executeTask(AppConstants.TASKCODES.USER_PROFILE,httpParamObject);
+//    }
 
 
 
@@ -109,22 +108,22 @@ public class LoginActivity extends BaseLoginActivity {
             switch (taskCode){
 
                 case AppConstants.TASKCODES.USER_PROFILE:
-                    try {
-                        UserProfileResponse userProfileResponse = (UserProfileResponse) response;
-
-                        clinicResponses = userProfileResponse.getTable();
-                        if(clinicResponses.size()==0){
-                            clinicResponse();
-                        }
-                        else{
-                            String json = new Gson().toJson(clinicResponses);
-                            ClinicResponse.setJson(json);
-                            clinicResponse();
-                        }
-
-                    }catch(NullPointerException e){
-                        e.printStackTrace();
-                    }
+                    //try {
+//                        UserProfileResponse userProfileResponse = (UserProfileResponse) response;
+//
+//                        clinicResponses = userProfileResponse.getTable();
+//                        if(clinicResponses.size()==0){
+//                            clinicResponse();
+//                        }
+//                        else{
+//                            String json = new Gson().toJson(clinicResponses);
+//                            ClinicResponse.setJson(json);
+//                            clinicResponse();
+//                        }
+//
+//                    }catch(NullPointerException e){
+//                        e.printStackTrace();
+//                    }
                     break;
 
             }

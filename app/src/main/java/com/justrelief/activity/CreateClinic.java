@@ -38,17 +38,6 @@ public class CreateClinic extends AppBaseActivity {
 
         setContentView(R.layout.layout_create_clinic);
 
-        Bundle bundle = getIntent().getExtras();
-        if (bundle != null) {
-            String authToken = bundle.getString(AppConstants.BUNDLE_KEYS.AUTH_TOKEN);
-            if (CollectionUtils.isNotEmpty(authToken)) {
-                Preferences.saveData(Preferences.KEY_AUTH_TOKEN, authToken);
-            }
-            if (CollectionUtils.isNotEmpty(bundle.getString(AppConstants.BUNDLE_KEYS.CONSTANT))) {
-                constant = bundle.getString(AppConstants.BUNDLE_KEYS.CONSTANT);
-            }
-        }
-
 
         actv_city = (AutoCompleteTextView) findViewById(R.id.actv_city);
         actv_locality = (AutoCompleteTextView) findViewById(R.id.actv_locality);
@@ -118,10 +107,9 @@ public class CreateClinic extends AppBaseActivity {
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.btn_find_my_clinic:
-                findClinic(cityID, localityID);
-                break;
+        int i = v.getId();
+        if (i == R.id.btn_find_my_clinic) {
+            findClinic(cityID, localityID);
 
         }
     }

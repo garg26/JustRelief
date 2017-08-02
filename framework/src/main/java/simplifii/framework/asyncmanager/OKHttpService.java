@@ -41,9 +41,9 @@ public class OKHttpService extends GenericService {
             HttpParamObject param = (HttpParamObject) params[0];
             OkHttpClient client = OKHttpService.getUnsafeOkHttpClient();
             client = new OkHttpClient().newBuilder()
-                    .connectTimeout(30000, TimeUnit.SECONDS)
-                    .readTimeout(30000, TimeUnit.SECONDS)
-                    .writeTimeout(30000, TimeUnit.SECONDS)
+                    .connectTimeout(120, TimeUnit.SECONDS)
+                    .readTimeout(120, TimeUnit.SECONDS)
+                    .writeTimeout(120, TimeUnit.SECONDS)
                     .build();
 
             final MediaType mediaType = MediaType.parse(param.getContentType());

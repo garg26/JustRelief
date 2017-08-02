@@ -40,17 +40,16 @@ public class NewClinicProfile extends AppBaseActivity {
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.btn_go_back:
-                // startActivity(new Intent(this,CreateClinic.class));
-                finish();
-                break;
-            case R.id.btn_create_clinic_profile:
-                emailVerify();
+        int i = v.getId();
+        if (i == R.id.btn_go_back) {// startActivity(new Intent(this,CreateClinic.class));
+            finish();
 
-                break;
-            case R.id.tv_resend_mail:
-                resendEmail();
+        } else if (i == R.id.btn_create_clinic_profile) {
+            emailVerify();
+
+
+        } else if (i == R.id.tv_resend_mail) {
+            resendEmail();
         }
     }
 

@@ -1,9 +1,13 @@
 package simplifii.framework.models.response;
 
+import com.google.gson.Gson;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+import com.google.gson.reflect.TypeToken;
 
-import simplifii.framework.models.UserLoginResponse;
+import java.lang.reflect.Type;
+import java.util.List;
+
 import simplifii.framework.utility.JsonUtil;
 import simplifii.framework.utility.Preferences;
 
@@ -39,6 +43,16 @@ public class DoctorResponse {
     @SerializedName("UClinicCount")
     @Expose
     private Integer uClinicCount;
+
+    private String type;
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
 
     public Integer getDoctorID() {
         return doctorID;
@@ -104,19 +118,17 @@ public class DoctorResponse {
         this.uClinicCount = uClinicCount;
     }
 
-    public static DoctorResponse getInstance() {
-        String json = Preferences.getData(Preferences.USER_DETAILS, null);
-        return setJson(json);
+    public static List<DoctorResponse> getInstance() {
+        String json = Preferences.getData(Preferences.KEY_USER_DOCTOR, null);
+        Gson gson = new Gson();
+        Type listType = new TypeToken<List<DoctorResponse>>() {}.getType();
+        List<DoctorResponse> doctorResponse = gson.fromJson(json, listType);
+
+        return doctorResponse;
     }
 
-    public static DoctorResponse setJson(String json) {
-        DoctorResponse response = (DoctorResponse) JsonUtil.parseJson(json, DoctorResponse.class);
-        if (response != null) {
-            Preferences.saveData(Preferences.USER_DETAILS, json);
-
-        }
-        instance = response;
-        return response;
+    public static void setJson(String json) {
+        Preferences.saveData(Preferences.KEY_USER_DOCTOR, json);
     }
 
 }

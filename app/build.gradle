@@ -1,21 +1,10 @@
-buildscript {
-    repositories {
-        maven { url 'https://maven.fabric.io/public' }
-    }
-
-    dependencies {
-        classpath 'io.fabric.tools:gradle:1.+'
-    }
-}
-apply plugin: 'com.android.application'
-apply plugin: 'io.fabric'
-apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
     defaultConfig {
-        applicationId "com.justrelief"
+
         minSdkVersion 15
         targetSdkVersion 25
         versionCode 1
@@ -37,7 +26,7 @@ repositories {
     maven { url "https://jitpack.io" }
     jcenter()
     maven { url 'https://github.com/leonardocardoso/mvn-repo/raw/master/maven-deploy' }
-    maven { url 'https://maven.fabric.io/public' }
+
 }
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -48,10 +37,7 @@ dependencies {
     compile 'com.android.support:multidex:1.0.1'
     testCompile 'junit:junit:4.12'
     compile project(':framework')
-    compile project(':justreliefdoctor')
     compile 'com.github.Plumillon:ChipView:1.2.0'
     compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
-    compile('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') {
-        transitive = true;
-    }
+
 }

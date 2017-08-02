@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    >
+   >
 
 
     <RelativeLayout
@@ -10,13 +10,13 @@
         android:layout_marginTop="@dimen/tv_paddingTop"
         android:layout_marginLeft="@dimen/tv_paddingLeft"
         android:layout_marginRight="@dimen/tv_paddingRight"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/iv_clinic_profile_pic"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="92dp"
+            android:layout_height="92dp"
             android:scaleType="centerCrop"
             android:src="@mipmap/profile" />
 
@@ -26,39 +26,45 @@
             android:layout_toRightOf="@+id/iv_clinic_profile_pic"
             android:orientation="vertical">
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                >
 
                 <simplifii.framework.widgets.CustomFontTextView
                     android:id="@+id/tv_clinic_user_name"
-                    style="@style/tv_black_style_heading_without_background_style_bold"
-                    android:layout_width="match_parent"
-                    android:gravity="start"
-                    android:ellipsize="end"
-                    android:ems="10"
-                    android:text="Kartikeyta garg" />
+                    style="@style/tv_black_bold_without_background"
+                    android:text="Kartikeya garg" />
 
-            </LinearLayout>
+                <ImageView
+                    android:id="@+id/iv_offline"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_clinic_user_name"
+                    android:src="@drawable/offline" />
+
+            </RelativeLayout>
 
             <LinearLayout
 
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_height="match_parent"
+                >
 
                 <simplifii.framework.widgets.CustomFontTextView
-                    android:id="@+id/tv_total_doctor"
-                    style="@style/tv_black_style_heading_without_background"
-                    android:layout_width="wrap_content"
+                    style="@style/tv_black_normal_without_background"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="@dimen/tv_paddingTop"
                     android:text="Total Doctor :" />
 
                 <simplifii.framework.widgets.CustomFontTextView
-                    android:id="@+id/tv_get_visited_clinic"
-                    style="@style/tv_black_style_heading_without_background"
-                    android:layout_width="wrap_content"
-                    android:ellipsize="end"
-                    android:ems="6"
+                    style="@style/tv_black_normal_without_background"
+                    android:maxLines="1"
+                    android:layout_marginTop="@dimen/tv_paddingTop"
+
+                    android:layout_marginRight="@dimen/tv_paddingRight"
                     android:text="0(0 Unverified Clinic)" />
 
 
@@ -71,17 +77,12 @@
                 android:orientation="horizontal">
 
                 <simplifii.framework.widgets.CustomFontTextView
-                    android:id="@+id/tv_created_date"
-                    style="@style/tv_black_style_heading_without_background"
-                    android:layout_width="wrap_content"
+                    style="@style/tv_black_normal_without_background"
                     android:text="Created Date :" />
 
                 <simplifii.framework.widgets.CustomFontTextView
                     android:id="@+id/tv_get_created_date"
-                    style="@style/tv_black_style_heading_without_background"
-                    android:layout_width="wrap_content"
-                    android:ellipsize="end"
-                    android:ems="6"
+                    style="@style/tv_black_normal_without_background"
                     android:text="01-Jul-2017" />
 
 

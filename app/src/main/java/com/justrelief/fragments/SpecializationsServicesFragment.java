@@ -250,16 +250,18 @@ public class SpecializationsServicesFragment extends AppBaseFragment {
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.iv_plus:
-                service_list = addServiceToLayout(services_selected_list, services_list);
+        int i = v.getId();
+        if (i == R.id.iv_plus) {
+            service_list = addServiceToLayout(services_selected_list, services_list);
 
-            case R.id.iv_plus1:
-                Specialization_list = addSpecializationToLayout(specialization_selected_list, specialization_list);
-                break;
-            case R.id.btn_save_and_next:
-                saveServices(services_selected_list,specialization_selected_list );
 
+            Specialization_list = addSpecializationToLayout(specialization_selected_list, specialization_list);
+
+        } else if (i == R.id.iv_plus1) {
+            Specialization_list = addSpecializationToLayout(specialization_selected_list, specialization_list);
+
+        } else if (i == R.id.btn_save_and_next) {
+            saveServices(services_selected_list, specialization_selected_list);
         }
     }
 

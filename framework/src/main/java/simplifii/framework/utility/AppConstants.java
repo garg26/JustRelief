@@ -306,6 +306,7 @@ public interface AppConstants {
         String SET_DOCTOR_SPEC = BASEURL + "DocMaster/SetDoctorSpecialization";
         String SET_DOCTOR_CONTACT = BASEURL + "DocMaster/SetDoctorContactDetails";
         String SET_DOCTOR_DETAIL = BASEURL + "Master/FinalDocSubmit";
+        String SET_CLINIC_FINAL = BASEURL + "Master/FinalSubmit";
     }
 
     public static interface PREF_KEYS {
@@ -645,6 +646,8 @@ public interface AppConstants {
         int GET_DOCTOR = 193;
         int SET_FINAL_DOCTOR = 194;
         int GET_QUALIFICATION_LIST = 195;
+        int GET_CLINIC_FILE = 196;
+        int SET_FINAL_CLINIC = 197;
     }
 
     interface ProfileStructureType {

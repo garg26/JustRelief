@@ -8,28 +8,31 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 
 import simplifii.framework.R;
-import simplifii.framework.fragments.DrawerFragment;
 
 
 public class HomeActivity extends BaseActivity implements DrawerLayout.DrawerListener {
 
     private boolean isDrawerOpen;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        setAddFragment();
+        setDrawer(toolbar);
+
+    }
+
+    public void setDrawer(Toolbar toolbar) {
         final DrawerLayout drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.LOLLIPOP){
             toolbar.setNavigationIcon(getDrawable(R.mipmap.bacon2x));
@@ -43,8 +46,8 @@ public class HomeActivity extends BaseActivity implements DrawerLayout.DrawerLis
 
         drawerLayout.addDrawerListener(this);
         FragmentManager fragmentManager = getSupportFragmentManager();
-        addDrawerFragment(toolbar,drawerLayout, fragmentManager);
-        setAddFragment();
+        addDrawerFragment(this.toolbar,drawerLayout, fragmentManager);
+
         initNavigationDrawer();
     }
 

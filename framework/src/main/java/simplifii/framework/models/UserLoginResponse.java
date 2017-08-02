@@ -6,8 +6,6 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
-import simplifii.framework.models.response.ClinicResponse;
-import simplifii.framework.models.response.DoctorResponse;
 import simplifii.framework.utility.JsonUtil;
 import simplifii.framework.utility.Preferences;
 
@@ -157,14 +155,14 @@ public class UserLoginResponse extends BaseApi {
     }
 
     public static UserLoginResponse getInstance() {
-        String json = Preferences.getData(Preferences.USER_DETAILS, null);
+        String json = Preferences.getData(Preferences.DOCTOR_DETAIL, null);
         return parseJson(json);
     }
 
     public static UserLoginResponse parseJson(String json) {
         UserLoginResponse response = (UserLoginResponse) JsonUtil.parseJson(json, UserLoginResponse.class);
         if (response != null && response.isSuccess()) {
-            Preferences.saveData(Preferences.USER_DETAILS, json);
+            Preferences.saveData(Preferences.DOCTOR_DETAIL, json);
 
         }
         instance = response;
@@ -173,7 +171,7 @@ public class UserLoginResponse extends BaseApi {
 
     public void save(){
         String json = new Gson().toJson(this);
-        Preferences.saveData(Preferences.USER_DETAILS, json);
+        Preferences.saveData(Preferences.DOCTOR_DETAIL, json);
     }
 
 }

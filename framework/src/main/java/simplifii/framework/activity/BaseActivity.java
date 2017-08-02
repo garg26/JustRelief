@@ -218,8 +218,7 @@ public class BaseActivity extends AppCompatActivity implements
 
 
     protected void onInternetException() {
-        findViewById(R.id.frame_noInternet).setVisibility(View.VISIBLE);
-        onServerError();
+
     }
 
 

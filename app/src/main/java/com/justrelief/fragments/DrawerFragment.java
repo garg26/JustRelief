@@ -20,7 +20,7 @@ public class DrawerFragment extends simplifii.framework.fragments.DrawerFragment
         int i = v.getId();
         if (i == simplifii.framework.R.id.rl_logout) {
             Preferences.removeData(Preferences.LOGIN_KEY);
-            Preferences.removeData(Preferences.USER_DETAILS);
+            Preferences.removeData(Preferences.DOCTOR_DETAIL);
             startNextActivity(LoginActivity.class);
             getActivity().finish();
 

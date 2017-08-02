@@ -1,4 +1,4 @@
-package com.justrelief.activity;
+package simplifii.framework.activity;
 
 import android.content.Intent;
 import android.location.Address;
@@ -20,14 +20,12 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
-import com.justrelief.R;
 
-import simplifii.framework.activity.BaseActivity;
+import simplifii.framework.R;
 import simplifii.framework.utility.AppConstants;
 
 
-public class MapViewActivity extends AppBaseActivity implements OnMapReadyCallback{
+public class MapViewActivity extends BaseActivity implements OnMapReadyCallback{
     private String latitude;
     private String longitude;
     private Intent intent = new Intent();
@@ -55,13 +53,13 @@ public class MapViewActivity extends AppBaseActivity implements OnMapReadyCallba
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.place:
-                setResult(AppConstants.RESULT_CODE.LOCATION,intent);
-                finish();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
+        int i = item.getItemId();
+        if (i == R.id.place) {
+            setResult(AppConstants.RESULT_CODE.LOCATION, intent);
+            finish();
+            return true;
+        } else {
+            return super.onOptionsItemSelected(item);
         }
     }
 

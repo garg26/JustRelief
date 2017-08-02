@@ -8,9 +8,9 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
 import com.justreliefdoctors.R;
 import com.justreliefdoctors.activity.HomeActivity;
+import com.squareup.picasso.Picasso;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -50,7 +50,7 @@ public class DoctorProfileFragment extends AppBaseFragment {
 
         String doctorImage = doctorResponse.getDoctorImage();
         if (CollectionUtils.isNotEmpty(doctorImage)) {
-            Glide.with(getActivity())
+            Picasso.with(getActivity())
                     .load(doctorImage)
                     .into(iv_get_profile_pic);
         }
@@ -88,10 +88,10 @@ public class DoctorProfileFragment extends AppBaseFragment {
 
     @Override
     public void onClick(View v) {
-        int i = v.getId();
-        if (i == R.id.im_popup_icon) {
-            showPopup(v);
-
+        switch (v.getId()) {
+            case R.id.im_popup_icon:
+                showPopup(v);
+                break;
         }
     }
 
@@ -104,7 +104,6 @@ public class DoctorProfileFragment extends AppBaseFragment {
 
                 Bundle bundle = new Bundle();
                 bundle.putString(AppConstants.BUNDLE_KEYS.DOCTOR_ID, doctorID);
-                bundle.putString(AppConstants.BUNDLE_KEYS.AUTH_TOKEN, Preferences.getData(Preferences.KEY_AUTH_TOKEN, null));
                 startNextActivityForResult(bundle, HomeActivity.class, AppConstants.REQUEST_CODES.HOME);
 
                 return true;

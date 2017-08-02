@@ -1,6 +1,5 @@
 package com.justreliefdoctors.fragment;
 
-import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.PopupMenu;
@@ -9,18 +8,17 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
 import com.justreliefdoctors.R;
+import com.squareup.picasso.Picasso;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Locale;
 
+import simplifii.framework.activity.HomeActivity;
 import simplifii.framework.models.response.ClinicResponse;
 import simplifii.framework.utility.AppConstants;
 import simplifii.framework.utility.CollectionUtils;
-import simplifii.framework.utility.Preferences;
 import simplifii.framework.utility.Util;
 
 /**
@@ -31,6 +29,7 @@ public class ClinicProfileFragment extends AppBaseFragment {
 
     private ClinicResponse clinicResponse;
     private String facilityID;
+    private PopupMenu popup;
 
     public static ClinicProfileFragment getInstance(ClinicResponse clinicResponse) {
         ClinicProfileFragment profileFragment = new ClinicProfileFragment();
@@ -41,10 +40,12 @@ public class ClinicProfileFragment extends AppBaseFragment {
     @Override
     public void initViews() {
 
+        popup = new PopupMenu(getActivity(), v);
         ImageView im_clinic_profile = (ImageView) findView(R.id.iv_clinic_profile_pic);
+        ImageView iv_offline = (ImageView) findView(R.id.iv_offline);
         String facilityImage = clinicResponse.getFacilityImage();
         if (CollectionUtils.isNotEmpty(facilityImage)) {
-            Glide.with(getActivity())
+            Picasso.with(getActivity())
                     .load(facilityImage)
                     .into(im_clinic_profile);
         }
@@ -71,21 +72,31 @@ public class ClinicProfileFragment extends AppBaseFragment {
             }
 
         }
+
+        Boolean isPublished = clinicResponse.getIsPublished();
+        if (isPublished!=null) {
+            if (isPublished) {
+                iv_offline.setImageResource(R.drawable.online);
+               // popup.getMenu().add("Add Doctor");
+            } else {
+                iv_offline.setImageResource(R.drawable.offline);
+            }
+        }
         setOnClickListener(R.id.im_popup_icon);
 
     }
 
     @Override
     public void onClick(View v) {
-        int i = v.getId();
-        if (i == R.id.im_popup_icon) {
-            showPopup(v);
-
+        switch (v.getId()) {
+            case R.id.im_popup_icon:
+                showPopup(v);
+                break;
         }
     }
 
     public void showPopup(View v) {
-        PopupMenu popup = new PopupMenu(getActivity(), v);
+
         //MenuInflater inflater = popup.getMenuInflater();
         popup.getMenu().add("Edit Clinic");
         //inflater.inflate(R.menu.edit_profile, popup.getMenu());
@@ -95,17 +106,8 @@ public class ClinicProfileFragment extends AppBaseFragment {
 
                 Bundle bundle = new Bundle();
                 bundle.putString(AppConstants.BUNDLE_KEYS.FACILITYID, facilityID);
-                String data = Preferences.getData(Preferences.KEY_AUTH_TOKEN, null);
-                bundle.putString(AppConstants.BUNDLE_KEYS.AUTH_TOKEN, Preferences.getData(Preferences.KEY_AUTH_TOKEN, null));
-                Intent myIntent = new Intent();
-                try {
-                    myIntent.setClassName("com.justrelief", "com.justrelief.activity.HomeActivity");
-                    myIntent.putExtras(bundle);
-                    startActivityForResult(myIntent, AppConstants.REQUEST_CODES.NEW_APP);
-                }catch (ActivityNotFoundException e){
-                    showToast(getString(R.string.install_clinic_app));
-                    e.printStackTrace();
-                }
+
+                startNextActivityForResult(bundle, com.justrelief.activity.HomeActivity.class,AppConstants.REQUEST_CODES.NEW_APP);
 
                 return true;
             }

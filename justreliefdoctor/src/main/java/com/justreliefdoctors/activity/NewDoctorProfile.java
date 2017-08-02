@@ -46,14 +46,15 @@ public class NewDoctorProfile extends BaseActivity {
 
     @Override
     public void onClick(View v) {
-        int i = v.getId();
-        if (i == R.id.btn_go_back) {//  startNextActivityForResult(bundle,CreateDoctor.class, AppConstants.REQUEST_CODES.CREATE_DOCTOR);
-            finish();
+        switch (v.getId()) {
+            case R.id.btn_go_back:
+              //  startNextActivityForResult(bundle,CreateDoctor.class, AppConstants.REQUEST_CODES.CREATE_DOCTOR);
+                finish();
+                break;
+            case R.id.btn_create_doctor_profile:
+                emailVerify();
 
-        } else if (i == R.id.btn_create_doctor_profile) {
-            emailVerify();
-
-
+                break;
 //            case R.id.tv_resend_mail:
 //                resendEmail();
         }

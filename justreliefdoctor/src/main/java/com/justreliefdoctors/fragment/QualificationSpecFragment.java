@@ -130,12 +130,13 @@ public class QualificationSpecFragment extends AppBaseFragment {
 
     @Override
     public void onClick(View v) {
-        int i = v.getId();
-        if (i == R.id.btn_save_education) {
-            setQualification(getACTVText(R.id.actv_qualification), getACTVText(R.id.actv_college), year);
-
-        } else if (i == R.id.btn_save_specialization) {
-            saveDocSpecialization();
+        switch (v.getId()) {
+            case R.id.btn_save_education:
+                setQualification(getACTVText(R.id.actv_qualification), getACTVText(R.id.actv_college), year);
+                break;
+            case R.id.btn_save_specialization:
+                saveDocSpecialization();
+                break;
 
         }
     }

@@ -20,7 +20,7 @@ import com.google.android.gms.location.places.Place;
 import com.google.android.gms.location.places.ui.PlacePicker;
 import com.google.android.gms.maps.model.LatLng;
 import com.justrelief.R;
-import com.justrelief.activity.MapViewActivity;
+import simplifii.framework.activity.MapViewActivity;
 import com.justrelief.models.response.GetClinicResponse;
 import com.justrelief.models.response.GetClinicResponseTable;
 
@@ -43,7 +43,6 @@ import simplifii.framework.models.GetDocFileTable;
 import simplifii.framework.models.GetFileItem;
 import simplifii.framework.models.LocationResponse;
 import simplifii.framework.models.MasterListResponse;
-import simplifii.framework.models.response.ClinicResponse;
 import simplifii.framework.models.response.MasterValues;
 import simplifii.framework.utility.AppConstants;
 import simplifii.framework.utility.BaseApiGenerator;
@@ -143,17 +142,15 @@ public class LocationPhotosFragment extends AppBaseFragment implements AdapterVi
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.btn_locate:
-                getLocation();
-                break;
+        int i = v.getId();
+        if (i == R.id.btn_locate) {
+            getLocation();
 
-            case R.id.btn_save_and_next:
-                setLocation();
-                break;
+        } else if (i == R.id.btn_save_and_next) {
+            setLocation();
 
-            case R.id.rl_clinic_image:
-                askPermissions(AppConstants.MEDIA_TYPES.IMAGE);
+        } else if (i == R.id.rl_clinic_image) {
+            askPermissions(AppConstants.MEDIA_TYPES.IMAGE);
 //                if (permission) {
 //                    getImage();
 //                } else {
@@ -162,17 +159,15 @@ public class LocationPhotosFragment extends AppBaseFragment implements AdapterVi
 //                        getImage();
 //                    }
 //                }
-                break;
-            case R.id.btn_upload:
-                uploadImage();
+
+        } else if (i == R.id.btn_upload) {
+            uploadImage();
 //                if (imageFile != null) {
 //                    uploadImage(imageFile);
 //                } else {
 //
 //                    showToast(getString(R.string.clinic_image_empty));
 //                }
-                break;
-
 
         }
 
@@ -611,10 +606,10 @@ public class LocationPhotosFragment extends AppBaseFragment implements AdapterVi
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        switch (parent.getId()) {
-            case R.id.spin_clinic_image:
-                clinicImageType = parent.getItemAtPosition(position).toString();
-                break;
+        int i = parent.getId();
+        if (i == R.id.spin_clinic_image) {
+            clinicImageType = parent.getItemAtPosition(position).toString();
+
         }
     }
 

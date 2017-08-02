@@ -5,7 +5,7 @@
     <item android:id="@+id/place"
         android:orderInCategory="101"
         app:showAsAction="always"
-        android:title="Placed Youe location">
+        android:title="Place Your location">
 
     </item>
 </menu>

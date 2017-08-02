@@ -68,13 +68,15 @@ public class ContactDoctorDetailsFragment extends AppBaseFragment implements Ada
         rg_gender.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                int i = group.getCheckedRadioButtonId();
-                if (i == R.id.rb_male) {
-                    gender = rb_male.getText().toString();
+                switch (group.getCheckedRadioButtonId()) {
+                    case R.id.rb_male:
 
-                } else if (i == R.id.rb_female) {
-                    gender = rb_female.getText().toString();
+                        gender = rb_male.getText().toString();
+                        break;
+                    case R.id.rb_female:
 
+                        gender = rb_female.getText().toString();
+                        break;
                 }
             }
         });
@@ -198,13 +200,13 @@ public class ContactDoctorDetailsFragment extends AppBaseFragment implements Ada
 
     @Override
     public void onClick(View v) {
-        int i = v.getId();
-        if (i == R.id.btn_save_and_next) {
-            setDoctorContactDetail();
-
-        } else if (i == R.id.tv_image) {
-            askPermissions();
-
+        switch (v.getId()) {
+            case R.id.btn_save_and_next:
+                setDoctorContactDetail();
+                break;
+            case R.id.tv_image:
+                askPermissions();
+                break;
         }
     }
 
@@ -330,9 +332,9 @@ public class ContactDoctorDetailsFragment extends AppBaseFragment implements Ada
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        int i = parent.getId();
-        if (i == R.id.spin_prefix) {
-            prefix = parent.getItemAtPosition(position).toString();
+        switch (parent.getId()) {
+            case R.id.spin_prefix:
+                prefix = parent.getItemAtPosition(position).toString();
         }
     }
 

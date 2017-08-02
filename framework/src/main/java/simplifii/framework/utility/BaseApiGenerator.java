@@ -316,6 +316,7 @@ public class BaseApiGenerator {
         HttpParamObject httpParamObject = new HttpParamObject();
         httpParamObject.setPostMethod();
         httpParamObject.setJSONContentType();
+
         httpParamObject.setUrl(AppConstants.PAGE_URL.GET_CLINIC_DETAIL);
         httpParamObject.setJson(JsonUtil.toJson(item));
         return httpParamObject;

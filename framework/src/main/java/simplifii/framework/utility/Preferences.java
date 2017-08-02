@@ -20,9 +20,12 @@ public class Preferences {
     public static final String KEY_USER = "userProfile";
     public static final String GROUP = "group";
     public static final String KEY_CITIES = "cities";
-    public static final String USER_DETAILS = "userDetails";
-    public static final String KEY_AUTH_TOKEN = "Authorization";
+    public static final String DOCTOR_DETAIL = "doctorDetails";
+    public static final String USER_TYPE = "Doctor";
+    public static final String KEY_DOCTOR_AUTH_TOKEN = "Doctor_Authorization";
     public static final String LOCALITY_KEY = "localityKey";
+    public static final String KEY_AUTH_TOKEN = "Authorization";
+    public static final String KEY_USER_DOCTOR = "Doctor";
 
 
     private static SharedPreferences xebiaSharedPrefs;

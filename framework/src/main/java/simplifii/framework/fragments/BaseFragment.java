@@ -406,12 +406,8 @@ public abstract class BaseFragment extends Fragment implements
     }
 
     protected void onInternetException() {
-        View view = findView(R.id.frame_noInternet);
-        if (view != null) {
 
-        }
-        view.setVisibility(View.VISIBLE);
-        onServerError();
+
     }
 
     protected void onServerError() {

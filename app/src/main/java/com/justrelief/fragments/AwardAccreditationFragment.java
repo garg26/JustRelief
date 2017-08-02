@@ -147,13 +147,13 @@ public class AwardAccreditationFragment extends AppBaseFragment implements Adapt
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.btn_award_save:
-                setAward();
-                break;
-            case R.id.btn_accreditation_save:
-                setaccreditation();
-                break;
+        int i = v.getId();
+        if (i == R.id.btn_award_save) {
+            setAward();
+
+        } else if (i == R.id.btn_accreditation_save) {
+            setaccreditation();
+
         }
     }
 
@@ -230,6 +230,7 @@ public class AwardAccreditationFragment extends AppBaseFragment implements Adapt
                 if (baseApi!=null && baseApi.isSuccess()){
                     showToast(getString(R.string.information_save_successfully));
                     startFragment();
+                    getActivity().setResult(AppConstants.REQUEST_CODES.CONTACT);
                 }
                 else{
                     showToast(getString(R.string.fail));
@@ -240,6 +241,7 @@ public class AwardAccreditationFragment extends AppBaseFragment implements Adapt
                 if (baseApi1!=null && baseApi1.isSuccess()){
                     showToast(getString(R.string.information_save_successfully));
                     startFragment();
+                    getActivity().setResult(AppConstants.REQUEST_CODES.CONTACT);
                 }
                 else{
                     showToast(getString(R.string.fail));
@@ -397,16 +399,15 @@ public class AwardAccreditationFragment extends AppBaseFragment implements Adapt
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        switch (parent.getId()){
-            case R.id.spin_accreditation:
-                accreditation = parent.getItemAtPosition(position).toString();
-                break;
-            case R.id.spin_award_year:
-                award_year = parent.getItemAtPosition(position).toString();
-                break;
-            case R.id.spin_accreditation_year:
-                accreditation_year = parent.getItemAtPosition(position).toString();
-                break;
+        int i = parent.getId();
+        if (i == R.id.spin_accreditation) {
+            accreditation = parent.getItemAtPosition(position).toString();
+
+        } else if (i == R.id.spin_award_year) {
+            award_year = parent.getItemAtPosition(position).toString();
+
+        } else if (i == R.id.spin_accreditation_year) {
+            accreditation_year = parent.getItemAtPosition(position).toString();
 
         }
 

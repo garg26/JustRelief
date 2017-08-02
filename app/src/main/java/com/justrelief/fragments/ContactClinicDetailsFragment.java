@@ -39,7 +39,6 @@ import simplifii.framework.models.response.MasterValues;
 import simplifii.framework.utility.AppConstants;
 import simplifii.framework.utility.BaseApiGenerator;
 import simplifii.framework.utility.CollectionUtils;
-import simplifii.framework.utility.Util;
 import simplifii.framework.widgets.ContactsCompletionView;
 import simplifii.framework.widgets.CustomFontTextView;
 
@@ -51,16 +50,14 @@ public class ContactClinicDetailsFragment extends AppBaseFragment implements Ada
     private String documentType;
     private List<MasterValues> document_list, payment_list;
     private LinearLayout ll_image_container;
-    private List<String> paymentlist = new ArrayList<>();
-    private Bundle bundle;
 
 
     @Override
     public void initViews() {
 
-         ll_image_container = (LinearLayout) findView(R.id.ll_image_container);
-         list_selected_payment = new ArrayList<>();
-         bundle = getActivity().getIntent().getBundleExtra(AppConstants.BUNDLE_KEYS.EXTRA_BUNDLE);
+        ll_image_container = (LinearLayout) findView(R.id.ll_image_container);
+        list_selected_payment = new ArrayList<>();
+
 
         ContactsCompletionView completionView = (ContactsCompletionView) findView(R.id.ccv_payment_mode);
         completionView.setTokenListener(new TokenCompleteTextView.TokenListener<String>() {
@@ -76,7 +73,7 @@ public class ContactClinicDetailsFragment extends AppBaseFragment implements Ada
         });
 
         GetClinicResponseTable clinicResponseTable = null;
-
+        Bundle bundle = getActivity().getIntent().getBundleExtra(AppConstants.BUNDLE_KEYS.EXTRA_BUNDLE);
         if (bundle != null) {
             clinicResponseTable = (GetClinicResponseTable) bundle.getSerializable(AppConstants.BUNDLE_KEYS.CLINIC_DETAIL);
         }
@@ -92,54 +89,46 @@ public class ContactClinicDetailsFragment extends AppBaseFragment implements Ada
         setOnItemSelectedListener(this, R.id.spin_documents_type);
 
 
-
-
         setOnClickListener(R.id.btn_save_and_next, R.id.tv_clinic_type_image, R.id.tv_document_image, R.id.btn_upload);
     }
 
     private void getPaymentResponse(GetClinicResponseTable clinicResponseTable) {
-        List<GetPaymentResponse> paymentResponse = clinicResponseTable.getTable2();
-        String str1 = null;
-        if (paymentResponse != null && paymentResponse.size() > 0) {
+        if (clinicResponseTable != null) {
+            List<GetPaymentResponse> paymentResponse = clinicResponseTable.getTable2();
 
-            for (int i = 0; i < paymentResponse.size(); i++) {
-                String label = paymentResponse.get(i).getLabel();
-                ContactsCompletionView completionView = (ContactsCompletionView) findView(R.id.ccv_payment_mode);
-                completionView.addObject(label);
+            if (paymentResponse != null && paymentResponse.size() > 0) {
 
-              //  list_selected_payment.add(label);
+                for (int i = 0; i < paymentResponse.size(); i++) {
+                    String label = paymentResponse.get(i).getLabel();
+                    ContactsCompletionView completionView = (ContactsCompletionView) findView(R.id.ccv_payment_mode);
+                    completionView.addObject(label);
 
-//                for (String string : paymentlist){
-//                    if (string.equals(label)){
-//                        str1 = string;
-//                    }
-//                }
-//                paymentlist.remove(str1);
-
+                }
             }
         }
-
-
 
 
     }
 
     private void getClinicResponse(GetClinicResponseTable clinicResponseTable) {
 
-        String clinic_name = null, clinic_email = null, clinic_phone = null, facilityImage = null, overView = null;
-        List<GetClinicResponse> clinicResponse = clinicResponseTable.getTable();
-        if (clinicResponse != null) {
-            for (int i = 0; i < clinicResponse.size(); i++) {
-                GetClinicResponse clinicIndex = clinicResponse.get(i);
-                clinic_name = clinicIndex.getFacilityName();
-                clinic_email = clinicIndex.getFacilityEmailId();
-                clinic_phone = clinicIndex.getFacilityPhone();
-                facilityImage = clinicIndex.getFacilityImage();
-                overView = clinicIndex.getOverView();
-            }
+        if (clinicResponseTable != null) {
 
+            String clinic_name = null, clinic_email = null, clinic_phone = null, facilityImage = null, overView = null;
+            List<GetClinicResponse> clinicResponse = clinicResponseTable.getTable();
+            if (clinicResponse != null) {
+                for (int i = 0; i < clinicResponse.size(); i++) {
+                    GetClinicResponse clinicIndex = clinicResponse.get(i);
+                    clinic_name = clinicIndex.getFacilityName();
+                    clinic_email = clinicIndex.getFacilityEmailId();
+                    clinic_phone = clinicIndex.getFacilityPhone();
+                    facilityImage = clinicIndex.getFacilityImage();
+                    overView = clinicIndex.getOverView();
+                }
+
+            }
+            setResponse(clinic_name, clinic_email, clinic_phone, overView, facilityImage);
         }
-        setResponse(clinic_name, clinic_email, clinic_phone, overView, facilityImage);
 
     }
 
@@ -158,59 +147,15 @@ public class ContactClinicDetailsFragment extends AppBaseFragment implements Ada
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.btn_save_and_next:
-                upload();
-//                if (imageFile != null) {
-//                    uploadImage(imageFile);
-//                } else {
-//
-//                    showToast(getString(R.string.clinic_image_empty));
-//                }
-                break;
-
-            case R.id.tv_document_image:
-                askPermissions(AppConstants.MEDIA_TYPES.DOC);
-//                if (permission) {
-//                    getDocument();
-//                } else {
-//                    askPermissions();
-//                    if (permission) {
-//                        getDocument();
-//                    }
-//                }
-
-                break;
-
-            case R.id.tv_clinic_type_image:
-                askPermissions(AppConstants.MEDIA_TYPES.IMAGE);
-//                if (permission) {
-//                    getImage();
-//                } else {
-//                    askPermissions(AppConstants.MEDIA_TYPES.DOC);
-//                    if (permission) {
-//                        getImage();
-//                    }
-//                }
-                break;
-            case R.id.btn_upload:
-                uploadDocument();
-                break;
-
-//                if (imageFile != null && docFile == null) {
-//                    uploadDocument(imageFile);
-//                } else if (docFile != null && imageFile == null) {
-//                    uploadDocument(docFile);
-//                } else if (imageFile != null && docFile != null) {
-//                    String fileExtension = getFileExtension(docFile);
-//                    if (fileExtension.equals("pdf")) {
-//                        uploadDocument(docFile);
-//                    } else {
-//                        uploadDocument(imageFile);
-//                    }
-//                } else {
-//                    showToast(R.string.document_file_empty);
-//                }
+        int i = v.getId();
+        if (i == R.id.btn_save_and_next) {
+            upload();
+        } else if (i == R.id.tv_document_image) {
+            askPermissions(AppConstants.MEDIA_TYPES.DOC);
+        } else if (i == R.id.tv_clinic_type_image) {
+            askPermissions(AppConstants.MEDIA_TYPES.IMAGE);
+        } else if (i == R.id.btn_upload) {
+            uploadDocument();
 
         }
     }
@@ -227,33 +172,29 @@ public class ContactClinicDetailsFragment extends AppBaseFragment implements Ada
 
     private void uploadDocument() {
         File file = null;
-        if (getTag(R.id.tv_document_image)!=null){
-            file=getTag(R.id.tv_document_image);
+        if (getTag(R.id.tv_document_image) != null) {
+            file = getTag(R.id.tv_document_image);
         }
         if (file != null) {
             if (file.exists()) {
                 String facilityID = getFacilityID();
                 String fileExtension = getFileExtension(file);
-                if (CollectionUtils.isNotEmpty(facilityID) && CollectionUtils.isNotEmpty(fileExtension)){
+                if (CollectionUtils.isNotEmpty(facilityID) && CollectionUtils.isNotEmpty(fileExtension)) {
                     String docTypeID = getDocTypeID(documentType);
-                    if (CollectionUtils.isNotEmpty(docTypeID) && !docTypeID.equalsIgnoreCase("0") ){
+                    if (CollectionUtils.isNotEmpty(docTypeID) && !docTypeID.equalsIgnoreCase("0")) {
                         FileUploadUrlItem urlItem = new FileUploadUrlItem(facilityID, AppConstants.FILE_TYPES.PDF, docTypeID, fileExtension);
                         FileParamObject fileParamObject = BaseApiGenerator.uploadDocument(urlItem, file);
                         executeTask(AppConstants.TASKCODES.UPLOAD_DOCUMENT, fileParamObject);
-                    }else{
+                    } else {
                         showToast(getString(R.string.error_document_type_empty));
                     }
-                }else{
+                } else {
                     showToast(R.string.error);
                 }
-    //            String docTypeID = getDocTypeID(documentType);
-    //            FileUploadUrlItem urlItem = new FileUploadUrlItem(facilityID, AppConstants.FILE_TYPES.PDF, docTypeID, fileExtension);
-    //            FileParamObject fileParamObject = BaseApiGenerator.uploadDocument(urlItem, file);
-    //            executeTask(AppConstants.TASKCODES.UPLOAD_DOCUMENT, fileParamObject);
-            }else{
+            } else {
                 showToast(getString(R.string.error_document_empty));
             }
-        }else{
+        } else {
             showToast(getString(R.string.error_document_empty));
         }
     }
@@ -286,16 +227,6 @@ public class ContactClinicDetailsFragment extends AppBaseFragment implements Ada
         }, getActivity());
     }
 
-//    private void uploadImage(File file) {
-//        if (file != null) {
-//            if (file.exists()) {
-//                upload(file);
-//            } else {
-//                showToast(getString(R.string.error_image_fime_not_exist));
-//            }
-//        }
-//
-//    }
 
     private void getDocument() {
         mediaFragment.getDoc(new MediaFragment.MediaListener() {
@@ -307,15 +238,6 @@ public class ContactClinicDetailsFragment extends AppBaseFragment implements Ada
             @Override
             public void setUri(Uri uri, String MediaType, String path) {
 
-//                if (MediaType.equals(AppConstants.MEDIA_TYPES.DOC)) {
-//                    File file = new File(path);
-//                    docFile = file;
-//
-//                    if (file.exists()) {
-//                        String name = file.getName();
-//                        setText(R.id.tv_document_image, name);
-//                    }
-//                }
                 if (MediaType.equals("doc")) {
                     File doc_path = new File(path);
                     if (doc_path.exists()) {
@@ -338,25 +260,6 @@ public class ContactClinicDetailsFragment extends AppBaseFragment implements Ada
         }, getActivity());
     }
 
-//    private void setImagePath(Bitmap bitmap, int tv_id) {
-//        bitmap = Util.getResizeBitmap(bitmap, 1024);
-//
-//        if (bitmap != null) {
-//            try {
-//                imageFile = Util.getFile(bitmap, null);
-//            } catch (Exception e) {
-//                e.printStackTrace();
-//            }
-//        }
-//        assert imageFile != null;
-//        if (imageFile.exists()) {
-//            String image_name = imageFile.getName();
-//            setText(tv_id, image_name);
-//
-//        }
-//
-//    }
-
     private String getDocTypeID(String documentType) {
 
         int value = 0;
@@ -373,7 +276,7 @@ public class ContactClinicDetailsFragment extends AppBaseFragment implements Ada
 
 
         File file = null;
-        if (getTag(R.id.tv_clinic_type_image)!=null){
+        if (getTag(R.id.tv_clinic_type_image) != null) {
             file = getTag(R.id.tv_clinic_type_image);
         }
         if (file != null) {
@@ -391,28 +294,28 @@ public class ContactClinicDetailsFragment extends AppBaseFragment implements Ada
                                         ContactClinicResponse clinicResponse = new ContactClinicResponse(facilityID, getEditText(R.id.et_contact_number), getEditText(R.id.et_email), getEditText(R.id.et_about_clinic), payModeID, fileExtension);
                                         FileParamObject fileParamObject = BaseApiGenerator.uploadImage(file, file.getName(), clinicResponse);
                                         executeTask(AppConstants.TASKCODES.UPLOAD_IMAGE, fileParamObject);
-                                    }else{
+                                    } else {
                                         showToast(getString(R.string.error_about_clinic_empty));
                                     }
-                                }else{
+                                } else {
                                     showToast(getString(R.string.email_address_empty));
                                 }
-                            }else{
+                            } else {
                                 showToast(getString(R.string.error_contact_no_empty));
                             }
-                        }else{
+                        } else {
                             showToast(getString(R.string.error_payment_mode_empty));
                         }
-                    }else{
+                    } else {
                         showToast(getString(R.string.error_payment_mode_empty));
                     }
-                }else{
+                } else {
                     showToast(R.string.error);
                 }
-            }else{
+            } else {
                 showToast(R.string.clinic_image_empty);
             }
-        }else{
+        } else {
             showToast(R.string.clinic_image_empty);
         }
 
@@ -491,7 +394,7 @@ public class ContactClinicDetailsFragment extends AppBaseFragment implements Ada
                 document_list = documentList;
 
                 List<MasterValues> payment_list = getList(paymentList);
-                paymentlist = getLabel(payment_list);
+                List<String> paymentlist = getLabel(payment_list);
                 if (CollectionUtils.isNotEmpty(paymentlist)) {
                     setAdapter(paymentlist);
                 }
@@ -501,7 +404,6 @@ public class ContactClinicDetailsFragment extends AppBaseFragment implements Ada
                 List<String> label = getLabel(document_list);
                 label.add(0, getString(R.string.select_document_type));
                 setadapter(label, R.id.spin_documents_type);
-
 
 
                 break;
@@ -554,7 +456,7 @@ public class ContactClinicDetailsFragment extends AppBaseFragment implements Ada
                 String stringExtension = getStringExtension(docPath);
                 if (stringExtension.equals("pdf")) {
                     setImageToLayout(docPath, docDesc, AppConstants.FILE_TYPES.PDF, id.toString());
-                }else{
+                } else {
                     setImageToLayout(docPath, docDesc, AppConstants.FILE_TYPES.IMG, id.toString());
                 }
             }
@@ -691,10 +593,10 @@ public class ContactClinicDetailsFragment extends AppBaseFragment implements Ada
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        switch (parent.getId()) {
-            case R.id.spin_documents_type:
-                documentType = parent.getItemAtPosition(position).toString();
-                break;
+        int i = parent.getId();
+        if (i == R.id.spin_documents_type) {
+            documentType = parent.getItemAtPosition(position).toString();
+
         }
     }
 

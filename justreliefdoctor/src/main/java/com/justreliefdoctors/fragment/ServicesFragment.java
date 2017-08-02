@@ -262,34 +262,37 @@ public class ServicesFragment extends AppBaseFragment {
     @Override
     public void onClick(View v) {
 
-        int i = v.getId();
-        if (i == R.id.et_fromDate) {
-            datePickerUtil.showCalendar(getContext(), "", new DatePickerUtil.DatePickerListener() {
-                @Override
-                public void getDate(String date, Calendar calendar) {
-                    fromDate = convertDateUPCFormat(calendar);
-                    setEditText(R.id.et_fromDate, date);
-                }
-            });
+        switch (v.getId()) {
+            case R.id.et_fromDate:
 
+                datePickerUtil.showCalendar(getContext(), "", new DatePickerUtil.DatePickerListener() {
+                    @Override
+                    public void getDate(String date, Calendar calendar) {
+                        fromDate = convertDateUPCFormat(calendar);
+                        setEditText(R.id.et_fromDate, date);
+                    }
+                });
 
-        } else if (i == R.id.et_toDate) {
-            datePickerUtil.showCalendar(getContext(), getEditText(R.id.et_fromDate), new DatePickerUtil.DatePickerListener() {
-                @Override
-                public void getDate(String date, Calendar calendar) {
-                    toDate = convertDateUPCFormat(calendar);
-                    setEditText(R.id.et_toDate, date);
-                }
-            });
+                break;
+            case R.id.et_toDate:
+                datePickerUtil.showCalendar(getContext(), getEditText(R.id.et_fromDate), new DatePickerUtil.DatePickerListener() {
+                    @Override
+                    public void getDate(String date, Calendar calendar) {
+                        toDate = convertDateUPCFormat(calendar);
+                        setEditText(R.id.et_toDate, date);
+                    }
+                });
+                break;
 
-        } else if (i == R.id.iv_plus) {
-            list_service = addServiceToLayout(serviceList, serviceList_selected);
-
-        } else if (i == R.id.btn_save_services) {
-            saveServices(list_service);
-
-        } else if (i == R.id.btn_save_membership) {
-            saveMembership();
+            case R.id.iv_plus:
+                list_service = addServiceToLayout(serviceList, serviceList_selected);
+                break;
+            case R.id.btn_save_services:
+                saveServices(serviceList_selected);
+                break;
+            case R.id.btn_save_membership:
+                saveMembership();
+                break;
 
         }
 
@@ -308,7 +311,7 @@ public class ServicesFragment extends AppBaseFragment {
     }
 
     private void saveServices(List<String> list_service) {
-        if (list_service.size() > 0) {
+        if (list_service!=null) {
             String valueIDs = getValueIDs(list_service, service_list);
             if (CollectionUtils.isNotEmpty(valueIDs) && CollectionUtils.isNotEmpty(getDoctorID())) {
                 SetServiceItem serviceItem = new SetServiceItem(getDoctorID(), valueIDs);
@@ -364,12 +367,14 @@ public class ServicesFragment extends AppBaseFragment {
             final CustomFontTextView tv_service = (CustomFontTextView) view.findViewById(R.id.tv_title);
             final ImageView iv_delete = (ImageView) view.findViewById(R.id.iv_upload_delete);
             tv_service.setText(str);
+            serviceList_selected.add(str);
             ll_service_container.addView(view);
             serviceList.remove(str);
             iv_delete.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     String service = tv_service.getText().toString();
+                    serviceList_selected.remove(service);
                     ll_service_container.removeView(view);
                     serviceList.add(service);
                 }

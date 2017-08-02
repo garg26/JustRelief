@@ -11,6 +11,7 @@ import java.util.List;
 import simplifii.framework.activity.BaseLoginActivity;
 import simplifii.framework.activity.ChangePassword;
 import simplifii.framework.asyncmanager.HttpParamObject;
+import simplifii.framework.exceptionhandler.RestException;
 import simplifii.framework.models.UserLoginResponse;
 import simplifii.framework.models.UserSIgnUp;
 import simplifii.framework.models.response.ClinicResponse;
@@ -28,6 +29,7 @@ public class LoginActivity extends BaseLoginActivity {
 
     private UserLoginResponse userLoginResponse = new UserLoginResponse();
     private List<DoctorResponse> doctorResponses;
+
 
     @Override
     protected void login() {
@@ -99,14 +101,13 @@ public class LoginActivity extends BaseLoginActivity {
             case AppConstants.TASKCODES.USER_PROFILE:
                 try {
                     UserProfileResponse userProfileResponse = (UserProfileResponse) response;
-
                     doctorResponses = userProfileResponse.getTable1();
-                    if(doctorResponses.size()==0){
+                    if(doctorResponses==null){
                         doctorResponse();
                     }
                     else{
                         String json = new Gson().toJson(doctorResponses);
-                        ClinicResponse.setJson(json);
+                        DoctorResponse.setJson(json);
                         doctorResponse();
                     }
 
@@ -132,5 +133,8 @@ public class LoginActivity extends BaseLoginActivity {
         }
     }
 
-
+    @Override
+    public void onBackgroundError(RestException re, Exception e, int taskCode, Object... params) {
+        super.onBackgroundError(re, e, taskCode, params);
+    }
 }

@@ -85,19 +85,18 @@ public class TimingsFragment extends AppBaseFragment implements AdapterView.OnIt
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
+        int i = v.getId();
+        if (i == R.id.btn_save_and_next) {
+            setTimings();
 
-            case R.id.btn_save_and_next:
-                setTimings();
-                break;
-            case R.id.cb_clinic_open24:
-                checked = ((CheckBox) v).isChecked();
-                if (checked) {
-                    relativeLayout.setVisibility(View.GONE);
-                } else {
-                    relativeLayout.setVisibility(View.VISIBLE);
-                }
-                break;
+        } else if (i == R.id.cb_clinic_open24) {
+            checked = ((CheckBox) v).isChecked();
+            if (checked) {
+                relativeLayout.setVisibility(View.GONE);
+            } else {
+                relativeLayout.setVisibility(View.VISIBLE);
+            }
+
         }
     }
 
@@ -415,22 +414,22 @@ public class TimingsFragment extends AppBaseFragment implements AdapterView.OnIt
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        switch (parent.getId()) {
-            case R.id.sp_start_time:
-                start_time1 = parent.getItemAtPosition(position).toString();
-                setEndTimeSession1(start_time1);
-                break;
-            case R.id.sp_start_time2:
-                start_time2 = parent.getItemAtPosition(position).toString();
-                setEndTimeSession2(start_time1, start_time2, end_time1);
-                break;
-            case R.id.sp_end_time:
-                end_time1 = parent.getItemAtPosition(position).toString();
-                setStartTimeSession2(start_time1, end_time1);
-                break;
-            case R.id.sp_end_time2:
-                end_time2 = parent.getItemAtPosition(position).toString();
-                break;
+        int i = parent.getId();
+        if (i == R.id.sp_start_time) {
+            start_time1 = parent.getItemAtPosition(position).toString();
+            setEndTimeSession1(start_time1);
+
+        } else if (i == R.id.sp_start_time2) {
+            start_time2 = parent.getItemAtPosition(position).toString();
+            setEndTimeSession2(start_time1, start_time2, end_time1);
+
+        } else if (i == R.id.sp_end_time) {
+            end_time1 = parent.getItemAtPosition(position).toString();
+            setStartTimeSession2(start_time1, end_time1);
+
+        } else if (i == R.id.sp_end_time2) {
+            end_time2 = parent.getItemAtPosition(position).toString();
+
         }
 
     }

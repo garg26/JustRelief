@@ -132,10 +132,10 @@ public class CreateDoctor extends AppBaseActivity{
     @Override
     public void onClick(View v) {
 
-        int i = v.getId();
-        if (i == R.id.btn_find_my_doctor) {
-            findDoctor();
-
+        switch (v.getId()){
+            case R.id.btn_find_my_doctor:
+                findDoctor();
+                break;
         }
     }
 

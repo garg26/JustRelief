@@ -1,11 +1,9 @@
 package simplifii.framework.asyncmanager;
 
 
-import android.provider.SyncStateContract;
 import android.text.TextUtils;
 
 import simplifii.framework.Network.ClientURLConnection;
-import simplifii.framework.utility.AppConstants;
 import simplifii.framework.utility.Preferences;
 
 import java.io.Serializable;
