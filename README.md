@@ -10,6 +10,6 @@
 
 <img src=http://i.imgur.com/j1cCWi4.png | width=200>  <img src=http://i.imgur.com/86A7wJy.png | width=200>   <img src=http://i.imgur.com/cAgKp7W.png | width=200>
 
-<img src=http://i.imgur.com/mMzwxeZ.png | width=200>  <img src=http://i.imgur.com/0s4mw5e.png | width=200>
+<img src=http://i.imgur.com/mMzwxeZ.png | width=200>  
 
 
